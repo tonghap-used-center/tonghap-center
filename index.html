@@ -140,6 +140,70 @@ footer{background:#0d1929;color:#cbd5e1;text-align:center;padding:28px 18px;font
 <option value="작동안됨">작동안됨</option>
 </select>
 <div id="business-fields">
+<label for="closing-date">6. 폐업·정리 예정일</label>
+<input type="text" id="closing-date" name="폐업정리예정일" placeholder="예: 2026년 10월 중">
+</div>
+<div id="appliance-fields" class="hidden">
+<label for="elevator">6. 엘리베이터 유무</label>
+<select id="elevator" name="엘리베이터유무">
+<option value="">선택해주세요</option>
+<option value="있음">있음</option>
+<option value="없음">없음</option>
+</select>
+<label for="move-reason">7. 처분사유</label>
+<select id="move-reason" name="처분사유">
+<option value="">선택해주세요</option>
+<option value="이사">이사</option>
+<option value="신품교체">신품교체</option>
+<option value="기타">기타</option>
+</select>
+</div>
+<label for="contact">연락처</label>
+<input type="tel" id="contact" name="연락처" placeholder="예: 010-1234-5678">
+<label for="memo">추가내용</label>
+<textarea id="memo" name="추가내용" rows="4" placeholder="장비 상태나 추가로 전달하실 내용을 적어주세요."></textarea>
+<button type="submit" class="submit-btn">무료 견적 신청하기</button>
+</div>
+</form>
+</div>
+</section>
+<footer>
+<p><strong>통합중고센터</strong></p>
+<p>카페장비 · 식당주방장비 · 중고가전 전문 매입·판매</p>
+<p>무료 비대면 사진견적 신청</p>
+</footer>
+<script>
+function showForm(type){
+document.getElementById('common-fields').classList.remove('hidden');
+document.getElementById('category').value=type;
+const businessFields=document.getElementById('business-fields');
+const applianceFields=document.getElementById('appliance-fields');
+businessFields.classList.add('hidden');
+applianceFields.classList.add('hidden');
+if(type==='coffee'){
+document.getElementById('form-title').textContent='카페·커피장비 무료견적';
+document.getElementById('form-guide').textContent='커피머신·그라인더·제빙기·냉장장비·베이커리장비 등의 사진과 정보를 입력해주세요.';
+businessFields.classList.remove('hidden');
+}
+else if(type==='kitchen'){
+document.getElementById('form-title').textContent='식당·주방장비 무료견적';
+document.getElementById('form-guide').textContent='냉장·냉동고·식기세척기·작업대·싱크대·화구 등의 사진과 정보를 입력해주세요.';
+businessFields.classList.remove('hidden');
+}
+else if(type==='appliance'){
+document.getElementById('form-title').textContent='중고가전 무료견적';
+document.getElementById('form-guide').textContent='냉장고·세탁기·건조기·에어컨·TV·스타일러 등의 사진과 정보를 입력해주세요.';
+applianceFields.classList.remove('hidden');
+}
+}
+document.getElementById('estimate-form').addEventListener('submit',function(e){
+e.preventDefault();
+alert('견적 신청 내용이 확인되었습니다.');
+});
+</script>
+</body>
+</html>
 
+  
 
 
