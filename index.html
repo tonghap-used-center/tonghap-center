@@ -508,6 +508,22 @@ setElev();
 });
 });
 </script>
+<script>
+document.querySelectorAll('form').forEach(function(form){
+form.addEventListener('submit',function(){
+form.querySelectorAll('input,select,textarea').forEach(function(el){
+if(!el.value || !el.value.trim()){
+el.disabled=true;
+}
+});
+});
+});
+document.querySelectorAll('input').forEach(function(el){
+if(el.name==='name' && !el.value){
+el.disabled=true;
+}
+});
+</script>
 
 
   
