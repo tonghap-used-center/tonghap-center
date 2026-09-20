@@ -430,6 +430,48 @@ if(t==="');" || t==="');." || t==="');•")del.push(n);
 del.forEach(function(n){n.remove();});
 });
 </script>
+<script>
+function fixElevator(){
+const cat=document.querySelector('[name="category"]');
+const elev=document.querySelector('[name="elevator"]');
+if(!cat||!elev)return;
+const box=elev.closest('div');
+const isHome=cat.value.includes('가전');
+if(box)box.style.display=isHome?'block':'none';
+if(!isHome)elev.value='';
+}
+document.addEventListener('DOMContentLoaded',()=>{
+const cat=document.querySelector('[name="category"]');
+if(cat)cat.addEventListener('change',fixElevator);
+fixElevator();
+});
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+const files=document.querySelectorAll('input[type="file"]');
+files.forEach((input)=>{
+input.setAttribute('multiple','multiple');
+input.addEventListener('change',function(){
+if(this.files.length>12){
+alert('사진은 최대 12장까지 선택할 수 있습니다.');
+this.value='';
+}
+});
+});
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+document.querySelectorAll('form').forEach(function(form){
+form.setAttribute('enctype','multipart/form-data');
+form.setAttribute('method','POST');
+form.querySelectorAll('input[type="file"]').forEach(function(f,i){
+f.setAttribute('multiple','');
+f.setAttribute('name','attachment'+(i+1)+'[]');
+});
+});
+});
+</script>
+
 
   
 
