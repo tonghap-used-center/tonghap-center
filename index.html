@@ -524,6 +524,46 @@ el.disabled=true;
 }
 });
 </script>
+<script>
+window.addEventListener('load',function(){
+const form=document.getElementById('estimate-form');
+const cat=form.querySelector('#category');
+const elevator=form.querySelector('#elevator');
+const appliance=document.getElementById('appliance-fields');
+function cleanFields(){
+const isAppliance=cat.value==='appliance';
+elevator.disabled=!isAppliance;
+appliance.querySelectorAll('input,select').forEach(function(el){
+el.disabled=!isAppliance;
+});
+}
+cleanFields();
+const buttons=document.querySelectorAll('.card-btn');
+buttons.forEach(function(btn){
+btn.addEventListener('click',function(){
+setTimeout(cleanFields,0);
+});
+});
+const oldPhoto=form.querySelector('#photo');
+oldPhoto.removeAttribute('multiple');
+oldPhoto.name='사진1';
+const holder=document.createElement('div');
+holder.id='extra-photos';
+oldPhoto.insertAdjacentElement('afterend',holder);
+for(let i=2;i<=12;i++){
+const input=document.createElement('input');
+input.type='file';
+input.name='사진'+i;
+input.accept='image/*';
+input.style.marginTop='8px';
+holder.appendChild(input);
+}
+form.addEventListener('submit',function(){
+cleanFields();
+});
+});
+</script>
+
 
 
   
