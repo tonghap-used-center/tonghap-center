@@ -678,6 +678,51 @@ header h1{font-size:28px}
 .section-title{font-size:23px}
 }
 </style>
+<style>
+header{position:relative;overflow:hidden;padding:30px 18px!important}
+header:after{content:"";position:absolute;width:180px;height:180px;border-radius:50%;background:#ffffff12;right:-60px;top:-70px}
+header h1{font-size:32px!important;text-shadow:0 3px 12px #0005}
+header p{font-size:15px!important;letter-spacing:-.3px}
+.hero{position:relative;padding:55px 20px!important;overflow:hidden}
+.hero:before{content:"무료 비대면 견적";display:inline-block;background:#246bfd;color:white;padding:7px 14px;border-radius:30px;font-size:13px;font-weight:900;margin-bottom:15px}
+.hero h2{font-size:34px!important;line-height:1.25!important;letter-spacing:-1.5px}
+.hero h2 strong{color:#246bfd}
+.hero p{max-width:520px;margin:15px auto 22px!important}
+.cards{display:grid!important;grid-template-columns:1fr!important;gap:16px!important}
+.card{position:relative;overflow:hidden;text-align:left!important;min-height:190px}
+.card h3{font-size:24px!important;margin-bottom:8px!important}
+.card p{max-width:72%;font-weight:600}
+.card-btn{width:100%;margin-top:15px!important;font-weight:900!important}
+.coffee:before{content:"☕";position:absolute;right:18px;top:18px;font-size:55px;opacity:.18}
+.kitchen:before{content:"🍳";position:absolute;right:18px;top:18px;font-size:55px;opacity:.18}
+.appliance:before{content:"🏠";position:absolute;right:18px;top:18px;font-size:55px;opacity:.18}
+.coffee h3{color:#70451f}
+.kitchen h3{color:#c85c00}
+.appliance h3{color:#1554c0}
+.card-btn{box-shadow:0 6px 16px rgba(0,0,0,.13)}
+.section-title:after{content:"";display:block;width:42px;height:4px;background:#246bfd;border-radius:10px;margin:10px auto 0}
+.info-box{background:linear-gradient(135deg,#10213a,#1d3c66)!important;color:white!important}
+.info-box h2{color:white!important}
+.info-box p{color:#dce7f5!important}
+.services{gap:8px!important}
+.service{background:#ffffff14!important;border:1px solid #ffffff25!important;color:white!important}
+.form-box{border:1px solid #e2e8f0!important;background:white!important}
+.form-box h2{color:#10213a!important}
+input,select,textarea{background:#f8fafc!important;border:1px solid #d5dce6!important}
+input:focus,select:focus,textarea:focus{outline:none;border-color:#246bfd!important;box-shadow:0 0 0 3px #246bfd18}
+.submit-btn{background:linear-gradient(135deg,#246bfd,#174fc4)!important}
+.submit-btn{box-shadow:0 8px 20px #246bfd38!important;font-weight:900!important}
+footer{background:#0c1728!important;padding:30px 15px!important}
+@media(min-width:700px){
+.cards{grid-template-columns:repeat(3,1fr)!important}
+.card p{max-width:100%}
+.hero h2{font-size:40px!important}
+}
+.card{transition:.2s ease!important}
+.card:active{transform:scale(.98)}
+.card-btn:active{transform:scale(.98)}
+.submit-btn:active{transform:scale(.98)}
+</style>
 
 
 
