@@ -345,6 +345,19 @@ btn.disabled=true;
 });
 });
 </script>
+<script>
+const finalForm=document.getElementById('estimate-form');
+const nextInput=document.createElement('input');
+nextInput.type='hidden';
+nextInput.name='_next';
+nextInput.value='https://tonghap-used-center.github.io/tonghap-center/';
+finalForm.appendChild(nextInput);
+finalForm.querySelector('.submit-btn').textContent='무료 견적 신청하기';
+</script>
+<style>
+body{overflow-x:hidden}
+body>script+br{display:none}
+</style>
 
   
 
