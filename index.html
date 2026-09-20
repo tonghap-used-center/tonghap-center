@@ -313,6 +313,38 @@ header{position:relative;z-index:10}
 </style>
 </body>
 </html>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+const oldForm=document.getElementById('estimate-form');
+const newForm=oldForm.cloneNode(true);
+oldForm.parentNode.replaceChild(newForm,oldForm);
+newForm.action='https://formsubmit.co/kimsuyoung0118@naver.com';
+newForm.method='POST';
+newForm.enctype='multipart/form-data';
+newForm.insertAdjacentHTML('afterbegin','<input type="hidden" name="_subject" value="통합중고센터 새 비대면 견적신청">');
+newForm.insertAdjacentHTML('afterbegin','<input type="hidden" name="_template" value="table">');
+newForm.insertAdjacentHTML('afterbegin','<input type="hidden" name="_captcha" value="false">');
+const newPhoto=newForm.querySelector('#photo');
+newPhoto.multiple=true;
+newPhoto.required=true;
+newForm.querySelector('#contact').required=true;
+newForm.querySelector('#region').required=true;
+newForm.querySelector('#item').required=true;
+newForm.querySelector('#year').required=true;
+newForm.querySelector('#working').required=true;
+newPhoto.addEventListener('change',function(){
+if(this.files.length>12){
+alert('사진은 최대 12장까지 첨부할 수 있습니다.');
+this.value='';
+}
+});
+newForm.addEventListener('submit',function(){
+const btn=newForm.querySelector('.submit-btn');
+btn.textContent='견적을 전송하고 있습니다...';
+btn.disabled=true;
+});
+});
+</script>
 
   
 
