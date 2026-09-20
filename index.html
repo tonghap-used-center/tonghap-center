@@ -200,7 +200,7 @@ document.getElementById('estimate-form').addEventListener('submit',function(e){
 e.preventDefault();
 alert('견적 신청 내용이 확인되었습니다.');
 });
-</script>
+const photoInput=document.getElementById('photo');photoInput.setAttribute('multiple','multiple');photoInput.addEventListener('change',function(){if(this.files.length>12){alert('사진은 최대 12장까지 첨부할 수 있습니다.');this.value='';return;}});photoInput.insertAdjacentHTML('afterend','<p style="font-size:12px;color:#667085;margin-top:6px">사진은 최대 12장까지 첨부할 수 있습니다.</p>');</script>
 </body>
 </html>
 
