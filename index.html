@@ -489,6 +489,25 @@ f.name='attachment'+(i+1);
 });
 });
 </script>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+const forms=document.querySelectorAll('form');
+forms.forEach(function(form){
+const cat=form.querySelector('[name="category"]');
+const elev=form.querySelector('[name="elevator"]');
+if(!cat||!elev)return;
+function setElev(){
+const home=cat.value.includes('가전');
+elev.disabled=!home;
+const box=elev.closest('div');
+if(box)box.style.display=home?'block':'none';
+if(!home)elev.value='';
+}
+cat.addEventListener('change',setElev);
+setElev();
+});
+});
+</script>
 
 
   
