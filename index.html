@@ -377,6 +377,28 @@ el.remove();
 });
 });
 </script>
+<script>
+window.addEventListener('load',function(){
+const nodes=[...document.body.childNodes];
+nodes.forEach(function(n){
+if(n.nodeType===3){
+const t=n.textContent||'';
+if(t.includes('photoInput.insertAdjacentHTML')){
+n.textContent='';
+}
+}
+});
+const all=[...document.body.querySelectorAll('p')];
+all.forEach(function(p){
+const t=p.textContent.trim();
+if(t==='사진은 최대 12장까지 첨부할 수 있습니다.'){
+if(!p.closest('#estimate-form')){
+p.remove();
+}
+}
+});
+});
+</script>
 
   
 
