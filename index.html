@@ -415,6 +415,21 @@ n=prev;
 document.body.style.overflowX='hidden';
 });
 </script>
+<script>
+window.addEventListener('load',function(){
+const w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);
+const del=[];
+while(w.nextNode()){
+const n=w.currentNode;
+const p=n.parentElement;
+if(p && p.tagName!=='SCRIPT' && p.tagName!=='STYLE'){
+const t=(n.nodeValue||'').trim();
+if(t==="');" || t==="');." || t==="');•")del.push(n);
+}
+}
+del.forEach(function(n){n.remove();});
+});
+</script>
 
   
 
