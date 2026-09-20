@@ -471,6 +471,15 @@ f.setAttribute('name','attachment'+(i+1)+'[]');
 });
 });
 </script>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+document.querySelectorAll('form').forEach(function(form){
+form.querySelectorAll('input[type="file"]').forEach(function(f,i){
+f.name='attachment'+(i+1);
+});
+});
+});
+</script>
 
 
   
