@@ -619,6 +619,24 @@ if(!f.files.length)f.disabled=true;
 });
 });
 </script>
+<script>
+window.addEventListener('load',function(){
+const form=document.getElementById('estimate-form');
+const cat=form.querySelector('#category');
+const closing=form.querySelector('#closing-date');
+function fixClosing(){
+if(!closing)return;
+closing.disabled=(cat.value==='appliance');
+}
+document.querySelectorAll('.card-btn').forEach(function(btn){
+btn.addEventListener('click',function(){
+setTimeout(fixClosing,100);
+});
+});
+form.addEventListener('submit',fixClosing);
+fixClosing();
+});
+</script>
 
 
 
