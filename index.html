@@ -399,6 +399,22 @@ p.remove();
 });
 });
 </script>
+<script>
+window.addEventListener('load',function(){
+const blog=document.querySelector('a[href*="blog.naver.com"]');
+if(!blog)return;
+const section=blog.closest('section');
+let n=section.previousSibling;
+while(n){
+const prev=n.previousSibling;
+if(n.nodeType===3)n.remove();
+else if(n.nodeType===1 && n.tagName==='P')n.remove();
+else break;
+n=prev;
+}
+document.body.style.overflowX='hidden';
+});
+</script>
 
   
 
