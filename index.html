@@ -358,6 +358,25 @@ finalForm.querySelector('.submit-btn').textContent='무료 견적 신청하기';
 body{overflow-x:hidden}
 body>script+br{display:none}
 </style>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);
+const bad=[];
+while(walker.nextNode()){
+const n=walker.currentNode;
+const p=n.parentElement;
+if(p && p.tagName!=='SCRIPT' && p.tagName!=='STYLE'){
+if(n.nodeValue.includes('photoInput.insertAdjacentHTML')) bad.push(n);
+}
+}
+bad.forEach(function(n){n.remove();});
+Array.from(document.body.children).forEach(function(el){
+if(el.tagName==='P' && el.textContent.trim()==='사진은 최대 12장까지 첨부할 수 있습니다.'){
+el.remove();
+}
+});
+});
+</script>
 
   
 
