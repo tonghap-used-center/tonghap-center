@@ -563,6 +563,62 @@ cleanFields();
 });
 });
 </script>
+<script>
+window.addEventListener('load',function(){
+const form=document.getElementById('estimate-form');
+if(!form)return;
+const cat=form.querySelector('#category');
+<script>
+window.addEventListener('load',function(){
+const form=document.getElementById('estimate-form');
+if(!form)return;
+const cat=form.querySelector('#category');
+const elev=form.querySelector('#elevator');
+const app=form.querySelector('#appliance-fields');
+function syncFields(){
+const isApp=cat.value==='appliance';
+if(elev)elev.disabled=!isApp;
+if(app){
+app.querySelectorAll('input,select').forEach(function(el){
+el.disabled=!isApp;
+});
+}
+}
+document.querySelectorAll('.card-btn').forEach(function(btn){
+btn.addEventListener('click',function(){
+setTimeout(syncFields,50);
+});
+});
+syncFields();
+const oldPhoto=form.querySelector('#photo');
+if(!oldPhoto)return;
+oldPhoto.removeAttribute('multiple');
+oldPhoto.name='사진1';
+oldPhoto.required=true;
+let holder=document.getElementById('photo12box');
+if(!holder){
+holder=document.createElement('div');
+holder.id='photo12box';
+oldPhoto.insertAdjacentElement('afterend',holder);
+for(let i=2;i<=12;i++){
+const f=document.createElement('input');
+f.type='file';
+f.name='사진'+i;
+f.accept='image/*';
+f.style.marginTop='8px';
+holder.appendChild(f);
+}
+}
+form.enctype='multipart/form-data';
+form.method='POST';
+form.addEventListener('submit',function(){
+syncFields();
+form.querySelectorAll('input[type="file"]').forEach(function(f){
+if(!f.files.length)f.disabled=true;
+});
+});
+});
+</script>
 
 
 
