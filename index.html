@@ -343,6 +343,16 @@ outline-offset:3px;
 .submit-btn{min-height:54px}
 }
 </style>
+<script>
+const quoteSection=document.getElementById('quote');
+const services=document.querySelectorAll('.service');
+const quoteButtons=document.querySelectorAll('.service-link');
+quoteButtons.forEach((button,i)=>{
+button.addEventListener('click',function(e){
+e.preventDefault();
+services[i].after(quoteSection);
+quoteSection.style.display='block';
+selectQuote(i===0?'카페·커피장비':i===1?'식당·주방장비':'중고가전');
 
 
 
