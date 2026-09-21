@@ -104,8 +104,8 @@ a{text-decoration:none;color:inherit}
 <div class="tags">
 <span>커피머신</span><span>그라인더</span><span>제빙기</span>
 <span>쇼케이스</span><span>오븐</span><span>냉장장비</span>
-</div>
-<a href="#quote" class="service-link">카페장비 견적받기 →</a>
+</div>>
+<a href="#quote" class="service-link" onclick="selectQuote('카페·커피장비')">카페장비 견적받기 →</a>
 </div>
 </article>
 <article class="service">
@@ -117,7 +117,7 @@ a{text-decoration:none;color:inherit}
 <span>냉장고</span><span>냉동고</span><span>세척기</span>
 <span>작업대</span><span>싱크대</span><span>화구</span>
 </div>
-<a href="#quote" class="service-link">주방장비 견적받기 →</a>
+<a href="#quote" class="service-link" onclick="selectQuote('식당·주방장비')">주방장비 견적받기 →</a>
 </div>
 </article>
 <article class="service">
@@ -129,7 +129,7 @@ a{text-decoration:none;color:inherit}
 <span>냉장고</span><span>세탁기</span><span>건조기</span>
 <span>에어컨</span><span>TV</span><span>스타일러</span>
 </div>
-<a href="#quote" class="service-link">중고가전 견적받기 →</a>
+<a href="#quote" class="service-link" onclick="selectQuote('중고가전')">중고가전 견적받기 →</a>
 </div>
 </article>
 </div>
@@ -283,6 +283,11 @@ a{text-decoration:none;color:inherit}
 </footer>
 </div>
 <script>
+function selectQuote(v){
+document.getElementById('category').value=v;
+document.getElementById('category').dispatchEvent(new Event('change'));
+document.getElementById('quote').scrollIntoView({behavior:'smooth'});
+}
 const category=document.getElementById('category');
 const closeField=document.getElementById('closeField');
 const homeFields=document.getElementById('homeFields');
