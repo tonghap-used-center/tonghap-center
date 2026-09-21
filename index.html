@@ -104,7 +104,7 @@ a{text-decoration:none;color:inherit}
 <div class="tags">
 <span>커피머신</span><span>그라인더</span><span>제빙기</span>
 <span>쇼케이스</span><span>오븐</span><span>냉장장비</span>
-</div>>
+</div>
 <a href="#quote" class="service-link" onclick="selectQuote('카페·커피장비')">카페장비 견적받기 →</a>
 </div>
 </article>
@@ -153,6 +153,7 @@ a{text-decoration:none;color:inherit}
 <input type="hidden" name="_subject" value="통합중고센터 새 사진견적 신청">
 <input type="hidden" name="_captcha" value="false">
 <input type="hidden" name="_template" value="table">
+<input type="hidden" name="_next" value="https://tonghap-used-center.github.io/tonghap-center/thanks.html">
 <div class="field">
 <label>어떤 장비인가요?</label>
 <select name="카테고리" id="category" required>
@@ -303,6 +304,44 @@ homeFields.style.display=(v==='중고가전')?'block':'none';
 .hero{background:#101820 url("./file_00000000d81881f5acecc5c7ec193d81.png") center/cover no-repeat!important;
 min-height:720px!important;}
 .hero::before{background:rgba(0,0,0,.38)!important;}
+</style>
+<style>
+.service{transition:.25s}
+.service:hover{transform:translateY(-3px)}
+.service-link{transition:.2s}
+.service-link:active{transform:scale(.98)}
+.service:nth-child(1){border-top:5px solid #9b5b30}
+.service:nth-child(2){border-top:5px solid #526475}
+.service:nth-child(3){border-top:5px solid #1587ec}
+.service-body h3{letter-spacing:-.7px}
+.service-link{font-size:15px}
+#quote{transition:.3s}
+.quote-box{border:1px solid #e5ebf0}
+#category{font-weight:800}
+.photo-help{line-height:1.6}
+.submit-btn{box-shadow:0 6px 18px rgba(22,119,255,.2)}
+</style>
+<style>
+.service:has(.service-link:focus){
+outline:3px solid #1677ff;
+outline-offset:3px;
+}
+</style>
+<style>
+.service-link{position:relative;overflow:hidden}
+.service-link:hover{background:#26384d}
+.quote-box{scroll-margin-top:18px}
+.quote-box:focus-within{border-color:#1677ff}
+@media(max-width:649px){
+.services{gap:18px}
+.service-visual{height:165px}
+.service-body{padding:22px 18px}
+.service-link{padding:15px 12px}
+.quote-box{padding:26px 18px}
+.field{margin-bottom:18px}
+.field input,.field select,.field textarea{min-height:50px}
+.submit-btn{min-height:54px}
+}
 </style>
 
 
