@@ -365,7 +365,7 @@ const photoInputs=[...quoteForm.querySelectorAll('input[type="file"]')];
 const qForm=document.querySelector('#quote form');
 const pInputs=[...qForm.querySelectorAll('input[type="file"]')];
 let sending=false;
-async function compressPhoto(file,quality=.72,max=1600){
+async function compressPhoto(file,quality=.55,max=1280){
 if(!file||!file.type.startsWith('image/'))return file;
 const bmp=await createImageBitmap(file);
 let w=bmp.width,h=bmp.height;
