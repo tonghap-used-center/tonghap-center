@@ -457,6 +457,80 @@ document.getElementById('homeText').innerText=`[중고가전 사진견적 신청
 10 - 전화번호:
 `;
 </script>
+<style>
+.logo{
+display:block!important;
+font-size:0!important;
+line-height:1.05!important;
+position:relative;
+padding-top:13px;
+padding-bottom:5px;
+min-width:190px;
+}
+.logo::before{
+content:"TONGHAP";
+display:block;
+font-size:9px!important;
+font-weight:700;
+letter-spacing:4px!important;
+color:#9ca8b8!important;
+margin-bottom:5px;
+}
+.logo::after{
+content:"통합  중고센터";
+display:block;
+font-size:22px!important;
+font-weight:900;
+letter-spacing:-1.3px!important;
+color:#fff!important;
+}
+.header-inner .logo{
+background:linear-gradient(90deg,#fff 0 28%,#d6ad55 28% 100%);
+-webkit-background-clip:text;
+}
+@media(max-width:480px){
+.logo{min-width:180px}
+.logo::after{font-size:21px!important}
+}
+</style>
+<style>
+.hero-label{
+font-size:11px!important;
+font-weight:700!important;
+letter-spacing:2.5px!important;
+color:#d6ad55!important;
+margin-bottom:14px!important;
+}
+.hero h1{
+font-size:42px!important;
+line-height:1.18!important;
+font-weight:900!important;
+letter-spacing:-2.2px!important;
+margin-bottom:22px!important;
+}
+.hero p{
+font-size:16px!important;
+line-height:1.9!important;
+font-weight:400!important;
+color:rgba(255,255,255,.82)!important;
+max-width:570px;
+}
+@media(max-width:480px){
+.hero h1{
+font-size:36px!important;
+line-height:1.2!important;
+}
+.hero p{
+font-size:15px!important;
+line-height:1.85!important;
+}
+}
+</style>
+
+<script>
+document.querySelector('.hero-label').textContent='CAFE · KITCHEN · HOME';
+document.querySelector('.hero h1').innerHTML='카페·식당 장비부터<br><span style="font-size:.78em;font-weight:700">중고가전까지</span>';
+</script>
 
 
   
