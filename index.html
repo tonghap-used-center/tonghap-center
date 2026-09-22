@@ -359,74 +359,8 @@ selectQuote(i===0?'카페·커피장비':i===1?'식당·주방장비':'중고가
 </body>
 </html>
 <script>
-const quoteForm=document.querySelector('#quote form');
-const photoInputs=[...quoteForm.querySelectorAll('input[type="file"]')];
-<script>
-const qForm=document.querySelector('#quote form');
-const pInputs=[...qForm.querySelectorAll('input[type="file"]')];
-let sending=false;
-async function compressPhoto(file,quality=.55,max=1280){
-if(!file||!file.type.startsWith('image/'))return file;
-const bmp=await createImageBitmap(file);
-let w=bmp.width,h=bmp.height;
-if(w>max||h>max){
-const r=Math.min(max/w,max/h);
-w=Math.round(w*r);h=Math.round(h*r);
-}
-const canvas=document.createElement('canvas');
-canvas.width=w;canvas.height=h;
-const ctx=canvas.getContext('2d');
-ctx.drawImage(bmp,0,0,w,h);
-if(bmp.close)bmp.close();
-const blob=await new Promise(resolve=>
-canvas.toBlob(resolve,'image/jpeg',quality));
-if(!blob)return file;
-const base=file.name.replace(/\.[^.]+$/,'');
-return new File([blob],base+'.jpg',{
-type:'image/jpeg',lastModified:Date.now()
-});
-}
-qForm.addEventListener('submit',async function(e){
-if(sending)return;
-e.preventDefault();
-const btn=qForm.querySelector('.submit-btn');
-const oldText=btn.textContent;
-btn.disabled=true;
-btn.textContent='사진 압축 중...';
-try{
-const data=new FormData(qForm);
-let total=0;
-for(const input of pInputs){
-const file=input.files&&input.files[0];
-if(!file)continue;
-data.delete(input.name);
-const compressed=await compressPhoto(file);
-data.append(input.name,compressed,compressed.name);
-total+=compressed.size;
-}
-if(total>9*1024*1024){
-alert('사진 용량이 아직 큽니다. 사진 수를 줄여 다시 시도해주세요.');
-btn.disabled=false;
-btn.textContent=oldText;
-return;
-}
-btn.textContent='견적 전송 중...';
-const res=await fetch(qForm.action,{
-method:'POST',
-body:data,
-headers:{'Accept':'application/json'}
-});
-if(!res.ok)throw new Error('send failed');
-sending=true;
-window.location.href=
-'https://tonghap-used-center.github.io/tonghap-center/thanks.html';
-}catch(err){
-alert('전송에 실패했습니다. 사진 용량을 줄이거나 카카오톡 상담을 이용해주세요.');
-btn.disabled=false;
-btn.textContent=oldText;
-}
-});
-</script>
+
+
 
 
 
