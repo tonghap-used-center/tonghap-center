@@ -221,6 +221,148 @@ section{padding:52px 0}
 
 </body>
 </html>
+<style>
+.quote-guide{display:none;background:#fff;padding:22px;margin:18px 12px;border-radius:16px;box-shadow:0 8px 28px rgba(15,23,42,.12)}
+.quote-guide h3{font-size:21px;margin-bottom:8px;color:#182230}
+.quote-guide .guide-note{font-size:14px;color:#667085;margin-bottom:15px}
+.quote-form-text{background:#f5f6f8;padding:17px;border-radius:12px;line-height:1.9;font-size:15px;white-space:pre-line;color:#182230}
+.quote-actions{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:14px}
+.copy-btn,.send-btn{border:0;border-radius:10px;padding:13px 8px;font-weight:900;font-size:14px;text-align:center;cursor:pointer}
+.copy-btn{background:#101b2b;color:#fff}
+.send-btn{background:#fee500;color:#191919}
+.copy-ok{display:none;text-align:center;margin-top:10px;font-size:13px;font-weight:800;color:#08783e}
+@media(max-width:480px){
+.quote-actions{grid-template-columns:1fr}
+.quote-guide{margin:16px 0;padding:18px}
+}
+</style>
+<div id="businessGuide" class="quote-guide">
+<h3>카페·커피장비 / 식당·주방장비 사진견적</h3>
+<p class="guide-note">아래 양식을 복사한 후 카카오톡에 붙여넣고 제품 사진을 함께 보내주세요.</p>
+<div id="businessText" class="quote-form-text">[사진견적 신청양식]
+
+1 - 구입년도:
+2 - 처분지역:
+3 - 전면사진:
+4 - 품목:
+5 - 작동여부:
+6 - 폐업예정일:
+7 - 전화번호:</div>
+
+<div class="quote-actions">
+<button class="copy-btn" type="button" onclick="copyQuote('businessText','businessOk')">양식 복사</button>
+<a class="send-btn" href="http://pf.kakao.com/_DxcxaaX/chat" target="_blank">카카오톡으로 사진 보내기</a>
+</div>
+<div id="businessOk" class="copy-ok">양식이 복사되었습니다. 카카오톡에 붙여넣어 주세요.</div>
+</div>
+
+<div id="homeGuide" class="quote-guide">
+<h3>중고가전 사진견적</h3>
+<p class="guide-note">아래 양식을 복사한 후 카카오톡에 붙여넣고 제품 사진을 함께 보내주세요.</p>
+<div id="homeText" class="quote-form-text">[중고가전 사진견적 신청양식]
+
+1 - 구입년도:
+2 - 처분지역:
+3 - 엘리베이터 유무:
+4 - 이사 여부:
+5 - 신품교체 여부:
+6 - 전체 앞모습 사진:
+7 - 품목:
+8 - 가전제품 브랜드:
+9 - 작동여부:
+10 - 전화번호:</div>
+
+<div class="quote-actions">
+<button class="copy-btn" type="button" onclick="copyQuote('homeText','homeOk')">양식 복사</button>
+<a class="send-btn" href="http://pf.kakao.com/_DxcxaaX/chat" target="_blank">카카오톡으로 사진 보내기</a>
+</div>
+<div id="homeOk" class="copy-ok">양식이 복사되었습니다. 카카오톡에 붙여넣어 주세요.</div>
+</div>
+<script>
+const quoteBtns=document.querySelectorAll('.service-btn');
+const businessGuide=document.getElementById('businessGuide');
+const homeGuide=document.getElementById('homeGuide');
+const serviceCards=document.querySelectorAll('.service');
+
+quoteBtns.forEach((btn,index)=>{
+btn.addEventListener('click',function(e){
+e.preventDefault();
+
+businessGuide.style.display='none';
+homeGuide.style.display='none';
+
+if(index===0||index===1){
+serviceCards[index].after(businessGuide);
+businessGuide.style.display='block';
+businessGuide.scrollIntoView({behavior:'smooth',block:'center'});
+}else{
+serviceCards[index].after(homeGuide);
+homeGuide.style.display='block';
+homeGuide.scrollIntoView({behavior:'smooth',block:'center'});
+}
+});
+});
+
+function copyQuote(textId,okId){
+const text=document.getElementById(textId).innerText;
+const ok=document.getElementById(okId);
+
+if(navigator.clipboard&&window.isSecureContext){
+navigator.clipboard.writeText(text).then(()=>{
+ok.style.display='block';
+});
+}else{
+const area=document.createElement('textarea');
+area.value=text;
+document.body.appendChild(area);
+area.select();
+document.execCommand('copy');
+document.body.removeChild(area);
+ok.style.display='block';
+}
+}
+</script>
+<div id="quoteChoice" class="quote-guide">
+<h3>어떤 제품의 견적이 필요하신가요?</h3>
+<p class="guide-note">종류를 선택하면 카카오톡으로 보내실 견적 양식이 나타납니다.</p>
+
+<div class="quote-actions">
+<button class="copy-btn" type="button" onclick="openBusinessGuide()">카페·식당 장비</button>
+<button class="copy-btn" type="button" onclick="openHomeGuide()">중고가전</button>
+</div>
+</div>
+
+<script>
+function showQuoteChoice(){
+const choice=document.getElementById('quoteChoice');
+document.querySelector('.kakao-section').before(choice);
+choice.style.display='block';
+choice.scrollIntoView({behavior:'smooth',block:'center'});
+}
+
+function openBusinessGuide(){
+const guide=document.getElementById('businessGuide');
+document.getElementById('quoteChoice').after(guide);
+guide.style.display='block';
+document.getElementById('homeGuide').style.display='none';
+guide.scrollIntoView({behavior:'smooth',block:'center'});
+}
+
+function openHomeGuide(){
+const guide=document.getElementById('homeGuide');
+document.getElementById('quoteChoice').after(guide);
+guide.style.display='block';
+document.getElementById('businessGuide').style.display='none';
+guide.scrollIntoView({behavior:'smooth',block:'center'});
+}
+
+document.querySelectorAll('.header-chat,.btn-kakao,.kakao-big').forEach(btn=>{
+btn.addEventListener('click',function(e){
+e.preventDefault();
+showQuoteChoice();
+});
+});
+</script>
 
 
   
