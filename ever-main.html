@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>통합센터 | EVER KOREA</title>
+<meta name="description" content="통합센터 중고장비 매입과 EVER KOREA 카페장비·원두·베이커리장비·AS 전문 상담">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,"Noto Sans KR",sans-serif;background:#f5f6f8;color:#18202b;line-height:1.65}
+a{text-decoration:none;color:inherit}
+img{display:block;width:100%}
+.wrap{width:min(1120px,92%);margin:auto}
+header{background:#101b2b;color:#fff;padding:16px 0}
+.brand{display:flex;align-items:center;justify-content:space-between;gap:15px}
+.brand-left small{display:block;font-size:12px;color:#c9a85d;font-weight:700;letter-spacing:2px}
+.brand-left strong{font-size:25px;font-weight:900;letter-spacing:.5px}
+.top-btn{background:#c9a85d;color:#101b2b;padding:10px 15px;border-radius:8px;font-size:13px;font-weight:800}
+.hero{position:relative;min-height:430px;display:flex;align-items:center;background:linear-gradient(90deg,rgba(10,20,34,.92),rgba(10,20,34,.45)),url('./file_00000000d81881f5acecc5c7ec193d81.png') center/cover no-repeat;color:#fff}
+.hero-content{max-width:700px;padding:70px 0}
+.hero-badge{display:inline-block;color:#d8b768;font-size:13px;font-weight:800;letter-spacing:2px;margin-bottom:12px}
+.hero h1{font-size:42px;line-height:1.2;margin-bottom:18px}
+.hero p{font-size:17px;color:#e5e7eb;margin-bottom:25px}
+.hero-actions{display:flex;gap:10px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 19px;border-radius:8px;font-weight:800;font-size:14px;cursor:pointer;border:0}
+.btn-gold{background:#c9a85d;color:#101b2b}
+.btn-white{background:#fff;color:#101b2b}
+section{padding:65px 0}
+.section-head{text-align:center;margin-bottom:32px}
+.section-head small{color:#a37d2d;font-weight:800;letter-spacing:2px}
+.section-head h2{font-size:30px;margin-top:6px}
+.section-head p{color:#687180;margin-top:8px}
+.buy-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.buy-card{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 8px 25px rgba(0,0,0,.08)}
+.buy-card img{height:210px;object-fit:cover}
+.buy-body{padding:20px}
+.buy-body h3{font-size:20px;margin-bottom:7px}
+.buy-body p{font-size:14px;color:#687180;margin-bottom:16px}
+.buy-btn{width:100%;background:#101b2b;color:#fff;padding:12px;border:0;border-radius:7px;font-weight:800;cursor:pointer}
+.quote-box{display:none;margin-top:25px;background:#fff;border:1px solid #e2e5e9;border-radius:14px;padding:22px}
+.quote-box.active{display:block}
+.quote-box h3{margin-bottom:12px;font-size:20px}
+.quote-form{white-space:pre-line;background:#f5f6f8;border-radius:9px;padding:17px;font-size:14px;line-height:1.8}
+.quote-actions{display:flex;gap:10px;margin-top:15px;flex-wrap:wrap}
+.copy-btn{background:#101b2b;color:#fff}
+.kakao-btn{background:#fee500;color:#191919}
+.ever-section{background:#101b2b;color:#fff}
+.ever-visual{max-width:950px;margin:0 auto 32px;border-radius:16px;overflow:hidden;box-shadow:0 15px 35px rgba(0,0,0,.28)}
+.ever-visual img{width:100%;max-height:520px;object-fit:cover}
+.ever-section .section-head small{color:#d8b768}
+.ever-section .section-head p{color:#c9d0da}
+.ever-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.ever-card{background:#17263a;border:1px solid #2b3a4e;border-radius:12px;padding:22px 14px;text-align:center;cursor:pointer;transition:.25s}
+.ever-card:hover{transform:translateY(-3px);border-color:#c9a85d}
+.ever-card.active{background:#c9a85d;color:#101b2b;border-color:#c9a85d}
+.ever-card strong{display:block;font-size:17px;margin-bottom:5px}
+.ever-card span{font-size:12px;opacity:.8}
+.ever-detail{display:none;margin-top:22px;background:#fff;color:#18202b;border-radius:15px;overflow:hidden}
+.ever-detail.active{display:block}
+.ever-story{display:grid;grid-template-columns:1fr 1.15fr;align-items:stretch}
+.story-image{min-height:330px;background:#e9edf2 center/cover no-repeat}
+.story-content{padding:32px}
+.story-content small{color:#a37d2d;font-weight:800;letter-spacing:1px}
+.story-content h3{font-size:27px;line-height:1.3;margin:7px 0 13px}
+.story-content p{color:#596270;font-size:15px;margin-bottom:14px}
+.story-points{margin:18px 0;padding:16px;background:#f5f6f8;border-radius:9px}
+.story-points span{display:block;padding:4px 0;font-size:14px;font-weight:700}
+.story-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.story-call{background:#101b2b;color:#fff}
+.story-kakao{background:#fee500;color:#191919}
+.contact-strip{background:#c9a85d;color:#101b2b;padding:28px 0}
+.contact-inner{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.contact-inner h3{font-size:23px}
+.contact-inner p{font-size:14px;margin-top:3px}
+.contact-buttons{display:flex;gap:8px;flex-wrap:wrap}
+.info-section{background:#fff}
+.info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.info-card{background:#f5f6f8;border-radius:12px;padding:22px}
+.info-card strong{display:block;font-size:17px;margin-bottom:7px}
+.info-card p{font-size:14px;color:#687180}
+footer{background:#0b1420;color:#aeb7c3;padding:35px 0;font-size:13px}
+.footer-brand{color:#fff;font-size:19px;font-weight:900;margin-bottom:10px}
+.footer-info{line-height:1.9}
+@media(max-width:800px){
+.hero{min-height:390px}
+.hero-content{padding:55px 0}
+.hero h1{font-size:31px}
+.buy-grid{grid-template-columns:1fr}
+.ever-grid{grid-template-columns:repeat(2,1fr)}
+.ever-story{grid-template-columns:1fr}
+.story-image{min-height:240px}
+.contact-inner{display:block}
+.contact-buttons{margin-top:15px}
+.info-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="wrap brand">
+<div class="brand-left">
+<small>통합센터</small>
+<strong>EVER KOREA</strong>
+</div>
+<a class="top-btn" href="tel:01088775951">상담전화</a>
+</div>
+</header>
+<main>
+<section class="hero">
+<div class="wrap hero-content">
+<span class="hero-badge">TONGHAP × EVER KOREA</span>
+<h1>중고장비 매입부터<br>카페장비 구매·운영까지</h1>
+<p>팔 때는 통합센터, 카페를 준비하고 운영할 때는 EVER KOREA.<br>장비·원두·베이커리·설치와 AS까지 한곳에서 상담하세요.</p>
+<div class="hero-actions">
+<a class="btn btn-gold" href="#buy">중고장비 사진견적</a>
+<a class="btn btn-white" href="#ever">EVER KOREA 보기</a>
+</div>
+</div>
+</section>
+<section id="buy">
+<div class="wrap">
+<div class="section-head">
+<small>중고장비 매입</small>
+<h2>통합센터 사진견적</h2>
+<p>처분할 장비를 선택하고 사진과 기본정보로 간편하게 견적을 받아보세요.</p>
+</div>
+
+<div class="buy-grid">
+<div class="buy-card">
+<img src="./file_0000000096ac82099f0ada88949f63ac.png" alt="카페 커피장비 매입">
+<div class="buy-body">
+<h3>카페·커피장비</h3>
+<p>커피머신부터 그라인더·제빙기·냉장장비·베이커리장비까지 확인합니다.</p>
+<button class="buy-btn" onclick="openQuote('business','카페·커피장비')">사진견적 받기</button>
+</div>
+</div>
+<div class="buy-card">
+<img src="./file_00000000d11c82069c977afb527d131b.png" alt="식당 주방장비 매입">
+<div class="buy-body">
+<h3>식당·주방장비</h3>
+<p>업소용 냉장·냉동고, 작업대, 싱크, 세척기와 각종 주방장비를 확인합니다.</p>
+<button class="buy-btn" onclick="openQuote('business','식당·주방장비')">사진견적 받기</button>
+</div>
+</div>
+<div class="buy-card">
+<img src="./file_000000000254820987386ed885b0e564.png" alt="중고가전 매입">
+<div class="buy-body">
+<h3>중고가전</h3>
+<p>냉장고·세탁기·건조기·에어컨·TV·스타일러 등 주요 생활가전을 확인합니다.</p>
+<button class="buy-btn" onclick="openQuote('home','중고가전')">사진견적 받기</button>
+</div>
+</div>
+</div>
+<div id="quoteBox" class="quote-box">
+<h3 id="quoteTitle">사진견적 신청</h3>
+<div id="quoteForm" class="quote-form"></div>
+
+<div class="quote-actions">
+<button class="btn copy-btn" onclick="copyQuote()">견적양식 복사</button>
+<a class="btn kakao-btn" href="http://pf.kakao.com/_DxcxaaX/chat" target="_blank">카카오톡으로 사진 보내기</a>
+</div>
+</div>
+
+</div>
+</section>
+<section id="ever" class="ever-section">
+<div class="wrap">
+<div class="section-head">
+<small>CAFE BUSINESS PARTNER</small>
+<h2>EVER KOREA</h2>
+<p>카페를 준비하는 순간부터 운영 이후까지, 예산과 매장에 맞는 장비와 서비스를 함께 구성합니다.</p>
+</div>
+
+<div class="ever-visual">
+<img src="./file_000000007c5082068afd68b9cb53beb7.png" alt="EVER KOREA 카페장비 전문">
+</div>
+<div class="ever-grid">
+
+<div class="ever-card" onclick="openEver('coffee',this)">
+<strong>커피머신·카페장비</strong>
+<span>신품 · 중고 · 매장구성</span>
+</div>
+
+<div class="ever-card" onclick="openEver('roasting',this)">
+<strong>원두·로스팅</strong>
+<span>로스팅 · 원두공급 · 상담</span>
+</div>
+
+<div class="ever-card" onclick="openEver('bakery',this)">
+<strong>베이커리장비</strong>
+<span>오븐 · 발효 · 제빵장비</span>
+</div>
+
+<div class="ever-card" onclick="openEver('service',this)">
+<strong>AS·설치</strong>
+<span>설치 · 점검 · 수리</span>
+</div>
+
+</div>
+<div id="coffee" class="ever-detail">
+<div class="ever-story">
+<div class="story-image" style="background-image:url('./file_000000007c5082068afd68b9cb53beb7.png')"></div>
+<div class="story-content">
+<small>COFFEE EQUIPMENT</small>
+<h3>카페의 시작, 장비 선택부터 달라야 합니다</h3>
+<p>매장의 규모와 메뉴, 예상 사용량에 따라 필요한 장비는 달라집니다. 무조건 신품만 권하기보다 실제 운영에 필요한 구성을 먼저 살펴봅니다.</p>
+<p>신품 구입이 부담된다면 상태를 확인한 중고장비부터 시작할 수 있습니다. 예산에 맞춰 신품과 중고를 함께 비교해 카페 전체 장비 구성을 상담합니다.</p>
+<div class="story-points">
+<span>✓ 커피머신 · 그라인더 · 자동템핑기</span>
+<span>✓ 제빙기 · 냉장·냉동장비 · 쇼케이스</span>
+<span>✓ 신품 · 중고장비 비교 구성</span>
+<span>✓ 매장 규모와 예산에 맞춘 장비 상담</span>
+</div>
+
+<div class="story-actions">
+<a class="btn story-call" href="tel:01088775951">전화 상담 010-8877-5951</a>
+<a class="btn story-kakao" href="http://pf.kakao.com/_DxcxaaX/chat" target="_blank">카카오 상담</a>
+</div>
+</div>
+</div>
+</div>
+<div id="roasting" class="ever-detail">
+<div class="ever-story">
+<div class="story-image" style="background-image:url('./file_000000007c5082068afd68b9cb53beb7.png')"></div>
+<div class="story-content">
+<small>BEANS & ROASTING</small>
+<h3>좋은 한 잔은 매장에 맞는 원두에서 시작됩니다</h3>
+<p>장비를 갖추는 것만으로 카페가 완성되지는 않습니다. 메뉴의 방향과 고객층, 원하는 맛에 맞는 원두 선택도 매장 운영의 중요한 부분입니다.</p>
+<p>EVER KOREA는 원두와 로스팅을 장비와 따로 보지 않고, 실제 매장에서 안정적으로 사용할 수 있는 방향으로 함께 상담합니다.</p>
+<div class="story-points">
+<span>✓ 매장 콘셉트에 맞는 원두 상담</span>
+<span>✓ 원두 로스팅 · 공급 상담</span>
+<span>✓ 커피 메뉴와 장비를 함께 고려한 구성</span>
+<span>✓ 신규 카페부터 기존 매장까지 상담</span>
+</div>
+
+<div class="story-actions">
+<a class="btn story-call" href="tel:01088775951">전화 상담 010-8877-5951</a>
+<a class="btn story-kakao" href="http://pf.kakao.com/_DxcxaaX/chat" target="_blank">카카오 상담</a>
+</div>
+</div>
+</div>
+</div>
+<div id="bakery" class="ever-detail">
+<div class="ever-story">
+<div class="story-image" style="background-image:url('./file_000000007c5082068afd68b9cb53beb7.png')"></div>
+<div class="story-content">
+<small>BAKERY EQUIPMENT</small>
+<h3>커피와 베이커리를 한 매장에서 함께 준비합니다</h3>
+<p>베이커리 메뉴를 함께 운영하는 카페라면 오븐 한 대만 선택해서 끝나는 것이 아닙니다. 생산량과 작업공간, 메뉴 구성에 따라 필요한 장비가 달라집니다.</p>
+<p>처음부터 모든 장비를 신품으로 구성하기 부담스럽다면 필요한 부분은 신품으로, 비용을 줄일 수 있는 부분은 중고장비로 나누어 상담할 수 있습니다.</p>
+<div class="story-points">
+<span>✓ 컨벡션오븐 · 데크오븐 · 콤비오븐</span>
+<span>✓ 발효기 · 도우컨 · 반죽기</span>
+<span>✓ 베이커리 쇼케이스 · 냉장장비</span>
+<span>✓ 신품 · 중고장비 예산별 구성 상담</span>
+</div>
+
+<div class="story-actions">
+<a class="btn story-call" href="tel:01088775951">전화 상담 010-8877-5951</a>
+<a class="btn story-kakao" href="http://pf.kakao.com/_DxcxaaX/chat" target="_blank">카카오 상담</a>
+</div>
+</div>
+</div>
+</div>
+<div id="service" class="ever-detail">
+<div class="ever-story">
+<div class="story-image" style="background-image:url('./file_000000007c5082068afd68b9cb53beb7.png')"></div>
+<div class="story-content">
+<small>INSTALLATION & SERVICE</small>
+<h3>장비는 구매보다 설치 이후가 더 중요합니다</h3>
+<p>커피머신과 카페장비는 매장에 들어왔다고 끝나는 것이 아닙니다. 설치 상태와 장비 점검, 사용 중 발생하는 문제까지 안정적으로 이어져야 실제 영업에 도움이 됩니다.</p>
+<p>EVER KOREA는 장비 상담부터 설치·점검·수리와 교체 상담까지, 매장을 운영하면서 필요한 사후관리까지 함께 연결합니다.</p>
+<div class="story-points">
+<span>✓ 커피머신 · 카페장비 설치</span>
+<span>✓ 장비 상태 점검 · 이상 확인</span>
+<span>✓ 사용 중 장비 수리 상담</span>
+<span>✓ 노후장비 교체 · 신품·중고장비 상담</span>
+</div>
+
+<div class="story-actions">
+<a class="btn story-call" href="tel:01088775951">전화 상담 010-8877-5951</a>
+<a class="btn story-kakao" href="http://pf.kakao.com/_DxcxaaX/chat" target="_blank">카카오 상담</a>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+<div class="contact-strip">
+<div class="wrap contact-inner">
+<div>
+<h3>카페장비 구매·원두·베이커리·AS 상담</h3>
+<p>신품과 중고장비를 예산에 맞춰 비교하고 필요한 구성을 상담해드립니다.</p>
+</div>
+
+<div class="contact-buttons">
+<a class="btn story-call" href="tel:01088775951">010-8877-5951</a>
+<a class="btn story-kakao" href="http://pf.kakao.com/_DxcxaaX/chat" target="_blank">카카오톡 상담</a>
+</div>
+</div>
+</div>
+<section class="info-section">
+<div class="wrap">
+<div class="section-head">
+<small>EVER KOREA</small>
+<h2>카페 비즈니스를 함께합니다</h2>
+<p>장비 구매부터 원두, 베이커리장비, 설치와 사후관리까지 필요한 부분을 상담하세요.</p>
+</div>
+
+<div class="info-grid">
+<div class="info-card">
+<strong>장비 구매 상담</strong>
+<p>매장 규모와 예산을 고려해 신품과 중고장비를 함께 비교합니다.</p>
+</div>
+<div class="info-card">
+<strong>원두·로스팅 상담</strong>
+<p>매장의 콘셉트와 메뉴 방향에 맞춰 원두와 로스팅 공급을 상담합니다.</p>
+</div>
+
+<div class="info-card">
+<strong>설치·AS 상담</strong>
+<p>장비 설치부터 점검·수리·교체까지 운영 중 필요한 부분을 상담합니다.</p>
+</div>
+
+</div>
+</div>
+</section>
+<footer>
+<div class="wrap">
+<div class="footer-brand">EVER KOREA · 통합센터</div>
+<div class="footer-info">
+상호 : 에버코리아<br>
+사업자등록번호 : 403-46-00681<br>
+사업장 : 경상북도 경산시 진량읍 일연로 606-7<br>
+이메일 : everkorea00@naver.com<br>
+상담전화 : 010-8877-5951
+</div>
+</div>
+</footer>
+<script>
+const businessForm=`[사진견적 신청양식]
+1 - 구입년도:
+2 - 처분지역:
+3 - 전면사진:
+4 - 품목:
+5 - 작동여부:
+6 - 폐업예정일:
+7 - 전화번호:`;
+
+const homeForm=`[중고가전 사진견적 신청양식]
+1 - 구입년도:
+2 - 처분지역:
+3 - 엘리베이터 유무:
+4 - 이사 여부:
+5 - 신품교체 여부:
+6 - 전체 앞모습 사진:
+7 - 품목:
+8 - 가전제품 브랜드:
+9 - 작동여부:
+10 - 전화번호:`;
+
+function openQuote(type,title){
+const box=document.getElementById('quoteBox');
+const form=document.getElementById('quoteForm');
+document.getElementById('quoteTitle').textContent=title+' 사진견적';
+form.textContent=type==='home'?homeForm:businessForm;
+box.classList.add('active');
+box.scrollIntoView({behavior:'smooth',block:'center'});
+}
+function copyQuote(){
+const text=document.getElementById('quoteForm').textContent;
+navigator.clipboard.writeText(text).then(()=>{
+alert('견적양식이 복사되었습니다.');
+}).catch(()=>{
+alert('복사가 안 되면 양식을 길게 눌러 복사해주세요.');
+});
+  }
+function openEver(id,card){
+document.querySelectorAll('.ever-detail').forEach(el=>el.classList.remove('active'));
+document.querySelectorAll('.ever-card').forEach(el=>el.classList.remove('active'));
+
+document.getElementById(id).classList.add('active');
+card.classList.add('active');
+
+document.getElementById(id).scrollIntoView({
+behavior:'smooth',
+block:'center'
+});
+}
+</script>
+</main>
+</body>
+</html>
+
+
+
+
+
+  
