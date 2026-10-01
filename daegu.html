@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
-<title>대구 카페폐업·식당폐업·중고가전매입 | 통합센터 EVER KOREA</title>
+<title>대구카페폐업·대구식당폐업·대구중고가전매입 | 통합센터 EVER KOREA</title>
 
-<meta name="description" content="대구 카페폐업, 커피머신·카페장비, 식당폐업·중고주방장비, 중고가전 매입. 대구 지역 사진견적, 출장 상담, 장비 매입 안내.">
+<meta name="description" content="대구카페폐업, 대구식당폐업, 대구중고가전매입 전문. 커피머신·카페장비·업소용 주방장비·중고가전 사진견적 및 대구지역 출장 상담.">
 
 <style>
 *{
@@ -21,8 +21,8 @@ scroll-behavior:smooth;
 
 body{
 font-family:Arial,"Noto Sans KR",sans-serif;
-background:#071426;
-color:#f4f0e6;
+background:#061426;
+color:#eaf0f7;
 line-height:1.75;
 word-break:keep-all;
 }
@@ -37,93 +37,167 @@ width:min(92%,820px);
 margin:auto;
 }
 
+/* 첫 화면 */
 .hero{
 min-height:100vh;
 display:flex;
 align-items:center;
-text-align:center;
-padding:55px 0;
+padding:48px 0;
 background:
-radial-gradient(circle at top,#173456 0%,#0b2039 35%,#071426 72%);
+radial-gradient(circle at 50% 0,
+#193a61 0%,
+#0b2340 36%,
+#061426 72%);
+}
+
+.hero-inner{
+width:100%;
+text-align:center;
 }
 
 .brand{
-font-size:13px;
+font-size:12px;
+font-weight:700;
 letter-spacing:3px;
-color:#c8a969;
-margin-bottom:20px;
+color:#d9b85f;
+margin-bottom:22px;
+}
+
+.location{
+display:inline-block;
+padding:6px 14px;
+border:1px solid #54779e;
+border-radius:30px;
+font-size:12px;
+font-weight:800;
+color:#bcd3ec;
+margin-bottom:14px;
 }
 
 .hero h1{
-font-size:38px;
-line-height:1.25;
-font-weight:900;
-margin-bottom:18px;
+font-size:30px;
+line-height:1.3;
+font-weight:800;
+color:#f4f7fb;
+letter-spacing:-1px;
 }
 
 .hero h1 strong{
 display:block;
-color:#d7b66d;
-font-size:44px;
+font-size:47px;
+line-height:1.15;
+margin-top:8px;
+color:#ffd76a;
+font-weight:900;
+letter-spacing:-2px;
 }
 
-.hero-text{
-font-size:16px;
-color:#d9dee6;
-margin:0 auto 28px;
-max-width:620px;
+.hero-copy{
+max-width:560px;
+margin:17px auto 27px;
+font-size:15px;
+color:#aebed0;
 }
 
+.hero-copy b{
+color:#f2f5f9;
+font-weight:700;
+}
 .fact-grid{
 display:grid;
 grid-template-columns:repeat(3,1fr);
 gap:9px;
-margin:28px 0;
+margin:30px 0 26px;
 }
 
 .fact{
-border:1px solid rgba(215,182,109,.65);
-border-radius:10px;
-padding:16px 5px;
-background:rgba(255,255,255,.025);
+min-height:92px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+border-radius:12px;
+padding:13px 5px;
+background:#091c32;
+box-shadow:0 8px 24px rgba(0,0,0,.28);
 }
 
-.fact b{
+.fact.buy{
+border:2px solid #e6b94f;
+}
+
+.fact.visit{
+border:2px solid #55b9e9;
+}
+
+.fact.after{
+border:2px solid #b58ae5;
+}
+
+.fact strong{
 display:block;
-font-size:15px;
-color:#f5dfad;
+font-size:16px;
+font-weight:900;
+margin-bottom:3px;
+}
+
+.fact.buy strong{
+color:#ffd76a;
+}
+
+.fact.visit strong{
+color:#77d2ff;
+}
+
+.fact.after strong{
+color:#d4b3ff;
 }
 
 .fact span{
 font-size:11px;
-color:#aeb9c7;
+color:#a9b7c7;
 }
 
 .quote-btn{
 display:block;
 width:100%;
-max-width:460px;
-margin:28px auto 0;
-padding:18px 15px;
-border-radius:9px;
-background:#d7b66d;
-color:#071426;
-font-size:18px;
+max-width:480px;
+margin:0 auto;
+padding:18px 12px;
+border-radius:12px;
+background:#fee500;
+color:#191919;
+font-size:19px;
 font-weight:900;
-box-shadow:0 8px 30px rgba(0,0,0,.3);
+letter-spacing:-.5px;
+box-shadow:
+0 8px 28px rgba(0,0,0,.35),
+0 0 0 1px rgba(255,229,0,.35);
 }
 
-.quote-btn small{
+.quote-btn span{
 display:block;
 font-size:11px;
-font-weight:600;
+font-weight:700;
 margin-top:2px;
+opacity:.72;
 }
 
 @media(max-width:480px){
-.hero h1{font-size:30px;}
-.hero h1 strong{font-size:36px;}
-.fact b{font-size:13px;}
+.hero h1{
+font-size:27px;
+}
+
+.hero h1 strong{
+font-size:44px;
+}
+
+.fact strong{
+font-size:14px;
+}
+
+.fact span{
+font-size:10px;
+}
 }
 </style>
 </head>
@@ -131,120 +205,169 @@ margin-top:2px;
 <body>
 
 <section class="hero">
-<div class="wrap">
+<div class="wrap hero-inner">
 
-<div class="brand">TONGHAP CENTER · EVER KOREA</div>
+<div class="brand">
+TONGHAP CENTER · EVER KOREA
+</div>
+
+<div class="location">
+DAEGU · 대구
+</div>
 
 <h1>
-대구 중고장비 전문매입
+중고장비 매입의 기준
 <strong>고가매입</strong>
 </h1>
 
-<p class="hero-text">
-카페장비부터 업소용 주방장비, 중고가전까지.<br>
-사진으로 먼저 확인하고 간편하게 견적을 받아보세요.
+<p class="hero-copy">
+복잡한 절차보다 <b>장비의 가치부터 정확하게.</b><br>
+사진으로 먼저 확인하고 필요한 상담을 이어갑니다.
 </p>
 
 <div class="fact-grid">
 
-<div class="fact">
-<b>고가매입</b>
+<div class="fact buy">
+<strong>고가매입</strong>
 <span>장비별 전문견적</span>
 </div>
 
-<div class="fact">
-<b>무료출장</b>
+<div class="fact visit">
+<strong>무료출장</strong>
 <span>대구지역 상담</span>
 </div>
 
-<div class="fact">
-<b>A/S 관리</b>
-<span>사후관리 안내</span>
+<div class="fact after">
+<strong>A/S 사후관리</strong>
+<span>판매 후 관리</span>
 </div>
 
 </div>
 
 <a class="quote-btn" href="ever-new.html">
 무료 사진견적 보기
-<small>사진으로 빠르고 간편하게</small>
+<span>사진으로 간편하게 견적 확인</span>
 </a>
 
 </div>
 </section>
 <style>
-.case-area{
-padding:65px 0 75px;
-background:#071426;
+.cases{
+padding:62px 0 80px;
+background:#061426;
 }
 
 .case-head{
 text-align:center;
-margin-bottom:35px;
+margin-bottom:34px;
 }
 
-.case-head small{
-color:#d7b66d;
-font-size:12px;
+.case-head span{
+font-size:11px;
+font-weight:800;
 letter-spacing:2px;
+color:#7890aa;
 }
 
 .case-head h2{
-font-size:27px;
-margin:8px 0;
-color:#fff;
+font-size:26px;
+line-height:1.35;
+color:#f6f8fb;
+margin:7px 0 8px;
 }
 
 .case-head p{
-font-size:14px;
-color:#9eabba;
+font-size:13px;
+color:#899caf;
 }
 
+/* 사례 공통 액자 */
 .case-card{
-border:1px solid rgba(215,182,109,.55);
-border-radius:12px;
-margin-bottom:18px;
+margin-bottom:22px;
+border-radius:14px;
 overflow:hidden;
-background:#0a1b30;
-box-shadow:0 12px 35px rgba(0,0,0,.18);
+background:#091b30;
+box-shadow:0 12px 32px rgba(0,0,0,.3);
+}
+
+/* 카테고리별 테두리 */
+.case-card.cafe{
+border:3px solid #e5b94f;
+}
+
+.case-card.food{
+border:3px solid #e8894c;
+}
+
+.case-card.home{
+border:3px solid #68c7ee;
 }
 
 .case-title{
-padding:22px 20px;
+padding:24px 20px 22px;
 cursor:pointer;
-position:relative;
 }
 
-.case-title .num{
-font-size:11px;
-color:#d7b66d;
+.case-title small{
+display:block;
+font-size:10px;
+font-weight:900;
 letter-spacing:2px;
+margin-bottom:5px;
+}
+
+.cafe .case-title small{
+color:#f1c95f;
+}
+
+.food .case-title small{
+color:#ff9e61;
+}
+
+.home .case-title small{
+color:#81dcff;
 }
 
 .case-title h3{
-font-size:21px;
+font-size:22px;
+line-height:1.35;
 color:#fff;
-margin:5px 0 7px;
+font-weight:900;
+letter-spacing:-.7px;
+margin-bottom:8px;
 }
 
 .case-title p{
 font-size:13px;
-color:#aeb9c7;
-padding-right:25px;
+color:#a7b6c7;
+line-height:1.65;
 }
 
-.case-title .more{
+.open-text{
 display:inline-block;
-margin-top:12px;
+margin-top:14px;
 font-size:12px;
-font-weight:800;
-color:#e2c782;
+font-weight:900;
+}
+
+.cafe .open-text{
+color:#f1c95f;
+}
+
+.food .open-text{
+color:#ff9e61;
+}
+
+.home .open-text{
+color:#81dcff;
 }
 
 .case-content{
 display:none;
-padding:5px 20px 26px;
-color:#cbd3dd;
-font-size:14px;
+padding:0 20px 30px;
+font-size:15px;
+line-height:1.95;
+color:#c8d2de;
 }
 
 .case-content.open{
@@ -252,372 +375,19 @@ display:block;
 }
 
 .case-content h4{
-font-size:18px;
-color:#f1d693;
-margin:20px 0 8px;
+font-size:19px;
+line-height:1.5;
+color:#fff;
+margin:27px 0 10px;
 }
 
 .case-content p{
-margin-bottom:15px;
-}
-
-.point-box{
-border-left:3px solid #d7b66d;
-background:#0d233c;
-padding:15px 16px;
-margin:18px 0;
-color:#eef1f5;
-font-size:13px;
-}
-</style>
-
-<section class="case-area">
-<div class="wrap">
-
-<div class="case-head">
-<small>DAEGU BUYING STORY</small>
-<h2>대구 장비 매입·정리 사례 안내</h2>
-<p>궁금한 분야를 누르면 자세한 내용을 확인할 수 있습니다.</p>
-</div>
-
-<div class="case-card">
-<div class="case-title" onclick="toggleCase('cafeCase',this)">
-<span class="num">CAFE · 01</span>
-<h3>대구 카페폐업 · 카페장비 매입</h3>
-<p>커피머신부터 제빙기·그라인더·베이커리 장비까지</p>
-<span class="more">사례 내용 보기 +</span>
-</div>
-
-<div class="case-content" id="cafeCase">
-
-<h4>카페를 시작할 때보다 정리할 때 확인할 것이 많습니다</h4>
-
-<p>
-대구에서 카페를 준비할 때는 상권과 인테리어, 커피머신과
-그라인더 선택부터 시작합니다. 운영 기간이 길어지면서
-제빙기와 쇼케이스, 블렌더, 테이블냉장고를 추가하고
-베이커리 메뉴를 시작하면서 오븐이나 반죽기까지 갖추는
-매장도 많습니다.
-</p>
-
-<p>
-반대로 매장을 이전하거나 업종을 변경하고 카페 운영을
-정리하게 되면 각각 구입했던 장비를 다시 하나씩 확인해야
-합니다. 이때 대구 카페폐업이나 대구 커피머신매입을
-알아보는 과정에서 장비의 연식과 모델, 작동상태를 함께
-확인하는 것이 중요합니다.
-</p>
-
-<div class="point-box">
-대구 카페장비 매입 확인품목<br>
-커피머신 · 그라인더 · 자동템핑기 · 제빙기 · 쇼케이스 ·
-테이블냉장고 · 블렌더 · 핫워터 · 베이커리장비
-</div>
-<h4>대구 지역에 따라 카페의 형태와 장비 구성도 달라집니다</h4>
-
-<p>
-대구 수성구 범어동·만촌동·황금동처럼 카페와 상업시설이
-밀집한 지역에서는 반자동 커피머신과 그라인더뿐 아니라
-제빙기, 쇼케이스, 테이블냉장고 등 여러 장비를 함께
-사용하는 매장을 쉽게 볼 수 있습니다.
-</p>
-
-<p>
-달서구 상인동·월성동·성서와 북구 침산동·칠곡,
-동구 신천동·동대구역 주변에서도 카페 이전이나 양도,
-업종변경과 매장 정리를 준비하면서 중고 커피머신과
-카페장비의 매입 가능 여부를 함께 확인하게 됩니다.
-</p>
-
-<p>
-중구 동성로·삼덕동·교동과 남구 대명동,
-서구 평리동·내당동, 달성군 다사·화원·현풍 등에서도
-카페 규모와 운영방식에 따라 보유하고 있는 장비의
-종류가 달라질 수 있습니다.
-</p>
-
-<h4>커피장비와 베이커리 장비는 함께 확인합니다</h4>
-
-<p>
-2그룹·3그룹 반자동 커피머신과 자동커피머신,
-그라인더, 자동템핑기, 핫워터, 제빙기뿐 아니라
-25박스·45박스 냉장냉동고와 쇼케이스,
-컨벡션오븐·데크오븐·콤비오븐, 도우컨디셔너,
-발효기와 반죽기 등도 장비의 연식과 상태를 확인합니다.
-</p>
-
-<div class="point-box">
-카페폐업뿐 아니라 매장 이전 · 업종변경 · 양도 준비 ·
-장비교체 과정에서도 사용하지 않는 카페장비의
-사진견적을 확인할 수 있습니다.
-</div>
-
-<p>
-장비를 먼저 철거하거나 이동하기보다 현재 설치된 모습,
-제품 전면, 모델명과 제조정보가 보이는 사진을 준비하면
-어떤 장비인지 확인하기가 훨씬 수월합니다.
-여러 품목을 정리한다면 전체 장비가 보이는 사진도
-함께 준비하는 것이 좋습니다.
-</p>
-
-</div>
-</div>
-<div class="case-card">
-
-<div class="case-title" onclick="toggleCase('foodCase',this)">
-<span class="num">RESTAURANT · 02</span>
-<h3>대구 식당폐업 · 주방장비 매입</h3>
-<p>업소용 냉장고부터 세척기·화구·주방기기까지</p>
-<span class="more">사례 내용 보기 +</span>
-</div>
-
-<div class="case-content" id="foodCase">
-
-<h4>식당 정리는 주방 안쪽부터 확인해야 합니다</h4>
-
-<p>
-대구에서 음식점을 창업할 때는 업종에 따라 필요한
-주방장비가 크게 달라집니다. 한식당이나 고깃집,
-분식점, 국밥집, 중식당처럼 메뉴가 달라지면
-냉장·냉동장비와 조리기기의 구성도 달라집니다.
-</p>
-
-<p>
-영업을 오래하면서 테이블냉장고를 추가하거나
-식기세척기와 제빙기, 작업대 등을 교체하기도 합니다.
-그래서 대구 식당폐업이나 업종변경으로 매장을
-정리할 때는 주방에 설치된 장비를 품목별로
-확인하는 과정이 필요합니다.
-</p>
-
-<div class="point-box">
-대구 중고주방장비 주요 확인품목<br>
-업소용 냉장·냉동고 · 테이블냉장고 · 식기세척기 ·
-제빙기 · 반찬바트 · 셀프바 · 화구 · 주방다이 ·
-싱크대 · 작업대 · 제면기 · 육절기 · 반죽기
-</div>
-
-<h4>철거하기 전에 장비부터 구분하는 것이 좋습니다</h4>
-
-<p>
-폐업 일정이 정해졌다고 주방 전체를 먼저 철거하면
-사용 가능한 중고주방기기의 모델이나 상태를
-확인하기 어려워질 수 있습니다. 매입을 알아볼 장비와
-철거 대상 시설을 먼저 구분해 두는 것이 좋습니다.
-</p>
-
-<p>
-특히 업소용 냉장고와 냉동고, 테이블냉장고,
-식기세척기처럼 모델과 연식에 따라 상태 확인이 필요한
-장비는 제품 전면과 제조정보가 보이는 사진을
-미리 준비하면 견적 상담이 수월합니다.
-</p>
-<h4>대구 곳곳의 음식점·주방장비 정리</h4>
-
-<p>
-수성구 범어동·수성동·황금동과 달서구 상인동·월성동·
-성서처럼 음식점이 많은 지역에서는 업종변경이나
-매장 이전을 준비하면서 기존 업소용 주방장비를
-어떻게 정리할지 함께 알아보는 경우가 있습니다.
-</p>
-
-<p>
-중구 동성로·삼덕동·교동, 북구 침산동·칠곡,
-동구 신천동·동대구역 주변, 남구 대명동,
-서구 내당동·평리동에서도 한식·고깃집·분식·
-국밥·중식 등 업종에 따라 주방기기의 구성이 달라집니다.
-</p>
-
-<p>
-달성군 다사·화원·현풍처럼 상권이 넓어지는 지역에서도
-식당폐업뿐 아니라 매장 이전, 양도 준비, 메뉴 변경으로
-사용하지 않게 된 중고주방기기의 매입 여부를
-확인할 수 있습니다.
-</p>
-
-<div class="point-box">
-식당 전체를 한꺼번에 정리한다면 냉장·냉동장비,
-조리기기, 세척장비, 작업대 등을 먼저 구분하고
-사진으로 현재 상태를 확인하는 것이 좋습니다.
-</div>
-
-<h4>사진견적은 장비가 설치된 상태에서</h4>
-
-<p>
-업소용 냉장고와 식기세척기, 제빙기, 화구,
-주방다이와 싱크대 등은 전체 모습과 제품정보를
-함께 확인하면 장비 종류를 구분하기 쉽습니다.
-작동 여부와 사용기간도 함께 알려주면
-견적 확인에 도움이 됩니다.
-</p>
-
-</div>
-</div>
-<div class="case-card">
-
-<div class="case-title" onclick="toggleCase('homeCase',this)">
-<span class="num">HOME APPLIANCE · 03</span>
-<h3>대구 중고가전매입 · 가전 정리</h3>
-<p>냉장고·세탁기·건조기·에어컨 등 생활가전 견적</p>
-<span class="more">사례 내용 보기 +</span>
-</div>
-
-<div class="case-content" id="homeCase">
-
-<h4>이사와 가전 교체 전, 버리기 전에 확인합니다</h4>
-
-<p>
-대구에서 이사를 준비하거나 새 가전제품으로 교체할 때
-기존에 사용하던 냉장고와 세탁기, 건조기 등을
-어떻게 정리할지 고민하게 됩니다. 아직 정상적으로
-작동하고 연식이 오래되지 않은 제품이라면
-폐기하기 전에 중고가전매입 가능 여부를
-먼저 확인해 볼 수 있습니다.
-</p>
-
-<p>
-신혼가전 교체, 아파트 이사, 부모님 댁 정리,
-사무실이나 원룸 정리처럼 가전을 처분하는 이유도
-다양합니다. 같은 냉장고나 세탁기라도 브랜드와 모델,
-구입연도, 용량과 현재 작동상태에 따라 확인해야 할
-내용이 달라집니다.
-</p>
-
-<div class="point-box">
-대구 중고가전 주요 확인품목<br>
-냉장고 · 김치냉장고 · 세탁기 · 건조기 ·
-에어컨 · TV · 스타일러 등 생활가전
-</div>
-
-<h4>사진 몇 장으로 먼저 제품을 확인합니다</h4>
-
-<p>
-중고가전 견적을 알아볼 때는 제품 전체 앞모습과
-브랜드, 모델명·제조연도가 표시된 라벨을 함께
-촬영하는 것이 좋습니다. 에너지등급 표시가 남아 있다면
-그 부분도 함께 확인하면 제품정보를 파악하기 쉽습니다.
-</p>
-
-<p>
-엘리베이터 유무와 설치 위치, 작동 여부도 실제
-이동과 수거 가능 여부를 확인하는 데 필요한 정보입니다.
-이사 날짜가 정해져 있다면 처분을 원하는 일정도
-함께 알려주는 것이 좋습니다.
-</p>
-<h4>대구 전 지역 중고가전 정리 상담</h4>
-
-<p>
-수성구 범어동·만촌동·황금동, 달서구 상인동·월성동·
-성서, 북구 침산동·칠곡처럼 아파트와 주거지역이 많은
-곳에서는 이사나 신제품 교체를 앞두고 냉장고,
-세탁기, 건조기 등 기존 가전을 정리하게 됩니다.
-</p>
-
-<p>
-동구 신천동·혁신도시, 중구 남산동·대봉동,
-남구 대명동, 서구 내당동·평리동,
-달성군 다사·화원·현풍 등에서도 대구 중고가전매입을
-알아볼 때 제품의 구입연도와 모델, 작동상태를
-먼저 확인하면 상담이 수월합니다.
-</p>
-
-<div class="point-box">
-이사 · 신제품 교체 · 집 정리 등 처분 이유와 함께
-제품 전체사진, 모델명, 구입연도, 작동 여부를
-알려주시면 사진견적 확인에 도움이 됩니다.
-</div>
-
-<p>
-여러 가전을 함께 정리한다면 각각의 제품사진과
-전체 배치가 보이는 사진을 준비해 주세요.
-연식과 상태에 따라 매입 가능 여부가 달라질 수 있습니다.
-</p>
-
-</div>
-</div>
-
-<div class="final-quote">
-<span>DAEGU FREE ESTIMATE</span>
-<h2>대구 중고장비<br>사진으로 먼저 견적받으세요</h2>
-
-<p>
-카페장비 · 업소용 주방장비 · 중고가전<br>
-복잡한 설명보다 사진으로 간편하게 확인하세요.
-</p>
-
-<a href="ever-new.html" class="bottom-btn">
-무료 사진견적 보기
-</a>
-</div>
-
-</div>
-</section>
-
-<style>
-.final-quote{
-margin-top:45px;
-padding:35px 20px;
-text-align:center;
-border:1px solid rgba(215,182,109,.7);
-border-radius:14px;
-background:#0a1b30;
-}
-
-.final-quote span{
-font-size:11px;
-letter-spacing:2px;
-color:#d7b66d;
-}
-
-.final-quote h2{
-font-size:25px;
-line-height:1.4;
-color:#fff;
-margin:10px 0;
-}
-
-.final-quote p{
-font-size:13px;
-color:#aeb9c7;
-margin-bottom:22px;
-}
-
-.bottom-btn{
-display:block;
-max-width:420px;
-margin:auto;
-padding:16px;
-border-radius:8px;
-background:#d7b66d;
-color:#071426;
-font-size:17px;
-font-weight:900;
-}
-</style>
-<style>
-.footer{
-padding:35px 20px 45px;
-text-align:center;
-background:#061120;
-border-top:1px solid rgba(215,182,109,.18);
-}
-
-.footer strong{
-display:block;
-font-size:16px;
-color:#f1d693;
-margin-bottom:5px;
-}
-
-.footer p{
-font-size:11px;
-color:#75869a;
-line-height:1.7;
+margin-bottom:18px;
 }
 
 @media(max-width:480px){
-.case-area{
-padding:50px 0 60px;
+.cases{
+padding:50px 0 65px;
 }
 
 .case-head h2{
@@ -625,45 +395,716 @@ font-size:23px;
 }
 
 .case-title h3{
-font-size:19px;
-}
-
-.case-content{
-font-size:14px;
-line-height:1.85;
-}
-
-.final-quote h2{
-font-size:22px;
+font-size:20px;
 }
 }
 </style>
 
-<footer class="footer">
-<strong>통합센터 · EVER KOREA</strong>
+<section class="cases">
+<div class="wrap">
+
+<div class="case-head">
+<span>DAEGU BUYING CASE</span>
+<h2>대구 장비 매입 사례</h2>
+<p>궁금한 분야를 누르면 자세한 내용을 볼 수 있습니다.</p>
+</div>
+<div class="case-card cafe">
+
+<div class="case-title" onclick="toggleCase('cafeCase',this)">
+<small>CAFE BUYING CASE · 01</small>
+<h3>대구카페폐업 장비 매입 사례</h3>
 <p>
-대구 카페장비 · 업소용 주방장비 · 중고가전<br>
-사진견적 및 장비 매입 상담
+커피머신부터 제빙기·그라인더·베이커리 장비까지,
+카페를 시작할 때 들어온 장비를 다시 하나씩 확인합니다.
 </p>
+<span class="open-text">자세히 보기 +</span>
+</div>
+
+<div class="case-content" id="cafeCase">
+
+<h4>카페 창업 때 하나씩 들여놓았던 장비들</h4>
+
+<p>
+대구에서 카페를 창업할 때 가장 먼저 고민하는 것은
+상권과 매장 크기, 메뉴 구성입니다. 커피를 중심으로
+운영할지, 디저트와 베이커리를 함께 판매할지에 따라
+처음부터 필요한 장비가 달라집니다.
+</p>
+
+<p>
+처음에는 2그룹 반자동 커피머신과 그라인더,
+자동템핑기 정도로 시작했던 매장도 영업을 이어가면서
+아이스 메뉴가 늘면 제빙기와 블렌더가 추가되고,
+음료 재료를 보관하기 위한 테이블냉장고와
+쇼케이스가 하나둘 늘어나게 됩니다.
+</p>
+
+<p>
+여기에 크루아상이나 쿠키, 스콘처럼 베이커리 메뉴를
+직접 만들기 시작하면 컨벡션오븐과 데크오븐,
+반죽기와 발효기까지 들어옵니다. 그렇게 몇 년을
+운영하다 보면 처음 카페를 열었을 때보다 훨씬 많은
+장비가 매장 안에 자리 잡게 됩니다.
+</p>
+
+<h4>대구카페폐업을 준비하면서 달라지는 순서</h4>
+
+<p>
+매장을 정리하기로 결정하면 창업할 때와는 반대로
+장비를 하나씩 다시 살펴보게 됩니다. 이때
+대구카페폐업을 알아보면서 인테리어 철거부터
+예약하는 경우가 있지만, 중고로 다시 사용할 수 있는
+카페장비가 있다면 철거 전에 먼저 확인하는 편이 좋습니다.
+</p>
+
+<p>
+커피머신이나 그라인더처럼 모델과 사용기간이 중요한
+장비도 있고, 제빙기나 냉장·냉동장비처럼 현재
+작동상태를 함께 확인해야 하는 제품도 있기 때문입니다.
+설치된 상태에서 전면사진과 모델정보를 확인하면
+장비를 이동한 뒤보다 제품을 파악하기가 수월합니다.
+</p>
+<h4>커피머신 한 대만 보는 것이 아닙니다</h4>
+
+<p>
+대구커피머신매입을 알아보다 보면 머신 한 대만
+처분하면 된다고 생각하기 쉽지만, 실제 카페 안에는
+서로 연결해서 사용하던 주변기기가 함께 남아 있는
+경우가 많습니다. 반자동 2그룹·3그룹 커피머신과
+자동커피머신 옆에는 메인 그라인더와 디카페인용
+보조 그라인더, 자동템핑기와 핫워터가 놓여 있기도 합니다.
+</p>
+
+<p>
+카운터 아래쪽에는 제빙기와 테이블냉장고가 설치되어
+있고, 음료 작업공간에는 블렌더와 각종 냉장장비가
+사용됩니다. 홀이나 카운터 전면에는 케이크와 디저트를
+보관하던 냉장쇼케이스가 남아 있는 경우도 있습니다.
+그래서 대구카페장비매입은 한 품목만 보는 것보다
+현재 매장에서 함께 사용하던 장비를 전체적으로
+확인하는 과정이 중요합니다.
+</p>
+
+<div class="cafe-point">
+<strong>카페장비 확인 품목</strong>
+<span>
+커피머신 · 그라인더 · 자동템핑기 · 핫워터 ·
+제빙기 · 블렌더 · 테이블냉장고 · 냉장·냉동고 ·
+쇼케이스 · 소프트아이스크림기 · 캔실링기
+</span>
+</div>
+
+<h4>베이커리 카페라면 확인해야 할 장비가 더 많습니다</h4>
+
+<p>
+커피와 함께 빵이나 디저트를 직접 만들던 매장은
+카운터만 확인해서는 전체 장비를 파악하기 어렵습니다.
+매장 안쪽 작업실이나 별도의 베이킹 공간에
+컨벡션오븐, 데크오븐, 콤비오븐이 설치되어 있을 수 있고
+반죽기와 발효기, 도우컨디셔너 같은 장비도
+함께 사용했을 수 있습니다.
+</p>
+
+<p>
+대구베이커리장비매입이나 중고오븐매입을 알아보는
+경우에도 브랜드와 모델, 구입시기와 작동상태를
+함께 확인해야 합니다. 카페 운영 중 메뉴를 확대하면서
+나중에 추가한 장비라면 커피머신과 구입연도가
+서로 다른 경우도 많기 때문에 품목별로 살펴보는
+것이 좋습니다.
+</p>
+
+<div class="cafe-point">
+<strong>베이커리 장비 확인 품목</strong>
+<span>
+컨벡션오븐 · 데크오븐 · 콤비오븐 · 반죽기 ·
+발효기 · 도우컨디셔너 등 매장 운영장비
+</span>
+</div>
+
+<style>
+.cafe-point{
+border:2px solid #e5b94f;
+border-radius:10px;
+padding:17px;
+margin:23px 0;
+background:#0d2239;
+}
+
+.cafe-point strong{
+display:block;
+color:#ffd76a;
+font-size:15px;
+margin-bottom:6px;
+}
+
+.cafe-point span{
+display:block;
+color:#d7dee7;
+font-size:13px;
+line-height:1.8;
+}
+</style>
+<h4>같은 대구라도 카페의 모습은 서로 다릅니다</h4>
+
+<p>
+수성구 범어동과 만촌동, 황금동 일대처럼 주거와
+상업시설이 함께 형성된 곳에서는 소형 개인카페부터
+베이커리를 함께 운영하는 매장까지 다양한 형태를
+볼 수 있습니다. 매장 규모가 커질수록 커피머신뿐 아니라
+제빙기와 쇼케이스, 냉장·냉동장비까지 여러 품목을
+함께 사용하는 경우가 많습니다.
+</p>
+
+<p>
+달서구 상인동과 월성동, 성서 일대에서도 카페를
+운영하다 매장을 이전하거나 새로운 업종을 준비하면서
+기존 장비를 정리해야 하는 상황이 생깁니다.
+이럴 때 대구카페폐업뿐 아니라 대구중고커피머신,
+대구카페장비매입처럼 사용하던 장비 자체를 기준으로
+견적을 알아보는 경우도 있습니다.
+</p>
+
+<p>
+중구 동성로와 삼덕동, 교동처럼 유동인구가 많은
+상권에서는 작은 공간에 필요한 장비를 효율적으로
+배치한 카페가 있는 반면, 북구 침산동과 칠곡 일대에는
+좌석과 작업공간을 넓게 구성한 매장도 있습니다.
+따라서 같은 카페 정리라도 보유장비와 반출환경은
+매장마다 다르게 확인해야 합니다.
+</p>
+
+<h4>폐업만이 장비를 정리하는 이유는 아닙니다</h4>
+
+<p>
+동구 신천동과 동대구역 주변에서 매장을 이전하거나,
+남구 대명동에서 업종을 변경하고, 서구 내당동과
+평리동에서 기존 카페를 양도하는 과정에서도
+사용하지 않을 장비가 생길 수 있습니다.
+</p>
+
+<p>
+달성군 다사와 화원, 현풍처럼 신규 상권과 주거지역이
+함께 형성되는 곳에서도 기존 매장을 정리하고 다른
+장소에서 다시 시작하거나 장비 구성을 바꾸는 경우가
+있습니다. 이때 계속 사용할 장비와 처분할 장비를
+먼저 구분하면 전체 정리과정도 훨씬 명확해집니다.
+</p>
+
+<div class="cafe-point">
+<strong>대구카페폐업 전 사진으로 먼저 확인</strong>
+<span>
+장비 전체 모습 · 제품 전면 · 모델명 · 제조정보 ·
+사용기간 · 작동상태를 확인하면 커피머신과 주변기기,
+베이커리장비의 견적 상담이 수월합니다.
+</span>
+</div>
+
+<h4>철거보다 장비 확인을 먼저</h4>
+
+<p>
+매장 정리 일정이 정해졌다면 인테리어 철거와
+중고장비 정리를 같은 일로 생각하지 않는 것이 좋습니다.
+커피머신이나 제빙기, 냉장고, 오븐처럼 다시 사용할 수
+있는 장비는 설치된 상태에서 먼저 확인하고,
+철거가 필요한 시설은 그 이후 일정에 맞춰 구분하는
+방식이 장비 상태를 확인하기에도 편리합니다.
+</p>
+
+<p>
+대구카페폐업을 준비하는 과정에서도 중요한 것은
+무조건 많은 장비를 한꺼번에 처리하는 것이 아니라
+현재 어떤 장비가 있고 어떤 상태인지 정확하게
+파악하는 것입니다. 사진으로 장비를 먼저 확인하면
+매장을 직접 정리하기 전에 필요한 내용을
+보다 간편하게 상담할 수 있습니다.
+</p>
+
+</div>
+</div>
+<div class="case-card food">
+
+<div class="case-title" onclick="toggleCase('foodCase',this)">
+<small>RESTAURANT BUYING CASE · 02</small>
+<h3>대구식당폐업 주방장비 매입 사례</h3>
+<p>
+업소용 냉장·냉동고부터 식기세척기, 화구,
+작업대와 각종 주방기기까지 함께 확인합니다.
+</p>
+<span class="open-text">자세히 보기 +</span>
+</div>
+
+<div class="case-content" id="foodCase">
+
+<h4>식당 창업은 메뉴를 정하는 순간부터 주방이 달라집니다</h4>
+
+<p>
+대구에서 식당을 시작할 때 한식집과 고깃집,
+국밥집, 분식점, 중식당은 같은 주방을 사용하지 않습니다.
+판매할 메뉴와 하루 조리량에 따라 필요한 냉장·냉동공간,
+화구의 수, 작업대의 크기와 세척장비까지 달라집니다.
+</p>
+
+<p>
+처음에는 꼭 필요한 장비만 갖춰 시작했더라도
+영업을 이어가면서 식재료 보관공간이 부족해
+업소용 냉장고나 냉동고를 추가하고, 주문량이 늘면서
+테이블냉장고와 식기세척기를 새로 설치하기도 합니다.
+셀프코너를 운영하게 되면 반찬바트나 셀프바가
+추가되는 경우도 있습니다.
+</p>
+
+<p>
+몇 년 동안 운영한 주방은 처음 문을 열었을 때와
+장비 구성이 상당히 달라질 수 있습니다. 그래서
+대구식당폐업이나 업종변경을 준비하게 되면
+눈에 보이는 냉장고 몇 대만 확인하는 것이 아니라
+주방 전체를 살펴볼 필요가 있습니다.
+</p>
+
+<h4>주방 안에는 매입장비와 시설물이 함께 있습니다</h4>
+
+<p>
+업소용 냉장·냉동고와 테이블냉장고, 제빙기,
+식기세척기처럼 독립된 장비가 있는 반면
+화구 주변의 시설이나 후드처럼 철거 과정과
+연결되는 부분도 있습니다. 주방다이와 싱크대,
+작업대 역시 크기와 설치상태가 서로 다릅니다.
+</p>
+
+<p>
+따라서 대구중고주방매입을 알아볼 때는
+무조건 주방 전체를 먼저 뜯어내기보다 어떤 제품을
+중고장비로 확인할지 먼저 구분하는 것이 좋습니다.
+장비가 설치된 상태에서 전체 모습과 모델정보,
+현재 작동상태를 확인하면 이후 정리 순서를
+결정하기도 훨씬 편리합니다.
+</p>
+<h4>냉장장비부터 조리·세척장비까지 확인합니다</h4>
+
+<p>
+대구주방장비매입을 알아볼 때 가장 먼저 확인하게 되는
+품목 가운데 하나가 업소용 냉장·냉동장비입니다.
+25박스·45박스 냉장고와 냉동고, 작업대 아래에 사용하는
+테이블냉장고처럼 주방 구조에 따라 여러 형태의
+제품을 함께 사용하는 매장이 많습니다.
+</p>
+
+<p>
+홀과 주방 사이에는 반찬바트나 셀프바가 설치되어
+있기도 하고, 세척공간에는 업소용 식기세척기와
+싱크대가 자리 잡고 있습니다. 음료 판매가 많은
+음식점이라면 제빙기를 별도로 사용하는 경우도 있어
+주방 안쪽뿐 아니라 홀 주변 장비까지 함께 확인합니다.
+</p>
+
+<div class="food-point">
+<strong>업소용 주방장비 확인 품목</strong>
+<span>
+냉장·냉동고 · 테이블냉장고 · 반찬바트 · 셀프바 ·
+제빙기 · 식기세척기 · 화구 · 주방다이 · 싱크대 ·
+작업대 · 제면기 · 육절기 · 반죽기
+</span>
+</div>
+
+<h4>업종에 따라 중고주방기기의 구성도 달라집니다</h4>
+
+<p>
+고깃집은 육류 보관을 위한 냉장·냉동장비와
+육절기 등을 사용하는 경우가 있고, 면요리를 전문으로
+하는 매장에서는 제면기나 반죽기처럼 일반 식당에서는
+보기 어려운 장비를 사용하기도 합니다.
+</p>
+
+<p>
+한식당이나 국밥집은 많은 식재료를 보관하기 위해
+냉장·냉동공간의 비중이 커질 수 있고, 분식점이나
+소형 음식점은 제한된 주방 안에 테이블냉장고,
+화구와 작업대를 밀도 있게 배치하는 경우가 많습니다.
+</p>
+
+<p>
+이처럼 대구중고주방기기를 정리할 때는 식당이라는
+이유만으로 같은 기준을 적용하기보다 어떤 업종으로
+운영했고 어떤 장비를 실제 사용했는지 살펴봐야 합니다.
+대구식당폐업뿐 아니라 메뉴 변경이나 업종전환,
+매장 이전을 준비하는 과정에서도 사용하지 않게 된
+주방장비를 따로 확인할 수 있습니다.
+</p>
+
+<style>
+.food-point{
+border:2px solid #e8894c;
+border-radius:10px;
+padding:17px;
+margin:23px 0;
+background:#102137;
+}
+
+.food-point strong{
+display:block;
+color:#ff9e61;
+font-size:15px;
+margin-bottom:6px;
+}
+
+.food-point span{
+display:block;
+color:#d7dee7;
+font-size:13px;
+line-height:1.8;
+}
+</style>
+<h4>상권과 매장 규모에 따라 주방의 모습도 달라집니다</h4>
+
+<p>
+중구 동성로와 삼덕동, 교동 일대의 음식점은
+제한된 공간 안에서 홀과 주방을 효율적으로 나누는
+경우가 많습니다. 작은 주방 안에 테이블냉장고와
+화구, 작업대, 식기세척기를 배치했다면 장비를
+정리할 때도 반출 순서를 함께 살펴봐야 합니다.
+</p>
+
+<p>
+수성구 범어동과 만촌동, 황금동 일대에서는
+한식과 고깃집, 다양한 전문음식점이 운영되고 있으며
+매장 규모에 따라 대형 냉장·냉동고와 셀프바,
+제빙기 등 여러 종류의 업소용 주방장비를
+함께 사용하는 경우가 있습니다.
+</p>
+
+<p>
+달서구 상인동과 월성동, 성서권이나 북구 침산동과
+칠곡 일대에서도 대구식당폐업, 매장 이전 또는
+업종변경을 준비하면서 사용하던 냉장고와 식기세척기,
+작업대 등 중고주방장비의 정리를 알아볼 수 있습니다.
+</p>
+
+<p>
+동구 신천동과 동대구역 주변, 남구 대명동,
+서구 내당동과 평리동, 달성군 다사·화원·현풍에서도
+매장의 업종과 규모에 따라 주방기기의 종류가
+서로 다르기 때문에 품목별 확인이 필요합니다.
+</p>
+
+<div class="food-point">
+<strong>대구식당폐업 장비정리 핵심</strong>
+<span>
+철거 전에 매입 가능한 장비와 시설물을 먼저 구분하고,
+제품 전체사진 · 모델정보 · 사용기간 · 작동상태를
+확인하면 주방장비 정리 순서를 잡기 편리합니다.
+</span>
+</div>
+
+<h4>장비 매입과 점포 철거는 구분해서 준비합니다</h4>
+
+<p>
+식당을 정리할 때 폐업지원금이나 점포철거지원금,
+철거업체를 함께 알아보는 경우가 있지만
+중고주방장비 매입과 점포 철거는 같은 작업이 아닙니다.
+다시 사용할 수 있는 장비가 있다면 철거 전에
+먼저 품목과 상태를 확인하는 것이 좋습니다.
+</p>
+
+<p>
+냉장·냉동고나 식기세척기, 제빙기처럼 이동 가능한
+장비를 먼저 확인하고 이후 철거가 필요한 시설을
+구분하면 장비가 섞이거나 제품정보를 확인하기
+어려워지는 상황을 줄일 수 있습니다.
+</p>
+
+<p>
+대구식당폐업을 준비하는 경우에도 모든 장비가
+매입 대상이 되는 것은 아니기 때문에 연식과 모델,
+현재 상태를 기준으로 하나씩 확인해야 합니다.
+사진으로 주방 전체와 각 장비의 정보를 먼저 정리하면
+방문 전에도 필요한 내용을 보다 정확하게 전달할 수 있습니다.
+</p>
+
+</div>
+</div>
+<div class="case-card home">
+
+<div class="case-title" onclick="toggleCase('homeCase',this)">
+<small>HOME APPLIANCE CASE · 03</small>
+<h3>대구중고가전매입 생활가전 정리 사례</h3>
+<p>
+이사와 신제품 교체, 집 정리 과정에서 사용하는
+냉장고·세탁기·건조기 등 생활가전을 확인합니다.
+</p>
+<span class="open-text">자세히 보기 +</span>
+</div>
+
+<div class="case-content" id="homeCase">
+
+<h4>새 가전을 사는 순간 기존 가전의 정리가 시작됩니다</h4>
+
+<p>
+대구에서 이사를 준비하다 보면 가구 배치만큼
+고민하게 되는 것이 기존 가전제품의 처리입니다.
+새집의 구조에 맞춰 냉장고를 교체하거나 세탁기와
+건조기를 새로 구입하면서 아직 정상적으로 사용하는
+제품이 남는 경우가 있습니다.
+</p>
+
+<p>
+신제품을 구입하지 않더라도 가족이 살던 집을 정리하거나
+원룸과 아파트의 살림을 줄이는 과정에서 냉장고,
+김치냉장고, 세탁기, TV 같은 생활가전을 한꺼번에
+정리해야 하는 상황도 생깁니다.
+</p>
+
+<p>
+이럴 때 무조건 폐기하기보다 제품의 구입연도와 모델,
+현재 작동상태를 먼저 확인하면 대구중고가전매입이
+가능한 제품인지 살펴볼 수 있습니다. 같은 브랜드의
+냉장고라도 용량과 모델, 사용기간에 따라 확인해야 할
+내용이 달라질 수 있습니다.
+</p>
+
+<h4>가전은 겉모습만으로 판단하기 어렵습니다</h4>
+
+<p>
+냉장고나 김치냉장고는 문을 닫은 전체 모습뿐 아니라
+제품 내부와 모델정보를 함께 확인하는 것이 좋습니다.
+세탁기와 건조기 역시 용량과 제조연도, 정상 작동 여부를
+알아야 제품 상태를 보다 정확하게 파악할 수 있습니다.
+</p>
+
+<p>
+에어컨은 스탠드형인지 벽걸이형인지, 또는 멀티형으로
+구성되어 있는지에 따라 확인할 내용이 달라지고
+TV와 스타일러 같은 제품도 모델과 크기,
+사용기간을 함께 살펴보게 됩니다.
+</p>
+
+<div class="home-point">
+<strong>중고가전 확인 품목</strong>
+<span>
+냉장고 · 김치냉장고 · 세탁기 · 건조기 ·
+에어컨 · TV · 스타일러 등 생활가전
+</span>
+</div>
+<h4>냉장고 한 대를 정리할 때도 확인할 내용이 있습니다</h4>
+
+<p>
+대구냉장고매입을 알아보는 경우에는 제품 전체 모습과
+브랜드뿐 아니라 모델명과 제조정보를 함께 확인하는 것이
+좋습니다. 양문형 냉장고, 대용량 냉장고처럼 외형이
+비슷해 보여도 모델에 따라 출시시기와 사양이 다르기
+때문입니다.
+</p>
+
+<p>
+김치냉장고 역시 스탠드형과 뚜껑형처럼 제품 형태가
+다르고, 세탁기는 일반세탁기와 드럼세탁기,
+건조기는 용량에 따라 확인해야 할 정보가 달라집니다.
+대구세탁기매입이나 건조기 처분을 알아볼 때도
+구입연도와 작동상태를 함께 확인하는 이유입니다.
+</p>
+
+<p>
+대구에어컨매입을 알아보는 경우에는 제품 자체뿐 아니라
+현재 설치상태도 중요합니다. 스탠드형과 벽걸이형,
+실외기 구성 등을 함께 확인해야 하며 제품 종류에 따라
+철거와 이동 조건이 달라질 수 있습니다.
+</p>
+
+<h4>사진견적은 제품정보가 보이도록 촬영합니다</h4>
+
+<p>
+중고가전 사진을 보낼 때는 멀리서 촬영한 한 장보다
+제품 전체 앞모습과 모델 라벨을 각각 확인할 수 있도록
+준비하는 것이 좋습니다. 에너지소비효율등급 표시가
+남아 있다면 해당 사진도 제품정보를 확인하는 데
+도움이 됩니다.
+</p>
+
+<div class="home-point">
+<strong>사진견적 확인정보</strong>
+<span>
+제품 전체사진 · 브랜드 · 모델명 · 구입연도 ·
+제조정보 · 작동여부 · 처분지역 · 엘리베이터 유무
+</span>
+</div>
+
+<p>
+아파트나 빌라처럼 층간 이동이 필요한 곳에서는
+엘리베이터 유무도 함께 확인합니다. 대형 냉장고나
+세탁기처럼 부피가 큰 가전은 제품 상태뿐 아니라
+실제로 이동할 수 있는 환경도 확인해야 하기 때문입니다.
+</p>
+
+<style>
+.home-point{
+border:2px solid #68c7ee;
+border-radius:10px;
+padding:17px;
+margin:23px 0;
+background:#0b2339;
+}
+
+.home-point strong{
+display:block;
+color:#81dcff;
+font-size:15px;
+margin-bottom:6px;
+}
+
+.home-point span{
+display:block;
+color:#d7dee7;
+font-size:13px;
+line-height:1.8;
+}
+</style>
+<h4>이사가 많은 주거지역에서는 가전 정리도 함께 움직입니다</h4>
+
+<p>
+수성구 범어동과 만촌동, 황금동처럼 아파트와
+주거시설이 많은 지역에서는 이사를 준비하면서
+기존 냉장고와 세탁기, 건조기를 새집으로 가져갈지
+새 제품으로 교체할지 결정하게 됩니다.
+</p>
+
+<p>
+달서구 상인동과 월성동, 성서 일대에서도 입주나
+이사 일정에 맞춰 기존 생활가전을 정리하는 경우가
+있습니다. 새 냉장고의 크기가 주방 구조와 맞지 않거나
+세탁기와 건조기를 세트로 교체하면서 사용하던 제품을
+처분해야 하는 상황도 생깁니다.
+</p>
+
+<p>
+북구 침산동과 칠곡, 동구 신천동과 혁신도시처럼
+아파트와 주거지역이 형성된 곳에서도 대구중고가전매입을
+알아볼 때는 제품의 연식과 모델, 정상 작동 여부를
+먼저 확인하는 것이 좋습니다.
+</p>
+
+<h4>이사뿐 아니라 집을 정리하면서도 가전이 남습니다</h4>
+
+<p>
+중구 남산동과 대봉동, 남구 대명동,
+서구 내당동과 평리동에서는 이사뿐 아니라
+가족이 사용하던 집을 정리하거나 생활공간을 줄이면서
+여러 가전제품을 한꺼번에 처분해야 할 수도 있습니다.
+</p>
+
+<p>
+달성군 다사와 화원, 현풍처럼 신규 주거지역과
+기존 생활권이 함께 있는 곳에서도 신제품 교체,
+입주, 이사 등 다양한 이유로 냉장고와 세탁기,
+건조기, TV 등의 중고가전 견적을 알아볼 수 있습니다.
+</p>
+
+<div class="home-point">
+<strong>대구중고가전매입 전 확인</strong>
+<span>
+연식이 오래되었거나 상태가 좋지 않은 제품까지
+모두 매입되는 것은 아닙니다. 사진과 제품정보를
+먼저 확인한 뒤 매입 가능 여부를 안내합니다.
+</span>
+</div>
+
+<h4>버리기 전에 제품의 현재 상태부터 확인합니다</h4>
+
+<p>
+아직 정상적으로 사용하는 생활가전이라면 폐기부터
+결정하기보다 현재 제품정보를 먼저 확인해 볼 수 있습니다.
+냉장고와 김치냉장고, 세탁기, 건조기, 에어컨,
+TV와 스타일러처럼 품목이 여러 개라면 각각의
+전체사진과 모델정보를 따로 준비하는 것이 좋습니다.
+</p>
+
+<p>
+대구중고가전매입은 단순히 제품 이름만으로 판단하는
+것이 아니라 구입시기와 모델, 작동상태와 이동환경까지
+함께 확인하는 과정입니다. 필요한 정보를 사진으로
+정리해 두면 방문 전에 제품을 구분하기도 편리합니다.
+</p>
+
+</div>
+</div>
+</div>
+</section>
+
+<footer class="footer">
+<div class="wrap">
+
+<strong>통합센터 · EVER KOREA</strong>
+
+<p>
+대구 중고장비 전문매입
+</p>
+
+<span>
+카페장비 · 업소용 주방장비 · 중고가전
+</span>
+
+</div>
 </footer>
+
+<style>
+.footer{
+background:#04101e;
+border-top:1px solid #18314d;
+padding:38px 0 42px;
+text-align:center;
+}
+
+.footer strong{
+display:block;
+font-size:15px;
+font-weight:900;
+letter-spacing:.5px;
+color:#d9b85f;
+margin-bottom:5px;
+}
+
+.footer p{
+font-size:12px;
+font-weight:700;
+color:#c7d2df;
+margin-bottom:3px;
+}
+
+.footer span{
+font-size:10px;
+color:#687d93;
+}
+
+.case-title{
+-webkit-tap-highlight-color:transparent;
+user-select:none;
+}
+
+.case-title:active{
+opacity:.82;
+}
+</style>
 
 <script>
 function toggleCase(id,title){
-const box=document.getElementById(id);
-const more=title.querySelector(".more");
 
-if(box.classList.contains("open")){
-box.classList.remove("open");
-more.textContent="사례 내용 보기 +";
+const content=document.getElementById(id);
+const text=title.querySelector(".open-text");
+
+if(content.classList.contains("open")){
+content.classList.remove("open");
+text.textContent="자세히 보기 +";
 }else{
-box.classList.add("open");
-more.textContent="사례 내용 닫기 −";
+content.classList.add("open");
+text.textContent="접기 −";
 }
+
 }
 </script>
 
 </body>
 </html>
+
+
 
 
 
