@@ -1103,6 +1103,31 @@ text.textContent="접기 −";
 
 </body>
 </html>
+<script>
+document.querySelectorAll(".case-title").forEach(function(title){
+title.onclick=function(){
+
+const card=this.closest(".case-card");
+const content=card.querySelector(".case-content");
+const isOpen=content.classList.contains("open");
+
+document.querySelectorAll(".case-content").forEach(function(box){
+box.classList.remove("open");
+});
+
+document.querySelectorAll(".open-text").forEach(function(text){
+text.textContent="자세히 보기 +";
+});
+
+if(!isOpen){
+content.classList.add("open");
+this.querySelector(".open-text").textContent="접기 −";
+}
+
+};
+});
+</script>
+
 
 
 
