@@ -3,274 +3,650 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>경산 카페폐업·식당폐업·중고가전매입 | 통합센터 EVER KOREA</title>
-<meta name="description" content="경산 카페폐업, 식당폐업, 중고가전매입 전문. 커피머신·카페장비·주방장비·생활가전 무료출장 및 사진견적.">
+
+<title>경산카페폐업·중고카페장비·식당폐업·중고가전 전문매입</title>
+
+<meta name="description"
+content="경산 카페폐업·식당폐업과 중고카페장비, 중고커피머신, 중고주방기구, 중고가전 전문매입. 경산 전지역 무료출장 및 사진견적 상담.">
+
+<meta name="robots" content="index,follow">
+
 <style>
 *{box-sizing:border-box}
-body{margin:0;font-family:Arial,'Noto Sans KR',sans-serif;background:#101d2d;color:#fff;line-height:1.7}
-.wrap{max-width:900px;margin:auto;padding:0 18px}
-header{text-align:center;padding:55px 15px 35px}
-.brand{font-size:14px;color:#d8b45a;letter-spacing:2px}
-h1{font-size:30px;margin:10px 0}
-.point{color:#ffd34e}
-.benefit{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin:25px 0}
-.benefit span{border:1px solid #d8b45a;border-radius:20px;padding:7px 13px;font-size:14px}
-.cta{display:block;background:#ffd43b;color:#111;text-decoration:none;font-weight:800;padding:16px;border-radius:10px;margin:25px auto;max-width:360px}
-section{margin:20px 0}
-.card{background:#182a3e;border:1px solid #38506a;border-radius:14px;margin:14px 0;overflow:hidden}
-.card button{width:100%;padding:20px;background:none;border:0;color:#fff;text-align:left;font-size:19px;font-weight:800;cursor:pointer}
-.card button span{float:right;color:#ffd34e}
-.content{display:none;padding:0 20px 22px;color:#dce5ee}
-.content.open{display:block}
-h2{color:#ffd34e;font-size:22px}
-.area{font-size:14px;color:#aebed0;margin-top:18px}
-.story{background:#112235;border-left:4px solid #d8b45a;padding:15px;margin:18px 0;border-radius:6px}
-footer{text-align:center;color:#8999aa;font-size:13px;padding:40px 10px}
+html{scroll-behavior:smooth}
+body{
+margin:0;
+font-family:Arial,'Noto Sans KR',sans-serif;
+background:#0b0f17;
+color:#f4f4f4;
+line-height:1.75;
+}
+.wrap{
+max-width:920px;
+margin:auto;
+padding:0 18px;
+}
+.hero{
+margin:18px 0 28px;
+padding:48px 24px 38px;
+text-align:center;
+background:linear-gradient(145deg,#151b27,#0d1119);
+border:1px solid #353d4b;
+border-radius:22px;
+box-shadow:0 18px 45px rgba(0,0,0,.35);
+}
+.eyebrow{
+color:#d6b765;
+font-size:13px;
+font-weight:800;
+letter-spacing:2px;
+}
+.hero h1{
+margin:12px 0;
+font-size:34px;
+line-height:1.3;
+letter-spacing:-1.5px;
+}
+.gold{color:#e5c568}
+.hero-text{
+color:#cbd1db;
+font-size:17px;
+margin:12px 0 18px;
+}
+.biz{
+display:inline-block;
+padding:6px 12px;
+border:1px solid #3d4655;
+border-radius:20px;
+color:#aeb6c2;
+font-size:12px;
+}
+.quote-btn{
+display:block;
+max-width:420px;
+margin:26px auto 12px;
+padding:18px 20px;
+background:#f5c842;
+color:#111;
+font-size:19px;
+font-weight:900;
+text-align:center;
+text-decoration:none;
+border-radius:12px;
+box-shadow:0 8px 28px rgba(245,200,66,.25);
+}
+.quote-btn:hover{transform:translateY(-2px)}
+.trust{
+display:flex;
+justify-content:center;
+gap:8px;
+flex-wrap:wrap;
+margin:18px 0 4px;
+}
+.trust span{
+padding:8px 14px;
+background:#171d28;
+border:1px solid #343c49;
+border-radius:20px;
+font-size:13px;
+font-weight:700;
+color:#e4e7eb;
+}
+.main-info{
+padding:12px 4px 25px;
+}
+.main-info h2{
+font-size:27px;
+line-height:1.4;
+margin:34px 0 14px;
+color:#f2d477;
+}
+.main-info h3{
+font-size:20px;
+margin:28px 0 10px;
+color:#fff;
+}
+.main-info p{
+color:#cbd1da;
+margin:0 0 18px;
+}
+.info-box{
+margin:22px 0;
+padding:20px;
+background:#121823;
+border:1px solid #303947;
+border-radius:14px;
+}
+.info-box strong{
+display:block;
+color:#e5c568;
+font-size:17px;
+margin-bottom:8px;
+}
+.info-box p{
+margin:0;
+color:#d7dce3;
+}
+.case{
+margin:12px 0;
+border:1px solid #303947;
+border-radius:12px;
+overflow:hidden;
+background:#101620;
+}
+.case button{
+width:100%;
+padding:17px 18px;
+border:0;
+background:#161d28;
+color:#fff;
+font-size:16px;
+font-weight:800;
+text-align:left;
+cursor:pointer;
+}
+.case button span{float:right;color:#e5c568}
+.case-content{display:none;padding:20px;color:#cbd1da}
+.case-content.open{display:block}
 @media(max-width:600px){
-h1{font-size:25px}
-header{padding-top:40px}
-.card button{font-size:17px}
+.wrap{padding:0 12px}
+.hero{margin:10px 0;padding:36px 16px 30px}
+.hero h1{font-size:27px}
+.hero-text{font-size:15px}
+.main-info h2{font-size:23px}
+.main-info h3{font-size:18px}
+.quote-btn{font-size:18px;padding:17px 14px}
 }
 </style>
 </head>
+
 <body>
 <div class="wrap">
-<header>
-<div class="brand">통합센터 · EVER KOREA</div>
-<h1>경산 중고장비 <span class="point">전문 매입센터</span></h1>
-<p>카페 · 식당 · 중고가전<br>폐업과 정리, 한 번에 편하게 상담하세요.</p>
 
-<div class="benefit">
-<span>고가매입</span>
-<span>무료출장</span>
-<span>A/S 사후관리</span>
+<section class="hero">
+<div class="eyebrow">GYEONGSAN USED EQUIPMENT CENTER</div>
+
+<h1>
+경산 카페·식당·중고가전<br>
+<span class="gold">중고장비 전문매입</span>
+</h1>
+
+<p class="hero-text">
+폐업·철거 전 버리지 마세요.<br>
+사용하던 중고장비의 가치를 먼저 확인합니다.
+</p>
+
+<div class="biz">사업자등록번호 403-46-00681</div>
+<div class="trust">
+<span>중고장비 고가매입</span>
+<span>경산 전지역 무료출장</span>
+<span>사진으로 간편견적</span>
 </div>
-<a class="cta" href="ever-new.html">
-📷 무료 사진견적 신청하기
+
+<a class="quote-btn" href="ever-new.html">
+📷 무료 사진견적 바로보기
 </a>
 
-<p class="area">
-경산 전 지역 출장 상담<br>
-중산동 · 정평동 · 옥산동 · 사동 · 하양읍 · 진량읍 등
-</p>
-</header>
+</section>
 
-<section>
-<div class="card">
-<button onclick="toggleCard(this)">
-경산카페폐업 <span>＋</span>
-</button>
-
-<div class="content">
-<h2>경산카페폐업 · 카페장비 일괄매입</h2>
+<main class="main-info">
+<h2>경산카페폐업, 철거보다 먼저 중고카페장비의 가치를 확인하세요</h2>
 
 <p>
-카페 정리는 커피머신 한 대만 보는 것이 아니라
-매장 안에 남아 있는 장비의 구성과 상태,
-반출 동선까지 함께 확인하는 것이 중요합니다.
+경산에서 카페폐업을 준비한다면 매장 철거부터 서두르기보다
+현재 사용 중인 중고카페장비 가운데 다시 매입할 수 있는 장비가
+무엇인지 먼저 확인하는 과정이 중요합니다.
+커피머신 한 대만 보는 것이 아니라 그라인더, 자동템핑기,
+제빙기, 냉장·냉동장비와 베이커리장비까지 매장 전체 구성을
+함께 살펴보면 정리해야 할 장비와 매입 가능한 장비를
+보다 정확하게 구분할 수 있습니다.
 </p>
+
 <p>
-커피머신 · 그라인더 · 자동템핑기 · 제빙기 ·
-테이블냉장고 · 쇼케이스부터
-데크오븐 · 컨벡션오븐 · 반죽기 · 도우컨디셔너 등
-베이커리 장비까지 함께 확인합니다.
+특히 경산중고커피머신이나 경산중고카페장비 매입을 알아보는
+경우에는 브랜드나 연식만으로 판단하기보다 실제 사용상태,
+관리상태, 작동 여부와 매장에 설치된 환경까지 함께 확인합니다.
+</p>
+<h3>경산 중고커피머신·중고카페장비, 어떤 품목을 확인할까요?</h3>
+
+<p>
+카페를 폐업하지 않더라도 장비 교체, 메뉴 변경, 매장 이전으로
+사용하던 중고커피머신이나 카페장비를 처분하는 경우가 있습니다.
+경산중고카페장비를 알아볼 때는 한 품목만 따로 보기보다
+매장에 함께 설치된 주변기기까지 확인하는 것이 좋습니다.
 </p>
 
-<div class="story">
-<strong>경산 현장 사례</strong><br>
-중산동 디저트카페 정리 현장에서는 장비를 먼저
-철거하지 않고 매장에 설치된 상태에서 전체 구성을 확인했습니다.
-커피장비와 베이커리장비의 상태를 각각 확인한 뒤
-반출 순서를 정해 폐업 일정에 맞춰 정리를 진행했습니다.
-</div>
-
-<p class="area">
-경산중산동카페폐업 · 경산정평동카페폐업 ·
-경산옥산동카페폐업 · 경산사동카페폐업 ·
-경산하양카페폐업 · 경산진량카페폐업
-</p>
-</div>
-</div>
-<div class="story">
-<strong>경산 카페장비 매입 품목</strong><br>
+<div class="info-box">
+<strong>중고 카페장비 주요 매입품목</strong>
+<p>
 2·3그룹 커피머신 · 자동/반자동 커피머신 · 그라인더 ·
 자동템핑기 · 블렌더 · 핫워터 · 제빙기 · 캔실링기 ·
-테이블냉장·냉동고 · 25/45박스 냉장·냉동고 · 쇼케이스 ·
-컨벡션오븐 · 데크오븐 · 콤비오븐 · 도우컨디셔너 ·
-발효기 · 반죽기 · 소프트아이스크림기 · 홀가구
-</div>
-<p class="area">
-경산카페폐업 · 경산카페장비매입 · 경산커피머신매입 · 경산베이커리장비매입<br>
-중산동 · 정평동 · 옥산동 · 옥곡동 · 사동 · 삼풍동 · 백천동 ·
-계양동 · 대평동 · 임당동 · 조영동 · 압량읍 · 하양읍 · 진량읍 · 자인면의
-카페폐업과 커피머신·제빙기·오븐 등 카페장비 정리를 상담합니다.
+테이블냉장·냉동고 · 쇼케이스 · 25/45박스 냉장·냉동고
 </p>
-<div class="card">
-<button onclick="toggleCard(this)">
-경산식당폐업 <span>＋</span>
+</div>
+<h3>경산 중고베이커리장비·디저트카페 장비도 함께 확인합니다</h3>
+
+<p>
+베이커리카페나 디저트카페는 커피장비 외에도 크고 무거운
+제빵장비가 함께 설치된 경우가 많습니다. 경산중고오븐,
+경산중고베이커리장비를 정리할 때도 철거 전에 장비 상태와
+반출 가능한 동선을 먼저 확인하는 것이 좋습니다.
+</p>
+
+<div class="info-box">
+<strong>중고 베이커리·디저트 장비</strong>
+<p>
+데크오븐 · 컨벡션오븐 · 콤비오븐 · 도우컨디셔너 ·
+발효기 · 반죽기 · 쇼케이스 · 소프트아이스크림기 등
+카페와 베이커리에서 사용하던 주요 중고장비를 확인합니다.
+</p>
+</div>
+<h3>중고장비는 연식만으로 매입가치를 판단하지 않습니다</h3>
+
+<p>
+같은 연식의 중고커피머신이라도 사용량과 관리상태,
+정기적인 세척·정비 여부에 따라 장비 상태는 달라질 수 있습니다.
+제빙기와 냉장장비 역시 외관만 보는 것이 아니라 작동상태와
+설치환경을 함께 확인해야 실제 중고장비의 가치를 판단하기 좋습니다.
+</p>
+
+<p>
+경산카페폐업 현장에서도 단순히 오래됐다는 이유로 장비를
+먼저 폐기하기보다 커피머신, 주변기기, 냉장장비,
+베이커리장비를 각각 확인한 뒤 매입 가능한 품목을 구분합니다.
+</p>
+<h3>경산카페철거 전에 중고장비 매입부터 확인하세요</h3>
+
+<p>
+폐업 일정이 정해지면 철거업체부터 알아보는 경우가 많지만,
+커피머신이나 제빙기, 냉장·냉동고, 오븐처럼 다시 사용할 수 있는
+장비까지 철거 과정에서 분리되거나 훼손되면 중고장비로서의
+가치가 달라질 수 있습니다.
+</p>
+
+<div class="info-box">
+<strong>폐업 정리는 순서가 중요합니다</strong>
+<p>
+폐업 일정 확인 → 매장 전체 장비 확인 → 매입 가능 품목 구분 →
+중고장비 반출 일정 조율 → 남은 시설 철거 순서로 준비하면
+장비와 시설을 뒤섞지 않고 보다 체계적으로 정리할 수 있습니다.
+</p>
+</div>
+<h3>폐업 예정이라면 희망리턴패키지도 꼭 확인하세요</h3>
+
+<div class="info-box">
+<strong>희망리턴패키지 이용 여부를 먼저 확인해 보세요</strong>
+<p>
+카페나 식당 폐업을 준비하고 있다면 중고장비 정리와 함께
+소상공인 희망리턴패키지의 지원 대상과 신청 가능한 사업을
+미리 확인하는 것이 좋습니다. 점포철거비 지원을 비롯해
+사업정리 과정에서 활용할 수 있는 지원사업이 있을 수 있으므로,
+철거 계약이나 폐업 절차를 진행하기 전에 해당 연도의
+지원조건과 신청방법을 공식 안내에서 확인하세요.
+</p>
+</div>
+
+<p>
+중고 커피머신과 카페장비는 매입 가능 여부를 먼저 확인하고,
+철거가 필요한 시설은 지원사업 조건을 확인한 뒤 진행하면
+장비 매입과 점포 정리를 서로 뒤섞지 않고 준비하기 좋습니다.
+</p>
+<h3>경산 중고카페장비, 사진만 잘 찍어도 견적이 빨라집니다</h3>
+
+<p>
+방문 전에 장비 정보를 확인할 수 있도록 사진을 준비하면
+중고장비의 종류와 상태를 파악하는 데 도움이 됩니다.
+매장 전체 사진과 함께 처분하려는 장비의 전면사진,
+제품 라벨과 모델명, 제조연도 등을 확인할 수 있는 사진을
+준비해 주세요.
+</p>
+
+<div class="info-box">
+<strong>사진견적 준비 방법</strong>
+<p>
+① 매장 전체가 보이는 사진<br>
+② 커피머신·제빙기·오븐 등 장비 전면사진<br>
+③ 모델명과 제조정보가 보이는 라벨사진<br>
+④ 장비의 현재 작동 여부<br>
+⑤ 폐업·철거 또는 장비 처분 예정일<br>
+⑥ 대형장비가 있다면 출입구와 반출동선 사진
+</p>
+</div>
+<h3>경산 전지역 중고카페장비 매입 상담</h3>
+
+<p>
+경산은 상권과 매장 형태에 따라 사용되는 카페장비 구성이
+다르기 때문에 현장 상황에 맞춰 확인하는 것이 중요합니다.
+중산동·정평동·옥산동·옥곡동을 비롯해 사동·삼풍동·백천동,
+계양동·대평동·임당동·조영동 등 경산 시내권의
+카페폐업과 중고카페장비 처분 상담이 가능합니다.
+</p>
+
+<p>
+압량읍·하양읍·진량읍·자인면 등 경산 외곽지역에서도
+중고커피머신, 제빙기, 냉장장비, 베이커리장비처럼
+매장에서 사용하던 주요 장비의 매입 가능 여부를 확인할 수 있습니다.
+폐업뿐 아니라 매장 이전이나 장비교체로 발생한 중고장비도
+사진을 통해 먼저 상담할 수 있습니다.
+</p>
+<h3>경산 카페 중고장비 정리 사례 유형</h3>
+
+<p>
+카페마다 폐업 일정과 장비 구성, 반출환경이 다릅니다.
+아래 내용은 중고카페장비를 정리할 때 자주 확인하게 되는
+상황을 유형별로 정리한 내용입니다.
+</p>
+
+<div class="case">
+<button type="button" onclick="toggleCase(this)">
+커피머신부터 주변기기까지 한 번에 정리하는 경우
+<span>＋</span>
 </button>
 
-<div class="content">
-<h2>경산식당폐업 · 업소용 주방장비 매입</h2>
-
-<p>
-식당을 정리할 때는 주방 안쪽에 설치된 냉장·냉동장비부터
-세척·조리·작업장비까지 전체 구성을 먼저 확인합니다.
-폐업 일정과 장비 반출이 겹치지 않도록 순서를 함께 살펴봅니다.
-</p>
-<div class="story">
-<strong>경산 업소용 주방장비 매입 품목</strong><br>
-업소용 냉장·냉동고 · 테이블냉장고 · 반찬바트 · 셀프바 ·
-제빙기 · 식기세척기 · 간텍기(후드) · 화구 ·
-주방다이 · 싱크대 · 작업대 · 제면기 · 육절기 · 반죽기 등
-식당폐업 현장의 주요 주방장비를 함께 확인합니다.
-</div>
-
-<p>
-장비별로 따로 정리하기보다 현장에 남아 있는 주방설비의
-구성과 상태를 확인해 일괄매입이 가능한 품목을 구분합니다.
-</p>
-<div class="story">
-<strong>경산 식당폐업 현장 사례</strong><br>
-진량읍 식당 정리 현장은 주방 안쪽 장비와 홀 쪽 장비가
-여러 구역에 나뉘어 있었습니다. 철거부터 진행하지 않고
-냉장·냉동고, 식기세척기, 작업대 등 매입 가능한 장비를
-먼저 구분해 폐업 일정에 맞춰 반출 순서를 정했습니다.
-</div>
-
-<p>
-경산식당폐업 상담은 진량읍뿐 아니라 하양읍·압량읍·자인면과
-중산동·정평동·사동·옥산동 등 경산 지역을 함께 확인합니다.
-</p>
-<p class="area">
-경산주방기구매입 · 경산업소용냉장고매입 · 경산식당장비매입<br>
-하양읍 · 진량읍 · 압량읍 · 자인면 · 중산동 · 정평동 ·
-옥산동 · 옥곡동 · 사동 · 백천동 · 임당동 등에서
-식당폐업과 업소용 주방장비 정리를 상담합니다.
-</p>
-
-<p>
-폐업 전 장비를 먼저 확인하면 철거 과정에서 매입 가능한
-주방기기가 함께 처리되는 일을 줄이고 정리 순서도 잡기 쉽습니다.
-</p>
+<div class="case-content">
+경산카페폐업을 준비하면서 커피머신만 먼저 처분하기보다
+그라인더, 자동템핑기, 제빙기, 테이블냉장고 등 매장에 남아 있는
+중고카페장비를 함께 확인하는 유형입니다. 장비별로 따로 알아보는
+번거로움을 줄이고 매입 가능한 품목과 남겨야 할 시설을
+먼저 구분한 뒤 폐업 일정을 준비할 수 있습니다.
 </div>
 </div>
-<div class="card">
-<button onclick="toggleCard(this)">
-경산중고가전매입 <span>＋</span>
+<div class="case">
+<button type="button" onclick="toggleCase(this)">
+베이커리카페 대형장비까지 함께 정리하는 경우
+<span>＋</span>
 </button>
 
-<div class="content">
-<h2>경산중고가전매입 · 생활가전 방문매입</h2>
-
-<p>
-이사나 신제품 교체, 집 정리로 사용하던 가전을 처분할 때는
-제품 전체사진과 모델명·제조연도·작동상태를 먼저 확인합니다.
-사진으로 기본 정보를 확인한 뒤 방문수거 가능 여부를 안내합니다.
-</p>
-<div class="story">
-<strong>경산 중고가전 취급 품목</strong><br>
-중고냉장고 · 김치냉장고 · 세탁기 · 건조기 ·
-에어컨 · TV · 스타일러 등 생활가전을 확인합니다.
+<div class="case-content">
+데크오븐, 컨벡션오븐, 도우컨디셔너, 반죽기처럼 크고 무거운
+중고베이커리장비가 있는 매장은 장비 상태뿐 아니라 출입문 폭,
+단차, 계단과 같은 반출환경도 함께 확인하는 것이 중요합니다.
+커피장비와 제빵장비를 구분해 확인하고 반출 순서를 정하면
+폐업과 철거 일정을 보다 체계적으로 준비할 수 있습니다.
+</div>
 </div>
 
-<p>
-경산중고가전을 찾거나 이사·가전교체로 처분이 필요한 경우
-제품 사진과 모델명, 제조연도, 작동상태를 기준으로
-중고가전매입과 방문수거 가능 여부를 확인합니다.
-</p>
-<p class="area">
-경산중고가전 · 경산중고가전매입 · 경산중고냉장고 ·
-경산중고세탁기 · 경산중고에어컨 · 경산중고가전수거<br>
-중산동 · 정평동 · 옥산동 · 옥곡동 · 사동 · 백천동 ·
-임당동 · 하양읍 · 진량읍 · 압량읍 · 자인면 등
-경산 지역의 중고 생활가전을 확인합니다.
-</p>
+<div class="case">
+<button type="button" onclick="toggleCase(this)">
+철거 일정이 정해진 뒤 중고장비를 확인하는 경우
+<span>＋</span>
+</button>
 
-<div class="story">
-<strong>경산 중고가전 현장 사례</strong><br>
-정평동 이사 정리 현장에서는 여러 가전을 한꺼번에 처분하기보다
-제품별 사용기간과 상태를 먼저 확인해 방문수거 대상을 구분했습니다.
+<div class="case-content">
+철거 날짜가 먼저 정해졌더라도 사용 가능한 중고커피머신,
+제빙기, 냉장·냉동장비 등을 바로 폐기하기보다 매입 가능 여부를
+먼저 확인하는 것이 좋습니다. 장비 반출과 시설 철거의 순서를
+나누면 철거 과정에서 장비가 훼손되는 상황도 줄일 수 있습니다.
 </div>
+</div>
+<h2>경산식당폐업, 업소용 중고주방기구도 매입가치를 먼저 확인하세요</h2>
+
 <p>
-중고냉장고와 김치냉장고는 전체 모습과 제품 라벨을,
-세탁기·건조기·스타일러는 모델과 작동상태를 확인합니다.
-에어컨과 TV도 설치상태와 사용기간을 함께 살펴
-경산중고가전 방문매입 가능 여부를 안내합니다.
+경산에서 식당폐업이나 음식점 정리를 준비할 때 주방 전체를
+철거 대상으로만 생각하기 쉽지만, 사용하던 업소용 주방장비
+가운데 다시 활용할 수 있는 중고장비가 남아 있을 수 있습니다.
+철거 전에 경산중고주방과 중고주방기구의 매입 가능 여부를
+먼저 확인하면 처분할 장비와 철거할 시설을 구분하기 좋습니다.
 </p>
 
 <p>
-한 품목뿐 아니라 여러 생활가전을 함께 정리하는 경우에도
-사진을 먼저 보내면 처분 가능한 제품을 구분하기 편리합니다.
+업소용 냉장고와 냉동고, 테이블냉장고, 식기세척기처럼
+독립적으로 사용되는 장비부터 작업대·싱크대와 각종 조리장비까지
+매장의 업종과 장비 상태에 따라 확인합니다. 모든 장비가
+매입되는 것은 아니므로 연식, 작동상태, 관리상태와 설치환경을
+함께 살펴보는 것이 중요합니다.
+</p>
+<h3>경산 중고주방기구, 어떤 장비를 확인할 수 있을까요?</h3>
+
+<div class="info-box">
+<strong>업소용 중고주방 주요 확인품목</strong>
+<p>
+업소용 냉장고·냉동고 · 테이블냉장고 · 반찬냉장고 ·
+셀프바 · 제빙기 · 식기세척기 · 화구·렌지 ·
+주방 작업대 · 싱크대 · 쇼케이스 ·
+제면기 · 육절기 · 반죽기 등
+</p>
+</div>
+
+<p>
+한식당, 고깃집, 분식점, 중식당, 일식당처럼 업종이 달라지면
+주방에 설치된 장비 구성도 달라집니다. 경산중고주방기구나
+경산업소용중고주방장비를 처분할 때는 품목 수만 확인하기보다
+장비의 모델과 사용기간, 작동상태, 관리상태를 함께 확인해
+매입 가능한 품목을 구분하는 것이 좋습니다.
+</p>
+<h3>식당 철거 전에 중고주방장비부터 구분하세요</h3>
+
+<p>
+경산식당폐업을 준비한다면 주방 전체를 한꺼번에 철거하기보다
+재사용 가능한 중고주방장비와 철거해야 할 시설을 먼저
+구분하는 것이 좋습니다. 업소용 냉장·냉동고, 식기세척기,
+제면기, 육절기 등은 철거 과정에서 손상되기 전에
+매입 가능 여부를 확인하는 것이 중요합니다.
 </p>
 
+<div class="info-box">
+<strong>희망리턴패키지도 철거 전에 확인하세요</strong>
+<p>
+폐업 예정인 소상공인이라면 희망리턴패키지의 점포철거비 등
+이용 가능한 지원사업이 있는지 먼저 확인해 보세요.
+지원 대상, 신청시기, 필요서류와 지원범위는 달라질 수 있으므로
+철거 계약을 진행하기 전에 해당 연도의 공식 기준을
+확인한 뒤 준비하는 것이 좋습니다.
+</p>
 </div>
-</div>
-</section>
-<footer>
-<strong>통합센터 EVER KOREA</strong><br>
-경산 카페폐업 · 식당폐업 · 중고가전 전문<br>
-사진으로 먼저 확인하고 필요한 장비를 편리하게 상담하세요.
-</footer>
+<h3>경산 전지역 식당폐업·중고주방장비 상담</h3>
 
+<p>
+중산동·정평동·옥산동·옥곡동·사동·백천동을 비롯해
+임당동·조영동·압량읍·하양읍·진량읍·자인면 등
+경산 전지역에서 식당폐업과 업소용 중고주방장비의
+매입 가능 여부를 확인할 수 있습니다.
+</p>
+
+<p>
+폐업뿐 아니라 업종변경, 매장이전, 주방 리뉴얼 과정에서
+사용하지 않게 된 업소용냉장고, 식기세척기, 작업대,
+조리장비 등도 사진으로 먼저 상태를 확인할 수 있습니다.
+</p>
+
+<div class="case">
+<button type="button" onclick="toggleCase(this)">
+식당 주방장비를 철거 전에 한 번에 확인하는 경우
+<span>＋</span>
+</button>
+
+<div class="case-content">
+경산식당폐업 과정에서 주방 전체를 바로 철거하지 않고
+업소용 냉장·냉동고, 식기세척기, 조리장비와 작업공간을
+먼저 확인하는 유형입니다. 매입 가능한 중고주방기구와
+철거 대상 시설을 구분한 뒤 반출과 철거 순서를 정하면
+복잡한 주방 정리를 보다 체계적으로 진행할 수 있습니다.
+</div>
+</div>
+<h3>소상공인 폐업지원금·점포철거비 지원도 확인하세요</h3>
+
+<p>
+경산에서 카페나 식당 폐업을 준비하는 소상공인이라면
+중고장비 정리와 함께 소상공인 폐업지원금,
+희망리턴패키지, 점포철거비 지원 등 현재 신청할 수 있는
+폐업지원사업이 있는지도 확인해 보는 것이 좋습니다.
+</p>
+
+<p>
+특히 경산카페폐업이나 경산식당폐업 후 원상복구와
+점포철거가 필요한 경우에는 철거를 먼저 진행하기보다
+폐업철거지원금의 신청조건과 제출서류, 지원대상 여부를
+공식 안내에서 확인한 뒤 일정을 잡는 것이 안전합니다.
+</p>
+
+<div class="info-box">
+<strong>폐업·철거 전 함께 확인할 내용</strong>
+<p>
+희망리턴패키지 · 소상공인 폐업지원금 · 점포철거비 지원 ·
+원상복구 · 철거지원 대상 여부 · 신청서류 · 지원조건을 확인하고,
+중고카페장비와 중고주방기구는 철거 전에 매입 가능 여부를
+먼저 확인하는 방식으로 준비하세요.
+</p>
+</div>
+<h2>경산중고가전, 버리기 전에 매입 가능 여부부터 확인하세요</h2>
+
+<p>
+이사나 신제품 교체, 집 정리 과정에서 사용하던 가전을
+처분해야 한다면 바로 폐기하기보다 중고가전으로 다시
+매입할 수 있는 제품인지 먼저 확인해 보는 것이 좋습니다.
+경산중고가전은 제품 종류뿐 아니라 제조연도, 모델명,
+작동상태와 외관상태 등을 함께 확인해 매입 가능 여부를 판단합니다.
+</p>
+
+<p>
+경산중고가전매입을 알아보는 경우 냉장고 한 대부터
+세탁기와 건조기 세트, 에어컨, TV, 스타일러,
+김치냉장고 등 여러 가전을 함께 확인할 수도 있습니다.
+제품 전면사진과 모델명·제조정보가 표시된 라벨사진을
+준비하면 방문 전 상담이 훨씬 수월합니다.
+</p>
+
+<div class="info-box">
+<strong>경산 중고가전 주요 확인품목</strong>
+<p>
+중고냉장고 · 김치냉장고 · 중고세탁기 · 중고건조기 ·
+중고에어컨 · 중고TV · 스타일러 등 생활가전의
+매입 가능 여부를 확인합니다.
+</p>
+</div>
+<h3>경산 중고냉장고·세탁기·건조기·에어컨 매입</h3>
+
+<p>
+경산중고냉장고를 알아볼 때는 일반 냉장고와 김치냉장고의
+용량, 모델, 제조연도와 현재 작동상태를 함께 확인합니다.
+세탁기와 건조기는 각각 처분하는 경우뿐 아니라
+세트로 사용하던 제품을 함께 정리하는 경우도 많습니다.
+</p>
+
+<p>
+경산중고에어컨은 제품 자체의 상태와 함께 설치형태와
+실외기 구성 등을 확인할 필요가 있으며, 중고TV와 스타일러도
+모델명과 제조정보, 화면이나 주요 기능의 정상 작동 여부가
+매입 가능성을 확인하는 중요한 정보가 됩니다.
+</p>
+
+<div class="info-box">
+<strong>중고가전 사진견적 핵심정보</strong>
+<p>
+제품 전체사진 · 모델명 · 제조연도 · 제품 라벨 ·
+작동 여부 · 설치상태 · 엘리베이터 유무 등을 알려주시면
+제품의 매입 가능 여부를 확인하는 데 도움이 됩니다.
+</p>
+</div>
+<h3>경산 전지역 중고가전매입 상담</h3>
+
+<p>
+중산동·정평동·옥산동·옥곡동·사동·삼풍동·백천동,
+계양동·대평동·임당동·조영동 등 경산 시내권에서
+냉장고, 세탁기, 건조기, TV 등 사용하던 중고가전의
+매입 가능 여부를 확인할 수 있습니다.
+</p>
+
+<p>
+압량읍·하양읍·진량읍·자인면 등에서도 이사나 가전교체,
+주택·상가 정리 과정에서 발생한 중고가전을 사진으로
+먼저 확인할 수 있습니다. 여러 제품을 함께 처분할 경우에는
+제품별 전면사진과 모델명, 제조연도 정보를 각각 준비하면
+보다 정확한 확인에 도움이 됩니다.
+</p>
+
+<div class="case">
+<button type="button" onclick="toggleCase(this)">
+이사 전 여러 중고가전을 함께 정리하는 경우
+<span>＋</span>
+</button>
+
+<div class="case-content">
+이사를 앞두고 냉장고, 세탁기, 건조기, TV처럼 사용하던
+가전을 한꺼번에 정리해야 하는 유형입니다. 제품마다
+모델과 제조연도, 작동상태가 다르기 때문에 사진과 제품정보를
+각각 확인한 뒤 매입 가능한 중고가전을 구분합니다.
+</div>
+</div>
+<h2>철거·폐기 전에 무료 사진견적부터 확인하세요</h2>
+
+<p>
+카페나 식당을 정리한다고 해서 사용하던 장비를 모두
+철거하거나 폐기할 필요는 없습니다. 중고커피머신,
+카페장비, 베이커리장비, 업소용 주방기구와 생활가전까지
+다시 사용할 수 있는 제품은 먼저 매입 가능 여부를
+확인해 보는 것이 좋습니다.
+</p>
+
+<p>
+경산 현장 방문이 필요한 경우에도 사진과 기본정보를
+먼저 확인하면 상담이 훨씬 간편합니다. 처분할 장비의
+전체사진과 모델명, 제조연도, 작동 여부를 준비해
+무료 사진견적을 이용해 주세요.
+</p>
+
+<a class="quote-btn" href="ever-new.html">
+📷 무료 사진견적 받기
+</a>
+<h2>자주 묻는 질문</h2>
+
+<div class="info-box">
+<strong>폐업 전에 장비부터 확인해야 하나요?</strong>
+<p>
+네. 철거 과정에서 장비가 분리되거나 손상되기 전에
+중고장비로 매입 가능한 품목인지 먼저 확인하는 것이 좋습니다.
+</p>
+</div>
+
+<div class="info-box">
+<strong>오래 사용한 장비도 상담할 수 있나요?</strong>
+<p>
+가능합니다. 다만 품목, 제조연도, 모델, 작동상태와
+관리상태에 따라 매입 가능 여부가 달라질 수 있습니다.
+</p>
+</div>
+
+<div class="info-box">
+<strong>희망리턴패키지와 폐업철거지원금도 확인해야 하나요?</strong>
+<p>
+카페·식당 폐업을 준비하는 소상공인이라면 희망리턴패키지,
+점포철거비 지원 등 이용 가능한 폐업지원사업의 대상 여부와
+신청조건을 철거 전에 공식 안내를 통해 확인하는 것이 좋습니다.
+</p>
+</div>
+
+<p style="text-align:center;color:#8f98a6;font-size:12px;margin:38px 0;">
+사업자등록번호 403-46-00681
+</p>
+
+</main>
 </div>
 
 <script>
-function toggleCard(btn){
-const box=btn.nextElementSibling;
-const all=document.querySelectorAll('.content');
-all.forEach(x=>{
-if(x!==box){
-x.classList.remove('open');
-x.previousElementSibling.querySelector('span').textContent='＋';
+function toggleCase(btn){
+const current=btn.nextElementSibling;
+
+document.querySelectorAll('.case-content').forEach(function(item){
+if(item!==current){
+item.classList.remove('open');
+const mark=item.previousElementSibling.querySelector('span');
+if(mark) mark.textContent='＋';
 }
 });
-box.classList.toggle('open');
+
+current.classList.toggle('open');
 btn.querySelector('span').textContent=
-box.classList.contains('open')?'－':'＋';
+current.classList.contains('open')?'－':'＋';
 }
 </script>
+
 </body>
 </html>
-<style>
-body{background:linear-gradient(160deg,#071c1a,#122823 55%,#101817)}
-header{background:linear-gradient(145deg,#0b2924,#173b32);margin:18px 0;border-radius:18px;border:1px solid #496e5f}
-.card{background:#102923;border:1px solid #496e5f}
-.card button{background:linear-gradient(90deg,#153b32,#102923)}
-.point,h2,.card button span{color:#ffd65a}
-.cta{background:#ffd43b;box-shadow:0 7px 22px rgba(255,212,59,.22)}
-.story{background:#0b211d;border-left:4px solid #e0b94f}
-</style>
-<style>
-.benefit span{
-background:#f6d25b;color:#10231f;
-border:0;font-weight:900;
-box-shadow:0 4px 14px rgba(0,0,0,.25)
-}
-.benefit span:nth-child(2){background:#fff;color:#16372f}
-.benefit span:nth-child(3){background:#d7b85a;color:#10231f}
-</style>
-<style>
-header h1{font-weight:900;letter-spacing:-1px}
-header p{color:#dbe8e3}
-.cta{font-size:18px;text-align:center;border:2px solid #ffe681}
-@media(max-width:600px){
-.wrap{padding:0 12px}
-header{margin:10px 0;padding:35px 14px 28px}
-.benefit{gap:6px}
-.benefit span{font-size:13px;padding:7px 10px}
-}
-</style>
-<script type="application/ld+json">
-{
-"@context":"https://schema.org",
-"@type":"WebPage",
-"name":"경산 카페폐업·식당폐업·중고가전 | 통합센터 EVER KOREA",
-"url":"https://tonghap-used-center.github.io/tonghap-center/gyeongsan.html",
-"description":"경산 카페폐업, 식당폐업, 중고가전과 중고장비 정리 정보를 제공하는 통합센터 EVER KOREA 경산 지역페이지.",
-"inLanguage":"ko-KR"
-}
-</script>
+
+
+
+  
 
 
 
