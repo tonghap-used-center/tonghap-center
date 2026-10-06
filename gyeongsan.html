@@ -388,6 +388,40 @@ color:#ffffff;
 </div>
 
 </section>
+</div>
+</div>
+
+<script>
+function toggleService(button){
+  const current = button.nextElementSibling;
+  const services = document.querySelectorAll('.service-content');
+  const buttons = document.querySelectorAll('.service-btn');
+
+  services.forEach(function(content){
+    if(content !== current){
+      content.classList.remove('open');
+    }
+  });
+
+  buttons.forEach(function(btn){
+    if(btn !== button){
+      btn.querySelector('span').textContent = '＋';
+    }
+  });
+
+  current.classList.toggle('open');
+
+  if(current.classList.contains('open')){
+    button.querySelector('span').textContent = '−';
+  }else{
+    button.querySelector('span').textContent = '＋';
+  }
+}
+</script>
+
+</body>
+</html>
+
 
 
 
