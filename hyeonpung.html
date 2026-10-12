@@ -2,23 +2,41 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>현풍카페폐업·현풍식당폐업·현풍중고가전 | 통합중고센터</title>
+<title>현풍카페폐업·현풍식당폐업·현풍중고가전 매입 | 통합중고센터</title>
 
-<meta name="description" content="현풍카페폐업, 현풍식당폐업, 현풍중고가전 전문매입 통합중고센터. 현풍읍·유가읍·테크노폴리스 카페장비, 커피머신, 베이커리장비, 중고주방기구, 업소용냉장고, 생활가전 사진견적 상담.">
+<meta name="description" content="현풍카페폐업, 현풍식당폐업, 현풍중고가전 매입 상담. 현풍읍·유가읍 테크노폴리스·구지면 등 달성군 남부 생활권의 중고커피머신, 베이커리장비, 업소용주방장비, 중고가전 무료 사진견적 안내.">
 
-<meta name="keywords" content="현풍카페폐업,현풍식당폐업,현풍중고가전,현풍중고커피머신,현풍중고카페장비,현풍중고주방기구,현풍중고가전매입,현풍테크노폴리스카페폐업,현풍테크노폴리스식당폐업,유가읍카페폐업,유가읍식당폐업">
-
-<meta name="robots" content="index,follow">
+<meta name="robots" content="index,follow,max-image-preview:large">
 
 <link rel="canonical" href="https://tonghap-used-center.github.io/tonghap-center/hyeonpung.html">
 
+<meta name="theme-color" content="#102532">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="통합중고센터 EVER KOREA">
+<meta property="og:title" content="현풍카페폐업·현풍식당폐업·현풍중고가전 | 통합중고센터">
+<meta property="og:description" content="현풍읍·유가읍·구지면 중고카페장비, 업소용주방장비, 중고가전 매입 및 무료 사진견적">
+<meta property="og:url" content="https://tonghap-used-center.github.io/tonghap-center/hyeonpung.html">
+
 <style>
+:root{
+  --bg:#0c202c;
+  --panel:#172f3d;
+  --panel2:#203c4a;
+  --line:#405c69;
+  --text:#f5f8f9;
+  --muted:#cbdbe0;
+  --emerald:#8ce1c9;
+  --copper:#e6ae8a;
+  --ice:#b2d8f0;
+  --yellow:#ffd36e;
+}
+
 *{
   box-sizing:border-box;
-  margin:0;
-  padding:0;
 }
 
 html{
@@ -27,682 +45,1350 @@ html{
 
 body{
   margin:0;
-  background:#09100e;
-  color:#f7f7f3;
-  font-family:
-  -apple-system,
-  BlinkMacSystemFont,
-  "Noto Sans KR",
-  "Malgun Gothic",
-  Arial,
-  sans-serif;
-  line-height:1.75;
+  background:var(--bg);
+  color:var(--text);
+  font-family:-apple-system,BlinkMacSystemFont,
+  "Noto Sans KR","Malgun Gothic",Arial,sans-serif;
+  line-height:1.8;
   word-break:keep-all;
+  overflow-wrap:break-word;
 }
 
 a{
-  text-decoration:none;
   color:inherit;
+  text-decoration:none;
 }
 
-.main{
-  min-height:100vh;
-  background:
-    linear-gradient(
-      rgba(3,12,10,.48),
-      rgba(4,13,11,.78) 38%,
-      rgba(4,12,10,.94) 78%,
-      #07100d 100%
-    ),
-    url('file_00000000672882069d9b14327d43968a.png')
-    center top/cover no-repeat;
-  background-attachment:fixed;
+a:focus-visible,
+summary:focus-visible{
+  outline:3px solid var(--yellow);
+  outline-offset:3px;
 }
 
 .hero{
-  min-height:92vh;
+  position:relative;
+  isolation:isolate;
   display:flex;
   align-items:center;
   justify-content:center;
+  min-height:86vh;
+  min-height:86svh;
+  padding:65px 18px;
   text-align:center;
-  padding:70px 20px 50px;
+  overflow:hidden;
+  background:#173a48;
+}
+
+.hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:-2;
+  background-image:url("https://commons.wikimedia.org/wiki/Special:FilePath/대구_달성_비슬산_홍보사진_Korea.jpg");
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+
+.hero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:-1;
+  background:linear-gradient(
+    180deg,
+    rgba(6,23,35,.50) 0%,
+    rgba(7,26,38,.66) 45%,
+    rgba(5,19,30,.91) 100%
+  );
 }
 
 .hero-inner{
   width:100%;
-  max-width:900px;
-  margin:auto;
+  max-width:800px;
 }
 
-.hero-small{
-  color:#b9e4cd;
-  font-size:14px;
-  font-weight:800;
-  letter-spacing:4px;
-  margin-bottom:12px;
+.hero-label{
+  margin:0 0 14px;
+  color:#c9f6e9;
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:2px;
 }
 
 .hero h1{
-  color:#e3f4e8;
-  font-size:58px;
-  line-height:1.15;
+  margin:0;
+  color:#fff;
+  font-size:clamp(36px,7vw,58px);
   font-weight:900;
-  letter-spacing:-2px;
+  line-height:1.2;
+  letter-spacing:-1.5px;
   text-shadow:0 4px 20px rgba(0,0,0,.45);
-  margin-bottom:28px;
+}
+
+.brand{
+  margin:12px 0 0;
+  color:#f3d4b5;
+  font-size:16px;
+  font-weight:900;
+  letter-spacing:2px;
 }
 
 .hero-keywords{
-  margin:0 auto 28px;
-  color:#ffffff;
-  font-size:23px;
-  line-height:1.75;
-  font-weight:800;
-  text-shadow:0 2px 12px rgba(0,0,0,.65);
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:9px;
+  margin:27px auto 22px;
 }
 
-.hero-key{
-  display:inline-block;
-}
-
-.hero-dot{
-  display:inline-block;
-  margin:0 9px;
-  color:#92d9b1;
+.hero-keywords span{
+  padding:9px 14px;
+  border:1px solid rgba(208,245,237,.60);
+  border-radius:10px;
+  background:rgba(5,25,35,.76);
+  color:#fff;
+  font-size:17px;
+  font-weight:900;
 }
 
 .hero-desc{
-  max-width:680px;
-  margin:0 auto 30px;
-  color:#eef5f0;
-  font-size:16px;
-  line-height:1.9;
-  text-shadow:0 2px 8px rgba(0,0,0,.65);
-}
-
-.cta{
-  display:inline-block;
-  min-width:280px;
-  padding:18px 32px;
-  border-radius:14px;
-  background:linear-gradient(135deg,#d8f0df,#8bcba7);
-  color:#092016;
-  font-size:19px;
-  font-weight:900;
-  box-shadow:0 12px 35px rgba(80,190,125,.26);
-  transition:.2s;
-}
-
-.cta:hover{
-  transform:translateY(-2px);
-}
-
-.business{
-  margin-top:17px;
-  color:#d5ddd7;
-  font-size:12px;
-  letter-spacing:.3px;
-}
-
-.content-wrap{
-  max-width:940px;
-  margin:auto;
-  padding:20px 18px 90px;
-}
-
-.intro{
-  margin-bottom:25px;
-  padding:28px 25px;
-  border:1px solid rgba(171,225,193,.25);
-  border-radius:18px;
-  background:rgba(7,19,15,.78);
-  backdrop-filter:blur(7px);
-  box-shadow:0 15px 40px rgba(0,0,0,.20);
-}
-
-.intro h2{
-  color:#c6ecd5;
-  font-size:24px;
-  line-height:1.4;
-  margin-bottom:13px;
-}
-
-.intro p{
-  color:#d9e1dc;
+  max-width:640px;
+  margin:0 auto 29px;
+  color:#edf7f5;
   font-size:15px;
   line-height:1.9;
+  text-shadow:0 2px 8px rgba(0,0,0,.5);
 }
 
-.service{
-  margin-bottom:16px;
-  border:1px solid rgba(177,227,197,.22);
-  border-radius:18px;
-  overflow:hidden;
-  background:rgba(7,17,14,.88);
-  box-shadow:0 14px 38px rgba(0,0,0,.20);
-}
-
-.service-btn{
-  width:100%;
-  border:0;
-  outline:0;
-  cursor:pointer;
-  padding:24px 24px;
+.main-cta{
   display:flex;
   align-items:center;
-  justify-content:space-between;
-  text-align:left;
-  color:#effaf3;
-  background:
-    linear-gradient(
-      90deg,
-      rgba(29,72,51,.80),
-      rgba(9,29,21,.88)
-    );
-  font-family:inherit;
-}
-
-.service-btn strong{
-  font-size:23px;
-  font-weight:900;
-  letter-spacing:-.5px;
-}
-
-.service-btn span{
-  color:#a9e2bf;
-  font-size:29px;
-  font-weight:300;
-  line-height:1;
-}
-
-.service-content{
-  display:none;
-  padding:8px 25px 30px;
-}
-
-.service-content.open{
-  display:block;
-}
-
-.service-content h2{
-  color:#c2ecd2;
-  font-size:22px;
-  line-height:1.5;
-  margin:24px 0 10px;
-}
-
-.service-content h3{
-  color:#a9dfbd;
-  font-size:18px;
-  margin:22px 0 8px;
-}
-
-.service-content p{
-  color:#d8dfda;
-  font-size:15px;
-  line-height:1.95;
-  margin-bottom:14px;
-}
-
-.keyword-box{
-  margin:20px 0;
-  padding:18px 18px;
-  border-left:3px solid #8ed1a8;
-  border-radius:8px;
-  background:rgba(117,188,145,.09);
-}
-
-.keyword-box strong{
-  display:block;
-  color:#c9edd7;
-  font-size:16px;
-  margin-bottom:7px;
-}
-
-.keyword-box p{
-  margin:0;
-  color:#d6ded9;
-}
-
-.area{
-  margin-top:20px;
-  padding:17px 18px;
-  border:1px solid rgba(168,218,188,.18);
-  border-radius:12px;
-  background:rgba(255,255,255,.025);
-}
-
-.area strong{
-  color:#bde7cc;
-}
-
-.notice{
-  margin-top:30px;
-  padding:25px;
-  border-radius:16px;
-  background:rgba(10,28,21,.90);
-  border:1px solid rgba(159,215,181,.20);
-}
-
-.notice h2{
-  color:#c4ebd3;
+  justify-content:center;
+  width:min(100%,370px);
+  min-height:66px;
+  margin:0 auto;
+  padding:16px 22px;
+  border:2px solid #ffe9b4;
+  border-radius:14px;
+  background:linear-gradient(
+    135deg,
+    #ffedb0,
+    #ffd36e 58%,
+    #f2ad59
+  );
+  color:#302114;
   font-size:20px;
-  margin-bottom:10px;
+  font-weight:900;
+  line-height:1.35;
+  box-shadow:0 13px 36px rgba(0,0,0,.38);
 }
 
-.notice p{
-  color:#d2dad5;
+.cta-note{
+  margin:14px 0 0;
+  color:#e5f0ef;
+  font-size:12px;
+}
+
+.page{
+  width:min(100% - 26px,940px);
+  margin:auto;
+  padding:14px 0 55px;
+}
+
+.intro,
+.info-card,
+.faq-wrap,
+.social{
+  margin-top:20px;
+  padding:27px 24px;
+  border:1px solid var(--line);
+  border-radius:17px;
+  background:var(--panel);
+  box-shadow:0 10px 28px rgba(0,0,0,.16);
+}
+
+.section-label{
+  margin:0 0 9px;
+  color:var(--emerald);
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:1.5px;
+}
+
+.intro h2,
+.info-card h2,
+.faq-wrap h2,
+.social h2{
+  margin:0 0 14px;
+  color:#fff;
+  font-size:23px;
+  line-height:1.45;
+}
+
+.intro p,
+.info-card p{
+  margin:0 0 14px;
+  color:var(--muted);
   font-size:14px;
   line-height:1.9;
 }
 
-.footer{
-  padding:35px 20px 50px;
+.intro p:last-child,
+.info-card p:last-child{
+  margin-bottom:0;
+}
+
+.info-card h3{
+  margin:23px 0 8px;
+  color:#fff;
+  font-size:17px;
+}
+
+.service{
+  margin-top:16px;
+  overflow:hidden;
+  border:1px solid var(--line);
+  border-radius:17px;
+  background:var(--panel);
+  box-shadow:0 10px 28px rgba(0,0,0,.18);
+}
+
+.service>summary{
+  position:relative;
+  display:flex;
+  align-items:center;
+  min-height:82px;
+  padding:20px 52px 20px 20px;
+  list-style:none;
+  cursor:pointer;
+  color:#fff;
+  font-size:21px;
+  font-weight:900;
+  line-height:1.4;
+}
+
+.service>summary::-webkit-details-marker{
+  display:none;
+}
+
+.service>summary::after{
+  content:"+";
+  position:absolute;
+  right:19px;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:28px;
+  font-weight:400;
+}
+
+.service[open]>summary::after{
+  content:"−";
+}
+
+.service.cafe{
+  border-color:#61bca5;
+}
+
+.service.cafe>summary{
+  border-left:6px solid #8ce1c9;
+  background:linear-gradient(
+    90deg,#205449,#1c3944
+  );
+}
+
+.service.restaurant{
+  border-color:#c58d72;
+}
+
+.service.restaurant>summary{
+  border-left:6px solid #e6ae8a;
+  background:linear-gradient(
+    90deg,#5d4037,#303c47
+  );
+}
+
+.service.appliance{
+  border-color:#779fbb;
+}
+
+.service.appliance>summary{
+  border-left:6px solid #b2d8f0;
+  background:linear-gradient(
+    90deg,#294c65,#1d3748
+  );
+}
+
+.service-body{
+  padding:9px 22px 26px;
+  border-top:1px solid rgba(190,216,221,.18);
+}
+
+.service-body h2{
+  margin:18px 0 11px;
+  color:#fff;
+  font-size:20px;
+  line-height:1.5;
+}
+
+.service-body h3{
+  margin:23px 0 9px;
+  color:#fff;
+  font-size:17px;
+}
+
+.service-body p{
+  margin:0 0 15px;
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.9;
+}
+
+.equipment,
+.local-box{
+  margin:18px 0;
+  padding:18px;
+  border-radius:12px;
+}
+
+.equipment{
+  border:1px solid #569e90;
+  background:#1b4144;
+}
+
+.local-box{
+  border:1px solid #6c899a;
+  background:#213e4d;
+}
+
+.equipment strong,
+.local-box strong{
+  display:block;
+  margin-bottom:8px;
+  color:#fff;
+  font-size:15px;
+}
+
+.equipment p,
+.local-box p{
+  margin:0;
+  font-size:13px;
+  line-height:1.9;
+}
+
+.faq{
+  border-bottom:1px solid #3c5865;
+}
+
+.faq:last-child{
+  border-bottom:0;
+}
+
+.faq summary{
+  position:relative;
+  padding:17px 34px 17px 0;
+  list-style:none;
+  cursor:pointer;
+  color:#fff;
+  font-size:15px;
+  font-weight:800;
+  line-height:1.65;
+}
+
+.faq summary::-webkit-details-marker{
+  display:none;
+}
+
+.faq summary::after{
+  content:"+";
+  position:absolute;
+  right:3px;
+  top:50%;
+  transform:translateY(-50%);
+  color:#9de7d6;
+  font-size:22px;
+}
+
+.faq[open] summary::after{
+  content:"−";
+}
+
+.faq p{
+  margin:0 0 17px;
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.9;
+}
+
+.social{
   text-align:center;
-  color:#99a69e;
+}
+
+.social-desc{
+  margin:0 0 18px;
+  color:var(--muted);
+  font-size:13px;
+}
+
+.social-grid{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:10px;
+}
+
+.social-link{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:7px;
+  min-height:62px;
+  padding:10px 6px;
+  border:1px solid #527384;
+  border-radius:11px;
+  background:#244452;
+  color:#fff;
   font-size:12px;
-  background:#060c09;
+  font-weight:800;
+}
+
+.social-icon{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:28px;
+  height:28px;
+  flex:0 0 28px;
+  border-radius:7px;
+  color:#fff;
+  font-size:13px;
+  font-weight:900;
+}
+
+.blog-icon{background:#03c75a;}
+.clip-icon{background:#151b21;}
+.insta-icon{
+  background:linear-gradient(
+    135deg,#f9ce34,#ee2a7b,#6228d7
+  );
+}
+.youtube-icon{background:#ff0033;}
+
+.footer{
+  padding:32px 18px 42px;
+  border-top:1px solid #3b5965;
+  background:#081720;
+  text-align:center;
+  color:#a9bec5;
+  font-size:12px;
+  line-height:1.9;
 }
 
 .footer strong{
   display:block;
-  margin-bottom:5px;
-  color:#c6d2ca;
-  font-size:14px;
+  margin-bottom:7px;
+  color:#fff;
+  font-size:15px;
+}
+
+.photo-credit{
+  margin-top:12px;
+  color:#9cb1b8;
+  font-size:10px;
+}
+
+.photo-credit a{
+  text-decoration:underline;
 }
 
 @media(max-width:700px){
 
-  .main{
-    background-attachment:scroll;
-    background-position:center top;
-  }
-
   .hero{
-    min-height:88vh;
-    padding:55px 17px 40px;
+    min-height:84vh;
+    min-height:84svh;
+    padding:55px 16px;
   }
 
-  .hero-small{
-    font-size:12px;
-    letter-spacing:2.8px;
+  .hero::before{
+    background-position:center center;
+  }
+
+  .hero-label{
+    font-size:10px;
+    letter-spacing:1.5px;
   }
 
   .hero h1{
-    font-size:40px;
-    letter-spacing:-1.5px;
-    margin-bottom:23px;
+    font-size:37px;
+  }
+
+  .brand{
+    font-size:13px;
   }
 
   .hero-keywords{
-    font-size:21px;
-    line-height:1.8;
+    display:grid;
+    grid-template-columns:1fr;
+    gap:8px;
+    max-width:295px;
+    margin:23px auto 20px;
   }
 
-  .hero-key{
-    display:block;
-    white-space:nowrap;
-  }
-
-  .hero-dot{
-    display:none;
+  .hero-keywords span{
+    padding:8px 12px;
+    font-size:16px;
   }
 
   .hero-desc{
     font-size:14px;
-    line-height:1.85;
   }
 
-  .cta{
-    width:100%;
-    max-width:350px;
-    min-width:0;
+  .main-cta{
+    min-height:63px;
     font-size:18px;
   }
 
-  .content-wrap{
-    padding:15px 13px 70px;
+  .intro,
+  .info-card,
+  .faq-wrap,
+  .social{
+    padding:22px 17px;
   }
 
-  .intro{
-    padding:23px 19px;
-  }
-
-  .intro h2{
-    font-size:21px;
-  }
-
-  .intro p,
-  .service-content p{
-    font-size:14px;
-  }
-
-  .service-btn{
-    padding:21px 19px;
-  }
-
-  .service-btn strong{
+  .intro h2,
+  .info-card h2,
+  .faq-wrap h2,
+  .social h2{
     font-size:20px;
   }
 
-  .service-content{
-    padding:5px 19px 25px;
+  .service>summary{
+    min-height:74px;
+    padding:19px 48px 19px 17px;
+    font-size:19px;
   }
 
-  .service-content h2{
-    font-size:20px;
+  .service-body{
+    padding:6px 17px 23px;
   }
 
-  .service-content h3{
-    font-size:17px;
+  .service-body h2{
+    font-size:18px;
+  }
+
+  .social-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+
+@media(prefers-reduced-motion:reduce){
+  html{
+    scroll-behavior:auto;
   }
 }
 </style>
 </head>
-
 <body>
+<header class="hero">
 
-<main class="main">
-
-<section class="hero">
   <div class="hero-inner">
 
-    <div class="hero-small">HYEONPUNG · TECHNOPOLIS USED CENTER</div>
+    <p class="hero-label">
+      HYEONPUNG · DALSEONG
+    </p>
 
     <h1>통합중고센터</h1>
 
+    <p class="brand">EVER KOREA</p>
+
     <div class="hero-keywords">
-      <span class="hero-key">현풍카페폐업</span>
-      <span class="hero-dot">·</span>
-      <span class="hero-key">현풍식당폐업</span>
-      <span class="hero-dot">·</span>
-      <span class="hero-key">현풍중고가전</span>
+      <span>현풍카페폐업</span>
+      <span>현풍식당폐업</span>
+      <span>현풍중고가전</span>
     </div>
 
     <p class="hero-desc">
-      현풍읍과 유가읍, 대구테크노폴리스 생활권의
-      카페장비·업소용주방장비·중고가전을 한 곳에서 확인합니다.
-      폐업과 이전, 업종변경을 준비할 때 사진으로 먼저 장비 상태를 확인할 수 있습니다.
+      현풍읍과 유가읍 테크노폴리스,
+      구지면 국가산단 생활권까지.
+      중고커피장비·베이커리장비·
+      업소용주방장비·생활가전의
+      매입 가능 여부를 사진으로
+      먼저 확인합니다.
     </p>
 
-    <a class="cta" href="ever-new.html">
+    <a class="main-cta"
+       href="index.html"
+       aria-label="무료 사진견적 신청">
       무료 사진견적 신청
     </a>
 
-    <div class="business">
-      사업자등록번호 403-46-00681
-    </div>
+    <p class="cta-note">
+      제품사진 · 모델명 · 처분지역으로 상담 시작
+    </p>
 
   </div>
-</section>
 
+</header>
 
-<div class="content-wrap">
+<main class="page">
 
 <section class="intro">
 
-  <h2>현풍·테크노폴리스 중고장비 매입 안내</h2>
+  <p class="section-label">
+    HYEONPUNG USED EQUIPMENT
+  </p>
+
+  <h2>
+    현풍의 기존 상권과
+    테크노폴리스 상권을
+    함께 고려한 장비 정리
+  </h2>
 
   <p>
-    현풍은 기존 현풍읍 상권과 대구테크노폴리스의 신도시형 상권이 함께 형성된 지역입니다.
-    카페, 베이커리, 음식점, 배달전문점과 생활가전 수요가 함께 움직이기 때문에
-    폐업이나 매장 이전을 준비할 때는 장비 종류와 설치환경을 함께 확인하는 것이 중요합니다.
+    현풍은 기존 읍내 생활권과
+    테크노폴리스의 상업·주거지역이
+    가까이 연결되어 있습니다.
+    현풍읍의 기존 상가와
+    유가읍의 테크노폴리스 상가는
+    매장 구조와 장비 이동조건이
+    서로 다를 수 있습니다.
   </p>
 
   <p>
-    통합중고센터는 현풍카페폐업, 현풍식당폐업, 현풍중고가전 관련 장비를
-    품목별로 나누어 확인하고 사진견적을 통해 매입 가능 여부를 먼저 살펴볼 수 있도록 안내합니다.
-    장비의 연식뿐 아니라 실제 사용상태, 관리상태, 설치조건과 반출환경 등을 종합적으로 확인합니다.
+    카페폐업과 식당폐업에서는
+    재사용 가능한 중고장비를
+    철거시설과 먼저 구분하는 것이
+    중요합니다.
+    중고가전은 모델과 사용기간,
+    작동상태와 설치환경을
+    함께 확인합니다.
   </p>
 
 </section>
 
+<details class="service cafe">
 
-<section class="service">
+  <summary>현풍카페폐업</summary>
 
-<button class="service-btn" onclick="toggleService(this)">
-  <strong>현풍카페폐업</strong>
-  <span>＋</span>
-</button>
+  <div class="service-body">
 
-<div class="service-content">
+    <h2>
+      현풍카페폐업,
+      테크노폴리스 상가의
+      장비 반출조건까지 확인합니다
+    </h2>
 
-  <h2>현풍카페폐업 · 테크노폴리스 중고카페장비 매입</h2>
-
-  <p>
-    현풍읍과 유가읍, 테크노폴리스 일대에는 개인카페부터 디저트카페,
-    베이커리카페와 프랜차이즈 매장까지 다양한 형태의 카페가 운영되고 있습니다.
-    매장을 정리할 때 커피머신 한 품목만 보는 것이 아니라
-    실제 영업에 사용했던 카페장비 전체 구성을 함께 확인하는 것이 효율적입니다.
-  </p>
-
-  <h3>중고커피머신·커피 주변기기</h3>
-
-  <p>
-    현풍중고커피머신 매입을 비롯해
-    중고2그룹커피머신, 중고3그룹커피머신,
-    중고자동커피머신, 중고반자동커피머신,
-    중고그라인더, 중고원두자동그라인더,
-    중고템핑기, 중고자동템핑기,
-    중고블렌더, 중고핫워터디스펜서,
-    중고제빙기와 같은 카페 핵심장비를 확인합니다.
-  </p>
-
-  <div class="keyword-box">
-    <strong>현풍 중고카페장비 주요 품목</strong>
     <p>
-      중고커피머신 · 중고그라인더 · 중고자동템핑기 ·
-      중고블렌더 · 중고핫워터디스펜서 · 중고제빙기 ·
-      중고캔실링기 · 중고케익쇼케이스 · 중고쇼케이스 ·
-      중고테이블냉장고 · 중고냉장고 · 중고냉동고
+      현풍읍과 유가읍에는
+      테크노폴리스 생활권의
+      상가형 카페와 디저트매장,
+      기존 읍내의 소규모 커피전문점,
+      외곽의 베이커리카페 등
+      다양한 운영 형태가 있습니다.
     </p>
-  </div>
 
-  <h3>디저트카페·베이커리카페 장비</h3>
-
-  <p>
-    베이커리와 디저트를 함께 운영했던 매장은
-    커피장비 외에도 중고데크오븐, 중고컨벡션오븐,
-    중고콤비오븐, 중고도우컨디셔너,
-    중고발효기, 중고반죽기,
-    중고소프트아이스크림기 등
-    부피가 큰 베이커리장비가 함께 설치되어 있는 경우가 많습니다.
-  </p>
-
-  <p>
-    이런 장비는 품목만 확인하기보다 출입문 폭,
-    엘리베이터 유무, 계단과 단차, 주차 및 차량 접근조건까지
-    함께 살펴야 실제 반출 계획을 세우기 좋습니다.
-    철거 전에 장비를 먼저 분류하면 사용 가능한 중고카페장비가
-    불필요하게 폐기되는 상황도 줄일 수 있습니다.
-  </p>
-
-  <div class="area">
-    <strong>현풍카페폐업 주요 확인지역</strong><br>
-    현풍읍 · 유가읍 · 대구테크노폴리스 · 중리 · 상리 · 부리 · 원교리 ·
-    성하리 · 하리 · 쌍계리 · 봉리 일대 카페 및 상가 장비
-  </div>
-
-</div>
-</section>
-
-
-<section class="service">
-
-<button class="service-btn" onclick="toggleService(this)">
-  <strong>현풍식당폐업</strong>
-  <span>＋</span>
-</button>
-
-<div class="service-content">
-
-  <h2>현풍식당폐업 · 중고주방기구·업소용장비 매입</h2>
-
-  <p>
-    현풍과 테크노폴리스 상권의 음식점은 한식, 고깃집,
-    분식, 치킨, 배달전문점, 주점 등 업종에 따라 주방구성이 크게 달라집니다.
-    따라서 현풍식당폐업 장비를 정리할 때는
-    냉장·냉동장비와 조리장비, 세척장비, 스테인리스 주방기구를
-    구역별로 확인하는 것이 좋습니다.
-  </p>
-
-  <h3>업소용 냉장·냉동장비</h3>
-
-  <p>
-    중고45박스냉장고, 중고25박스냉장고,
-    중고30박스냉장고, 중고테이블냉장고,
-    중고업소용냉장고, 중고업소용냉동고,
-    중고음료쇼케이스, 중고주류쇼케이스,
-    중고제빙기 등 매장에서 실제 사용했던
-    냉장·냉동장비를 품목별로 확인합니다.
-  </p>
-
-  <div class="keyword-box">
-    <strong>현풍 중고주방기구 주요 품목</strong>
     <p>
-      중고45박스냉장고 · 중고25박스냉장고 · 중고30박스냉장고 ·
-      중고테이블냉장고 · 중고음료쇼케이스 · 중고주류쇼케이스 ·
-      중고식기세척기 · 중고제빙기 · 중고반찬바트 · 중고셀프바 ·
-      중고화구 · 중고간텍기 · 중고주방다이 · 중고싱크대 ·
-      중고작업대 · 중고제면기 · 중고육절기 · 중고반죽기
+      카페를 정리할 때
+      커피머신만 따로 처분하기보다
+      제빙기, 냉장장비,
+      베이커리장비까지
+      함께 확인하면
+      매입 가능한 품목과
+      별도로 정리할 시설을
+      구분하기가 쉽습니다.
     </p>
-  </div>
 
-  <h3>식당폐업은 철거 전에 장비부터 확인</h3>
+    <h3>중고커피머신과 음료장비</h3>
 
-  <p>
-    폐업 일정이 정해졌다고 주방 전체를 먼저 철거하면
-    재사용 가능한 냉장고나 주방기구의 상태를 정확하게 확인하기 어려울 수 있습니다.
-    사용 가능한 중고주방기구와 철거 대상 시설을 먼저 구분한 뒤
-    장비 반출과 철거 일정을 나누어 잡는 방식이 효율적입니다.
-  </p>
-
-  <p>
-    특히 대형 업소용냉장고와 식기세척기,
-    스테인리스 작업대처럼 부피가 큰 장비는
-    매장 출입구와 주방 통로, 계단, 엘리베이터,
-    건물 앞 차량 접근 여부에 따라 반출조건이 달라질 수 있습니다.
-  </p>
-
-  <div class="area">
-    <strong>현풍식당폐업 확인지역</strong><br>
-    현풍읍 중심상권 · 테크노폴리스 상업지구 · 유가읍 · 봉리 · 쌍계리 ·
-    중리 · 상리 및 주변 음식점·배달매장·상가 주방
-  </div>
-
-</div>
-</section>
-
-
-<section class="service">
-
-<button class="service-btn" onclick="toggleService(this)">
-  <strong>현풍중고가전</strong>
-  <span>＋</span>
-</button>
-
-<div class="service-content">
-
-  <h2>현풍중고가전 · 테크노폴리스 생활가전 매입</h2>
-
-  <p>
-    현풍과 테크노폴리스는 아파트와 주거단지가 함께 형성되어 있어
-    이사, 입주, 신제품 교체, 집 정리 과정에서
-    중고가전을 처분하려는 경우도 많습니다.
-    현풍중고가전은 제품 전체 사진과 모델정보를 먼저 확인하면
-    방문 전 매입 가능 여부를 보다 효율적으로 살펴볼 수 있습니다.
-  </p>
-
-  <h3>중고가전 주요 확인 품목</h3>
-
-  <p>
-    중고냉장고, 중고김치냉장고,
-    중고세탁기, 중고건조기,
-    중고에어컨, 중고TV,
-    중고스타일러 등 대형 생활가전을 중심으로 확인합니다.
-  </p>
-
-  <div class="keyword-box">
-    <strong>사진견적에 필요한 기본 정보</strong>
     <p>
-      제품 전체사진 · 제조사 및 모델명 · 제조연도 또는 구입시기 ·
-      정상 작동 여부 · 설치층 · 엘리베이터 유무 ·
-      이사 또는 교체 등 처분 사유
+      2그룹·3그룹 중고커피머신,
+      중고자동커피머신,
+      중고그라인더,
+      중고자동템핑기,
+      중고블렌더,
+      중고핫워터와 중고제빙기 등을
+      확인합니다.
     </p>
+
+    <p>
+      라마르조코, 시네소,
+      빅토리아 아르두이노 등
+      상업용 커피머신은
+      브랜드뿐 아니라 정확한 모델,
+      사용기간, 작동상태와
+      관리 이력을 함께 살펴봅니다.
+    </p>
+
+    <div class="equipment">
+
+      <strong>
+        현풍 중고카페장비 상담 품목
+      </strong>
+
+      <p>
+        중고커피머신 · 중고그라인더 ·
+        중고자동템핑기 · 중고제빙기 ·
+        중고블렌더 · 중고핫워터 ·
+        중고테이블냉장고 · 중고냉동고 ·
+        중고쇼케이스 · 중고캔실링기 ·
+        중고소프트아이스크림기
+      </p>
+
+    </div>
+
+    <h3>베이커리카페와 디저트장비</h3>
+
+    <p>
+      중고컨벡션오븐,
+      중고데크오븐,
+      중고콤비오븐,
+      중고도우컨디셔너,
+      중고발효기와 중고반죽기 등은
+      제품 크기와 설치환경을
+      함께 확인합니다.
+    </p>
+
+    <p>
+      상가 내부에 설치된
+      대형 오븐과 반죽기는
+      출입문 폭과 엘리베이터,
+      계단, 바닥 단차에 따라
+      반출 방식이 달라질 수 있습니다.
+    </p>
+
+    <div class="local-box">
+
+      <strong>
+        현풍카페폐업 상담 생활권
+      </strong>
+
+      <p>
+        현풍읍 중리 · 부리 · 하리 ·
+        원교리 · 상리 일대,
+        유가읍 봉리 · 금리 · 용리 등
+        테크노폴리스 생활권
+      </p>
+
+    </div>
+
   </div>
 
-  <p>
-    같은 종류의 냉장고나 세탁기라도
-    제조연도와 용량, 외관상태, 작동상태,
-    설치환경에 따라 확인내용이 달라질 수 있습니다.
-    제품 라벨과 전체 모습이 함께 보이는 사진을 준비하면
-    보다 빠르게 제품 정보를 확인할 수 있습니다.
-  </p>
+</details>
+<details class="service restaurant">
 
-  <div class="area">
-    <strong>현풍중고가전 확인지역</strong><br>
-    현풍읍 · 유가읍 · 테크노폴리스 아파트단지 · 봉리 · 쌍계리 ·
-    중리 · 상리 및 인근 주거지역
+  <summary>현풍식당폐업</summary>
+
+  <div class="service-body">
+
+    <h2>
+      현풍식당폐업,
+      주방장비 매입과
+      철거시설을 구분하세요
+    </h2>
+
+    <p>
+      현풍의 음식점은
+      기존 읍내 상권과
+      테크노폴리스 상업시설,
+      산업단지 주변의 식당 등
+      다양한 환경에서 운영됩니다.
+    </p>
+
+    <p>
+      매장을 정리할 때는
+      업소용냉장고와 식기세척기,
+      조리장비 등 재사용 가능한
+      중고주방장비를 먼저 확인하고
+      철거가 필요한 시설과
+      구분하는 것이 좋습니다.
+    </p>
+
+    <h3>업소용 냉장·냉동장비</h3>
+
+    <p>
+      중고업소용냉장고,
+      중고업소용냉동고,
+      중고테이블냉장고,
+      25박스·45박스 냉장냉동고,
+      중고반찬바트와 중고셀프바 등은
+      모델과 사용기간,
+      정상작동 여부를 확인합니다.
+    </p>
+
+    <h3>조리·세척·가공장비</h3>
+
+    <p>
+      중고식기세척기,
+      중고제빙기, 중고화구,
+      중고간텍기, 중고주방다이,
+      중고싱크, 중고작업대,
+      중고제면기, 중고육절기,
+      중고반죽기 등은
+      제품별 상태와 시장 수요에 따라
+      매입 가능 여부가 달라집니다.
+    </p>
+
+    <div class="equipment">
+
+      <strong>
+        현풍 중고주방장비 주요 품목
+      </strong>
+
+      <p>
+        중고업소용냉장고 ·
+        중고업소용냉동고 ·
+        중고테이블냉장고 ·
+        중고식기세척기 · 중고제빙기 ·
+        중고반찬바트 · 중고셀프바 ·
+        중고화구 · 중고간텍기 ·
+        중고주방다이 · 중고싱크 ·
+        중고작업대 · 중고제면기 ·
+        중고육절기 · 중고반죽기
+      </p>
+
+    </div>
+
+    <h3>상가 구조에 따른 정리 순서</h3>
+
+    <p>
+      테크노폴리스 상가에서는
+      공용 출입구와 엘리베이터,
+      장비 이동시간,
+      차량 접근조건을 확인할
+      필요가 있습니다.
+    </p>
+
+    <p>
+      기존 읍내의 음식점은
+      출입문과 주방 위치,
+      작업공간의 폭에 따라
+      반출조건이 달라질 수 있습니다.
+      철거 전에 장비의 매입 가능성을
+      먼저 확인하는 것이 좋습니다.
+    </p>
+
+    <div class="local-box">
+
+      <strong>
+        현풍식당폐업 상담 생활권
+      </strong>
+
+      <p>
+        현풍읍 중리 · 부리 · 하리 ·
+        원교리 · 성하리 일대,
+        유가읍 테크노폴리스 상업지역,
+        구지면 국가산단 생활권
+      </p>
+
+    </div>
+
   </div>
 
-</div>
-</section>
+</details>
 
+<details class="service appliance">
 
-<section class="notice">
+  <summary>현풍중고가전</summary>
 
-  <h2>폐업지원제도도 함께 확인하세요</h2>
+  <div class="service-body">
+
+    <h2>
+      현풍중고가전,
+      이사와 가전 교체 전
+      매입 가능성을 확인하세요
+    </h2>
+
+    <p>
+      현풍읍과 유가읍의
+      공동주택 및 주거생활권에서는
+      냉장고와 세탁기,
+      건조기 등 대형가전의
+      설치환경이 중요합니다.
+    </p>
+
+    <p>
+      중고가전은 구입 당시 가격보다
+      현재 제품의 모델과 상태,
+      사용기간과 중고시장 수요를
+      함께 확인해야 합니다.
+    </p>
+
+    <div class="equipment">
+
+      <strong>
+        현풍중고가전 주요 확인 품목
+      </strong>
+
+      <p>
+        중고냉장고 · 중고김치냉장고 ·
+        중고세탁기 · 중고건조기 ·
+        중고에어컨 · 중고TV ·
+        중고스타일러
+      </p>
+
+    </div>
+
+    <h3>사용기간과 작동상태</h3>
+
+    <p>
+      생활가전은 일반적으로
+      사용기간 5년 이내 제품을
+      우선 확인합니다.
+      같은 연식이라도 브랜드와 모델,
+      정상작동 여부와 외관 상태에 따라
+      매입 가능성이 달라집니다.
+    </p>
+
+    <h3>사진견적 준비사항</h3>
+
+    <p>
+      제품 전체사진과 모델명 라벨,
+      구입 또는 제조시기,
+      정상작동 여부,
+      설치층과 엘리베이터 유무를
+      함께 알려주면 상담에 도움이 됩니다.
+    </p>
+
+    <div class="local-box">
+
+      <strong>
+        현풍중고가전 상담 생활권
+      </strong>
+
+      <p>
+        현풍읍 · 유가읍 · 구지면,
+        테크노폴리스 공동주택과
+        주변 주거생활권
+      </p>
+
+    </div>
+
+  </div>
+
+</details>
+<section class="info-card">
+
+  <p class="section-label">
+    HYEONPUNG LOCAL INFORMATION
+  </p>
+
+  <h2>
+    현풍읍·유가읍 테크노폴리스와
+    구지면 생활권 안내
+  </h2>
 
   <p>
-    사업장을 정리하는 소상공인은 상황에 따라
-    희망리턴패키지, 소상공인폐업지원금,
-    점포철거비지원 등 폐업 관련 지원제도를 확인해볼 수 있습니다.
-    지원대상과 신청조건, 지원범위는 시기와 사업공고에 따라 달라질 수 있으므로
-    실제 신청 전에는 정부 및 관련 기관의 최신 공식 안내를 확인하는 것이 좋습니다.
+    현풍 일대는 기존 읍내와
+    테크노폴리스의 상업·주거지역,
+    구지면 산업단지 생활권이
+    가까이 연결되어 있습니다.
+  </p>
+
+  <h3>현풍읍 기존 상권</h3>
+
+  <p>
+    현풍읍 중리·부리·하리·원교리
+    일대는 기존 생활상권과
+    주거지역이 함께 형성된 곳입니다.
+    소규모 카페와 음식점은
+    매장별 출입환경과 장비 배치를
+    확인하는 것이 중요합니다.
+  </p>
+
+  <h3>유가읍 테크노폴리스</h3>
+
+  <p>
+    유가읍 봉리·금리·용리 등
+    테크노폴리스 생활권에서는
+    상가형 카페와 음식점,
+    공동주택의 중고가전 처분을
+    각각 구분해 상담할 수 있습니다.
+  </p>
+
+  <p>
+    상가에서는 공용 출입구와
+    엘리베이터 사용조건을,
+    공동주택에서는 설치층과
+    대형가전 이동동선을
+    확인하는 것이 좋습니다.
+  </p>
+
+  <h3>구지면 국가산단 생활권</h3>
+
+  <p>
+    구지면의 산업단지와
+    주변 주거·상업지역에서는
+    음식점 주방장비와 카페장비,
+    생활가전의 종류와 수량에 따라
+    상담 범위가 달라질 수 있습니다.
+  </p>
+
+  <h3>논공읍 등 인접지역</h3>
+
+  <p>
+    논공읍 등 인접 생활권도
+    장비 종류와 수량,
+    현장 위치와 반출조건을
+    먼저 확인해 상담합니다.
+    방문 가능 여부는
+    개별 조건에 따라 안내합니다.
   </p>
 
 </section>
 
-</div>
+<section class="info-card">
+
+  <p class="section-label">
+    CLOSURE SUPPORT
+  </p>
+
+  <h2>
+    희망리턴패키지와
+    폐업철거지원금 확인
+  </h2>
+
+  <p>
+    폐업을 준비하는 소상공인은
+    신청 시점과 자격조건에 따라
+    희망리턴패키지,
+    점포철거비 지원 등
+    관련 지원사업을 확인할 수 있습니다.
+  </p>
+
+  <p>
+    중고장비 매입과
+    소상공인 폐업철거지원금은
+    별개의 절차입니다.
+    지원 대상과 신청기간,
+    제출서류 및 지원범위는
+    실제 신청 시점의
+    공식 공고를 기준으로 확인해야 합니다.
+  </p>
+
+</section>
+
+<section class="faq-wrap">
+
+  <p class="section-label">
+    FREQUENTLY ASKED QUESTIONS
+  </p>
+
+  <h2>현풍 중고장비 매입 FAQ</h2>
+
+  <details class="faq">
+    <summary>
+      현풍카페폐업 시 커피머신과
+      베이커리장비를 함께 상담할 수 있나요?
+    </summary>
+    <p>
+      중고커피머신, 그라인더,
+      제빙기 등 음료장비와
+      컨벡션오븐, 데크오븐,
+      반죽기 등 베이커리장비를
+      함께 확인할 수 있습니다.
+      매입 여부는 제품 상태와
+      시장 수요에 따라 달라집니다.
+    </p>
+  </details>
+
+  <details class="faq">
+    <summary>
+      현풍식당폐업은 철거 전에
+      주방장비부터 확인해야 하나요?
+    </summary>
+    <p>
+      재사용 가능한 업소용냉장고,
+      식기세척기, 제면기 등의 장비는
+      철거 전에 확인하는 것이 좋습니다.
+      중고장비와 철거시설을
+      미리 구분하면 불필요한
+      손상을 줄일 수 있습니다.
+    </p>
+  </details>
+
+  <details class="faq">
+    <summary>
+      현풍중고가전은 몇 년 된 제품까지 확인하나요?
+    </summary>
+    <p>
+      일반적으로 사용기간 5년 이내
+      생활가전을 우선 확인합니다.
+      모델과 작동상태,
+      외관과 시장 수요에 따라
+      실제 매입 여부는 달라집니다.
+    </p>
+  </details>
+
+  <details class="faq">
+    <summary>
+      무료 사진견적에는 어떤 정보가 필요한가요?
+    </summary>
+    <p>
+      제품 전체사진과 모델명,
+      구입 또는 제조시기,
+      정상작동 여부,
+      처분지역을 준비하면 좋습니다.
+      카페·식당은 정리 예정일,
+      가전은 엘리베이터 유무와
+      처분 사유를 함께 알려주면 도움이 됩니다.
+    </p>
+  </details>
+
+  <details class="faq">
+    <summary>
+      유가읍과 구지면도 상담 가능한가요?
+    </summary>
+    <p>
+      장비 종류와 수량,
+      현장 위치와 반출조건을
+      사진으로 먼저 확인합니다.
+      방문 가능 여부는
+      장비 규모와 현장조건 등을
+      고려해 안내합니다.
+    </p>
+  </details>
+
+  <details class="faq">
+    <summary>
+      중고장비 매입가격은 무엇을 기준으로 판단하나요?
+    </summary>
+    <p>
+      브랜드와 모델,
+      사용기간과 작동상태,
+      외관과 중고시장 수요,
+      설치 및 반출환경 등을
+      종합적으로 확인합니다.
+    </p>
+  </details>
+
+</section>
+
+<section class="social">
+
+  <p class="section-label">
+    EVER KOREA SOCIAL CHANNELS
+  </p>
+
+  <h2>통합센터 EVER KOREA</h2>
+
+  <p class="social-desc">
+    장비 정보와 관련 콘텐츠를
+    공식 채널에서 확인하세요.
+  </p>
+
+  <div class="social-grid">
+
+    <a class="social-link"
+       href="https://m.blog.naver.com/kimsuyoung0118"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="네이버 블로그">
+      <span class="social-icon blog-icon">N</span>
+      블로그
+    </a>
+
+    <a class="social-link"
+       href="https://naver.me/GtYTKGOO"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="네이버 클립">
+      <span class="social-icon clip-icon">▶</span>
+      클립
+    </a>
+
+    <a class="social-link"
+       href="https://www.instagram.com/technician_kim_pro_82?stkn=MTZxOHZ4aTBqYjBweg=="
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="인스타그램">
+      <span class="social-icon insta-icon">◎</span>
+      인스타그램
+    </a>
+
+    <a class="social-link"
+       href="https://youtube.com/channel/UCo3Bu9YAJvMjAS2i_94Z3fQ?si=ya6ZQrxsc30rYVCr"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="유튜브">
+      <span class="social-icon youtube-icon">▶</span>
+      유튜브
+    </a>
+
+  </div>
+
+</section>
 
 </main>
 
-
 <footer class="footer">
-  <strong>통합중고센터</strong>
-  현풍 · 테크노폴리스 카페장비 · 주방장비 · 중고가전 매입 안내<br>
+
+  <strong>
+    통합중고센터 · EVER KOREA
+  </strong>
+
+  현풍카페폐업 · 현풍식당폐업 · 현풍중고가전
+  <br>
+  중고장비 매입 및 무료 사진견적 상담
+  <br>
   사업자등록번호 403-46-00681
+
+  <div class="photo-credit">
+    메인사진: 비슬산 · Chanilim714
+    <br>
+    <a href="https://commons.wikimedia.org/wiki/File:대구_달성_비슬산_홍보사진_Korea.jpg"
+       target="_blank"
+       rel="noopener noreferrer">
+      Wikimedia Commons · CC BY-SA 3.0
+    </a>
+  </div>
+
 </footer>
-
-
 <script>
-function toggleService(button){
+document.addEventListener("DOMContentLoaded",function(){
 
-  const current = button.nextElementSibling;
-  const services = document.querySelectorAll('.service-content');
-  const buttons = document.querySelectorAll('.service-btn');
+  const services=document.querySelectorAll(".service");
 
-  services.forEach(function(content){
-    if(content !== current){
-      content.classList.remove('open');
-    }
+  services.forEach(function(service){
+
+    service.addEventListener("toggle",function(){
+
+      if(!service.open){
+        return;
+      }
+
+      services.forEach(function(other){
+
+        if(other!==service){
+          other.open=false;
+        }
+
+      });
+
+    });
+
   });
 
-  buttons.forEach(function(btn){
-    if(btn !== button){
-      btn.querySelector('span').textContent = '＋';
-    }
+  const faqs=document.querySelectorAll(".faq");
+
+  faqs.forEach(function(faq){
+
+    faq.addEventListener("toggle",function(){
+
+      if(!faq.open){
+        return;
+      }
+
+      faqs.forEach(function(other){
+
+        if(other!==faq){
+          other.open=false;
+        }
+
+      });
+
+    });
+
   });
 
-  current.classList.toggle('open');
+});
+</script>
 
-  if(current.classList.contains('open')){
-    button.querySelector('span').textContent = '−';
-  }else{
-    button.querySelector('span').textContent = '＋';
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebPage",
+  "name":"현풍카페폐업·현풍식당폐업·현풍중고가전 매입 | 통합중고센터",
+  "url":"https://tonghap-used-center.github.io/tonghap-center/hyeonpung.html",
+  "description":"현풍읍·유가읍·구지면의 카페폐업, 식당폐업, 중고가전 매입과 무료 사진견적 안내 페이지입니다.",
+  "inLanguage":"ko-KR",
+  "isPartOf":{
+    "@type":"WebSite",
+    "name":"통합중고센터 EVER KOREA",
+    "url":"https://tonghap-used-center.github.io/tonghap-center/"
+  },
+  "about":[
+    {
+      "@type":"Thing",
+      "name":"현풍카페폐업"
+    },
+    {
+      "@type":"Thing",
+      "name":"현풍식당폐업"
+    },
+    {
+      "@type":"Thing",
+      "name":"현풍중고가전"
+    }
+  ],
+  "spatialCoverage":{
+    "@type":"Place",
+    "name":"대구광역시 달성군 현풍읍·유가읍·구지면"
   }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"현풍카페폐업 시 커피머신과 베이커리장비를 함께 상담할 수 있나요?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"중고커피머신, 그라인더, 제빙기 등 음료장비와 컨벡션오븐, 데크오븐, 반죽기 등 베이커리장비를 함께 확인할 수 있습니다. 매입 여부는 제품 상태와 시장 수요에 따라 달라집니다."
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"현풍식당폐업은 철거 전에 주방장비부터 확인해야 하나요?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"재사용 가능한 업소용냉장고, 식기세척기, 제면기 등의 장비는 철거 전에 확인하는 것이 좋습니다. 중고장비와 철거시설을 미리 구분하면 불필요한 손상을 줄일 수 있습니다."
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"현풍중고가전은 몇 년 된 제품까지 확인하나요?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"일반적으로 사용기간 5년 이내 생활가전을 우선 확인합니다. 모델과 작동상태, 외관과 시장 수요에 따라 실제 매입 여부는 달라집니다."
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"무료 사진견적에는 어떤 정보가 필요한가요?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"제품 전체사진과 모델명, 구입 또는 제조시기, 정상작동 여부, 처분지역을 준비하면 좋습니다. 카페와 식당은 정리 예정일, 가전은 엘리베이터 유무와 처분 사유를 함께 알려주면 도움이 됩니다."
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"유가읍과 구지면도 상담 가능한가요?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"장비 종류와 수량, 현장 위치와 반출조건을 사진으로 먼저 확인합니다. 방문 가능 여부는 장비 규모와 현장조건 등을 고려해 안내합니다."
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"중고장비 매입가격은 무엇을 기준으로 판단하나요?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"브랜드와 모델, 사용기간과 작동상태, 외관과 중고시장 수요, 설치 및 반출환경 등을 종합적으로 확인합니다."
+      }
+    }
+  ]
 }
 </script>
 
 </body>
 </html>
+
+
+
+
+
+
+  
