@@ -654,6 +654,375 @@ document.addEventListener("DOMContentLoaded",function(){
 </body>
 </html>
 
+<!-- 대전 지역페이지 보강 시작 -->
+<script>
+(function(){
+"use strict";
+
+if(document.getElementById("daejeon-upgrade")) return;
+
+/* 메인 홈페이지 변경에 따른 견적 링크 보정 */
+document.querySelectorAll('a[href="ever-new.html"]').forEach(function(a){
+  a.href="index.html";
+});
+
+/* 모바일 전용 보강 디자인 */
+var style=document.createElement("style");
+style.textContent=`
+#daejeon-upgrade{
+ margin:30px 0 10px;
+ color:#f5f9ff;
+ font-family:"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+ word-break:keep-all;
+}
+#daejeon-upgrade *{box-sizing:border-box}
+#daejeon-upgrade .du-heading{
+ margin:0 0 17px;
+ color:#b6dfff;
+ font-size:24px;
+ line-height:1.4;
+}
+#daejeon-upgrade .du-lead{
+ font-size:14px;
+ line-height:1.9;
+ color:#d4e2ef;
+ margin:0 0 20px;
+}
+#daejeon-upgrade .du-card{
+ background:#142b42;
+ border:1px solid #58738e;
+ border-radius:15px;
+ margin:13px 0;
+ overflow:hidden;
+}
+#daejeon-upgrade .du-card summary{
+ padding:19px 16px;
+ cursor:pointer;
+ list-style:none;
+ font-size:17px;
+ font-weight:900;
+ line-height:1.55;
+ color:#fff;
+}
+#daejeon-upgrade .du-card summary::-webkit-details-marker{
+ display:none;
+}
+#daejeon-upgrade .du-card summary:after{
+ content:"＋";
+ float:right;
+ color:#b6dfff;
+}
+#daejeon-upgrade .du-card[open] summary:after{
+ content:"−";
+}
+#daejeon-upgrade .du-content{
+ border-top:1px solid #58738e;
+ padding:17px 16px 20px;
+ font-size:14px;
+ line-height:1.95;
+ color:#dce9f6;
+}
+#daejeon-upgrade .du-content h3{
+ font-size:17px;
+ color:#e7d3af;
+ line-height:1.5;
+ margin:12px 0;
+}
+#daejeon-upgrade .du-content p{
+ margin:10px 0 17px;
+}
+#daejeon-upgrade .du-sns{
+ margin-top:28px;
+ background:#0e2338;
+ border:1px solid #58738e;
+ border-radius:15px;
+ padding:20px 14px;
+}
+#daejeon-upgrade .du-sns h2{
+ text-align:center;
+ font-size:21px;
+ color:#e7d3af;
+ margin:0 0 7px;
+}
+#daejeon-upgrade .du-sns p{
+ text-align:center;
+ font-size:12px;
+ color:#cad9e9;
+ margin:0 0 17px;
+}
+#daejeon-upgrade .du-links{
+ display:grid;
+ grid-template-columns:repeat(2,minmax(0,1fr));
+ gap:10px;
+}
+#daejeon-upgrade .du-links a{
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ gap:8px;
+ min-height:58px;
+ padding:9px 6px;
+ background:#1c3852;
+ border:1px solid #6685a2;
+ border-radius:10px;
+ color:white;
+ font-size:13px;
+ font-weight:800;
+ text-align:center;
+}
+#daejeon-upgrade .du-links img{
+ width:26px;
+ height:26px;
+ object-fit:contain;
+ flex-shrink:0;
+ border-radius:5px;
+}
+#daejeon-upgrade .du-home{
+ display:block;
+ margin-top:15px;
+ padding:14px;
+ border:1px solid #e7d3af;
+ border-radius:10px;
+ color:#ffdc56;
+ text-align:center;
+ font-size:14px;
+ font-weight:900;
+}
+@media(max-width:360px){
+ #daejeon-upgrade .du-links a{
+  font-size:12px;
+  gap:5px;
+ }
+ #daejeon-upgrade .du-links img{
+  width:23px;height:23px;
+ }
+}
+`;
+document.head.appendChild(style);
+
+/* 지역별 정보형 콘텐츠 */
+var section=document.createElement("section");
+section.id="daejeon-upgrade";
+section.innerHTML=`
+<h2 class="du-heading">
+대전 폐업정리, 장비 매입 전에 알아둘 이야기
+</h2>
+<p class="du-lead">
+대전카페폐업, 대전식당폐업, 대전중고가전은
+같은 지역이라도 상권과 매장 구조에 따라
+정리 과정이 달라집니다.
+장비를 무조건 철거하기보다
+매입 가능한 품목과 반출 조건을
+먼저 확인하는 것이 중요합니다.
+</p>
+
+<details class="du-card">
+<summary>대전카페폐업｜둔산·봉명·관저 상권</summary>
+<div class="du-content">
+<h3>매장 양도와 폐업 사이에서 달라지는 장비 정리</h3>
+<p>
+대전 서구 둔산동과 탄방동, 유성구 봉명동,
+관저동처럼 상업시설이 밀집한 곳에서는
+매장 양도와 폐업 정리를 함께 검토하는 경우가 있습니다.
+이때 인테리어와 함께 넘길 장비인지,
+별도로 매입 상담을 받을 장비인지
+구분하는 것이 중요합니다.
+</p>
+<p>
+중고커피머신과 중고그라인더,
+중고제빙기, 중고쇼케이스,
+중고테이블냉장고는 모델과 상태를
+확인해 개별 매입 가능 여부를 판단합니다.
+기존 매장을 인수할 사람이 있는 경우라면
+장비를 먼저 철거하기보다
+양도 조건부터 정리하는 것이 좋습니다.
+</p>
+<h3>도안·노은·관평 베이커리카페</h3>
+<p>
+대형 디저트카페에서는
+중고데크오븐, 중고컨벡션오븐,
+중고도우컨디셔너와 중고반죽기 등
+제빵장비의 비중이 높아질 수 있습니다.
+출입문 폭, 전기 연결, 설치 층수와
+반출 순서를 미리 확인하면
+철거 과정에서 발생할 수 있는
+장비 손상 위험을 줄이는 데 도움이 됩니다.
+</p>
+</div>
+</details>
+
+<details class="du-card">
+<summary>대전식당폐업｜유성·중구·대덕구</summary>
+<div class="du-content">
+<h3>주방 철거 전에 매입 가능한 장비부터 구분</h3>
+<p>
+유성구 봉명동과 궁동의 음식점,
+중구 은행동과 대흥동의 식당,
+대덕구 송촌동과 중리동의 음식점은
+업종에 따라 주방장비 구성이 달라집니다.
+</p>
+<p>
+중고업소용냉장고와 중고냉동고,
+중고식기세척기, 중고제빙기,
+중고화구, 중고주방다이와
+중고작업대 등을 먼저 확인합니다.
+매입 가능한 장비와
+철거 대상 시설을 구분해야
+폐업 정리 순서를 계획하기 좋습니다.
+</p>
+<h3>철거업체와 장비 매입업체의 역할 구분</h3>
+<p>
+철거가 먼저 진행되면
+분리 과정에서 장비가 손상될 수 있습니다.
+중고주방장비는 모델과 사용기간,
+작동 상태를 확인하고
+매입 여부를 검토한 뒤
+철거 일정과 반출 순서를 조율하는 것이 좋습니다.
+</p>
+</div>
+</details>
+
+<details class="du-card">
+<summary>대전중고가전｜아파트 이사·교체·정리</summary>
+<div class="du-content">
+<h3>이사 날짜보다 먼저 확인할 가전 매입 조건</h3>
+<p>
+둔산동, 월평동, 도안동, 노은동,
+관저동 등 대전의 아파트 생활권에서는
+이사나 신제품 교체로
+중고냉장고, 중고세탁기, 중고건조기,
+중고김치냉장고를 정리하는 상황이 생깁니다.
+</p>
+<p>
+제품을 처분하기 전에 모델명과 제조연도,
+작동 여부를 확인하고
+전체사진과 제품 라벨사진을 준비하면
+매입 상담이 수월해집니다.
+</p>
+<h3>엘리베이터와 반출 환경도 중요합니다</h3>
+<p>
+중고냉장고와 중고세탁기처럼
+부피가 큰 제품은
+엘리베이터 유무와 설치 층수,
+주차 가능 여부에 따라
+반출 조건이 달라질 수 있습니다.
+제품 상태뿐 아니라
+이사 일정과 반출 환경을 함께 전달해 주세요.
+</p>
+</div>
+</details>
+
+<details class="du-card">
+<summary>대전 외곽지역｜진잠·기성·산내·신탄진</summary>
+<div class="du-content">
+<h3>도심과 다른 외곽 매장의 정리 조건</h3>
+<p>
+진잠과 구즉, 기성과 흑석,
+산내와 낭월, 신탄진과 대청호 인접 지역은
+도심 상가와 달리 단독건물이나
+넓은 매장 형태가 나타날 수 있습니다.
+</p>
+<p>
+중고커피머신, 중고제빙기,
+중고베이커리장비, 중고주방장비는
+장비 규모와 사용 상태를 먼저 확인하고
+차량 접근 및 반출 조건을 함께 검토합니다.
+</p>
+<p>
+대전 외곽도 사진견적 상담 대상이며
+실제 방문 가능 여부는
+품목과 일정에 따라 안내합니다.
+</p>
+</div>
+</details>
+
+<details class="du-card">
+<summary>대전 폐업철거지원금·사진견적 안내</summary>
+<div class="du-content">
+<h3>희망리턴패키지와 중고장비 매입은 별도 절차</h3>
+<p>
+대전에서 카페폐업이나 식당폐업을 준비한다면
+희망리턴패키지와 점포철거비 지원사업의
+신청 조건을 확인하는 것이 좋습니다.
+지원 대상과 금액, 증빙 요건은
+해당 연도 공식 공고를 기준으로 확인해야 합니다.
+</p>
+<p>
+중고장비 매입은 지원사업과 별개로 진행되며
+장비 사진, 모델명, 구입년도,
+작동 상태와 폐업 예정일을
+준비해 상담할 수 있습니다.
+</p>
+</div>
+</details>
+
+<div class="du-sns">
+<h2>통합센터 EVER KOREA</h2>
+<p>공식 SNS 채널에서 장비 정보와 매입 안내 확인</p>
+
+<div class="du-links">
+<a href="https://m.blog.naver.com/kimsuyoung0118"
+target="_blank" rel="noopener noreferrer">
+<img src="https://www.google.com/s2/favicons?domain=blog.naver.com&sz=64"
+alt="네이버 블로그 로고">
+네이버 블로그
+</a>
+
+<a href="https://naver.me/GtYTKGOO"
+target="_blank" rel="noopener noreferrer">
+<img src="https://www.google.com/s2/favicons?domain=naver.com&sz=64"
+alt="네이버 클립 로고">
+네이버 클립
+</a>
+
+<a href="https://www.instagram.com/technician_kim_pro_82?stkn=MTZxOHZ4aTBqYjBweg=="
+target="_blank" rel="noopener noreferrer">
+<img src="https://www.google.com/s2/favicons?domain=instagram.com&sz=64"
+alt="인스타그램 로고">
+인스타그램
+</a>
+
+<a href="https://youtube.com/channel/UCo3Bu9YAJvMjAS2i_94Z3fQ?si=ya6ZQrxsc30rYVCr"
+target="_blank" rel="noopener noreferrer">
+<img src="https://www.google.com/s2/favicons?domain=youtube.com&sz=64"
+alt="유튜브 로고">
+유튜브
+</a>
+</div>
+
+<a class="du-home"
+href="https://tonghap-used-center.github.io/tonghap-center/">
+EVER KOREA 공식 홈페이지 →
+</a>
+</div>
+`;
+
+/* 기존 지역 설명 아래, 폐업 지원 안내 앞에 추가 */
+var support=document.querySelector(".support");
+if(support){
+ support.parentNode.insertBefore(section,support);
+}else{
+ var mainWrap=document.querySelector("main .wrap");
+ if(mainWrap){mainWrap.appendChild(section);}
+}
+
+/* 추가 펼침 콘텐츠는 하나씩만 열기 */
+var cards=section.querySelectorAll(".du-card");
+cards.forEach(function(card){
+ card.addEventListener("toggle",function(){
+  if(card.open){
+   cards.forEach(function(other){
+    if(other!==card) other.open=false;
+   });
+  }
+ });
+});
+
+})();
+</script>
+<!-- 대전 지역페이지 보강 끝 -->
+
+
 
 
 
