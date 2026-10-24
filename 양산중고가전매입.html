@@ -3,29 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-
 <title>양산중고가전매입 | 냉장고·세탁기·건조기·에어컨 매입</title>
-<meta name="description" content="양산중고가전매입 안내. 물금읍·동면·양산시내·덕계·서창·평산 지역 냉장고, 세탁기, 건조기, 에어컨, TV, 스타일러 등 중고가전 매입 기준과 무료 사진견적.">
+<meta name="description" content="양산중고가전매입 전문 안내. 물금·증산·범어·동면·사송·덕계·평산·서창 등 양산 지역 중고냉장고, 중고세탁기, 중고건조기, 중고에어컨, TV, 스타일러 매입 기준과 무료 사진견적.">
 <meta name="robots" content="index,follow,max-image-preview:large">
-<meta name="theme-color" content="#142b39">
+<meta name="theme-color" content="#152936">
 <link rel="canonical" href="https://tonghap-used-center.github.io/tonghap-center/양산중고가전매입.html">
-
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:title" content="양산중고가전매입 | 통합중고가전센터">
-<meta property="og:description" content="양산 냉장고·세탁기·건조기·에어컨 등 중고가전 매입 및 무료 사진견적">
+<meta property="og:description" content="양산 냉장고·세탁기·건조기·에어컨 등 중고가전 매입 안내">
 <meta property="og:url" content="https://tonghap-used-center.github.io/tonghap-center/양산중고가전매입.html">
 
 <style>
 :root{
- --bg:#102530;
- --panel:#1b3543;
- --panel2:#264657;
- --line:#668698;
+ --bg:#10232f;
+ --panel:#1c3543;
+ --panel2:#29485a;
+ --line:#6b8b9d;
  --text:#f7fbff;
- --muted:#dce9f1;
- --accent:#b7e6f6;
- --yellow:#ffe500;
+ --muted:#d9e7ef;
+ --accent:#bce9fa;
+ --gold:#f8dfa4;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -34,84 +32,83 @@ body{
  background:var(--bg);
  color:var(--text);
  font-family:"Apple SD Gothic Neo","Malgun Gothic",Arial,sans-serif;
- line-height:1.9;
+ line-height:1.85;
  word-break:keep-all;
 }
 a{color:inherit}
-.wrap{width:min(calc(100% - 30px),940px);margin:auto}
-
+.wrap{width:min(92%,940px);margin:auto}
 .hero{
- min-height:390px;
+ min-height:480px;
  display:flex;
  align-items:center;
  justify-content:center;
- padding:65px 18px;
+ padding:75px 18px;
  text-align:center;
- background:linear-gradient(145deg,#142b39,#28536a 60%,#173543);
+ background-color:#243f4d;
+ background-image:
+ linear-gradient(180deg,rgba(8,19,28,.23),rgba(8,19,28,.83)),
+ url("https://tonghap-used-center.github.io/tonghap-center/file_000000008044820989a12e279fae3603.png");
+ background-position:center;
+ background-size:cover;
+ background-repeat:no-repeat;
 }
+.hero-inner{width:100%;max-width:760px}
 .hero h1{
  margin:0;
- font-size:clamp(39px,9vw,73px);
+ font-size:clamp(39px,9vw,72px);
  font-weight:900;
  letter-spacing:-2px;
  line-height:1.2;
+ text-shadow:0 3px 14px #000a;
 }
 .hero-sub{
- margin:18px auto 0;
- font-size:clamp(18px,4.3vw,25px);
+ margin:19px auto 0;
+ font-size:clamp(18px,4.5vw,25px);
  font-weight:800;
- color:#e4f5ff;
+ color:#e5f6ff;
+ text-shadow:0 2px 8px #000;
 }
 .hero-desc{
- margin:12px auto 0;
+ margin:14px auto 0;
  max-width:650px;
- color:#d9eaf3;
  font-size:16px;
-}
-.cta-zone{
- padding:23px 16px 28px;
- background:#1a3645;
+ color:#fff;
+ text-shadow:0 2px 8px #000;
 }
 .quote{
  display:block;
- max-width:650px;
- margin:auto;
- padding:19px 15px;
- border-radius:12px;
- background:var(--yellow);
- border:2px solid #ddc900;
- color:#151515;
- font-size:clamp(23px,5vw,30px);
- font-weight:900;
+ width:min(100%,630px);
+ margin:28px auto 0;
+ padding:19px 12px;
+ background:#ffe42c;
+ border:2px solid #ebcc00;
+ border-radius:13px;
+ color:#181818;
+ text-align:center;
  text-decoration:none;
- text-align:center;
-}
-.quote-note{
- margin:10px 0 0;
- text-align:center;
- color:#dce9f1;
- font-size:14px;
+ font-size:clamp(22px,5vw,29px);
+ font-weight:900;
+ box-shadow:0 5px 17px #0007;
 }
 .section{padding:49px 0}
-.section-title{
+.section h2{
  margin:0 0 18px;
- font-size:clamp(25px,5vw,35px);
- line-height:1.45;
+ font-size:clamp(25px,5.5vw,35px);
+ line-height:1.4;
 }
-.intro{color:var(--muted);font-size:16px}
-
-.categories{
- display:grid;
- gap:13px;
- margin-top:26px;
+.intro{
+ margin:0 0 26px;
+ color:var(--muted);
+ font-size:16px;
 }
-.category{
+.accordions{display:grid;gap:13px}
+.acc{
  overflow:hidden;
- border:1px solid var(--line);
- border-radius:12px;
  background:var(--panel);
+ border:1px solid var(--line);
+ border-radius:13px;
 }
-.category button{
+.acc-btn{
  display:flex;
  justify-content:space-between;
  align-items:center;
@@ -122,63 +119,68 @@ a{color:inherit}
  background:transparent;
  color:#fff;
  font-family:inherit;
- font-size:clamp(18px,4.4vw,23px);
+ font-size:clamp(18px,4.4vw,22px);
  font-weight:900;
  line-height:1.5;
  text-align:left;
  cursor:pointer;
 }
-.category button[aria-expanded="true"]{
- background:#31576b;
+.acc-btn[aria-expanded="true"]{
+ background:#31566c;
+ color:#e4f6ff;
 }
-.arrow{flex-shrink:0;font-size:25px}
-.category button[aria-expanded="true"] .arrow{
+.arrow{
+ flex-shrink:0;
+ font-size:24px;
+ transition:transform .2s;
+}
+.acc-btn[aria-expanded="true"] .arrow{
  transform:rotate(180deg);
 }
-.category-content{
- padding:23px 19px;
+.acc-body{
+ padding:22px 19px;
  border-top:1px solid var(--line);
 }
-.category-content[hidden]{display:none}
-.category-content h3{
+.acc-body[hidden]{display:none}
+.acc-body h3{
  margin:22px 0 10px;
- color:var(--accent);
+ color:var(--gold);
  font-size:21px;
 }
-.category-content h3:first-child{margin-top:0}
-.category-content p{
+.acc-body h3:first-child{margin-top:0}
+.acc-body p{
  margin:0 0 17px;
- color:#e8f3fa;
+ color:#edf6fc;
  font-size:16px;
  line-height:2;
 }
-.category-content ul{
+.acc-body ul{
  padding-left:23px;
- color:#e8f3fa;
+ color:#edf6fc;
 }
-.category-content li{margin:7px 0}
-.note{
+.acc-body li{margin:8px 0}
+.info{
  padding:17px;
- border-left:4px solid #a7dff2;
  background:var(--panel2);
+ border-left:4px solid var(--accent);
  border-radius:0 8px 8px 0;
 }
 .tags{
  display:flex;
  flex-wrap:wrap;
  gap:7px;
- margin-top:20px;
+ margin-top:23px;
 }
 .tags span{
  padding:5px 9px;
- background:#30546a;
- border:1px solid #7795a6;
+ background:#2b4b60;
+ border:1px solid #7898a9;
  border-radius:6px;
  font-size:12px;
 }
 .support{
- background:#1a3543;
  padding:46px 0;
+ background:#1c3748;
 }
 .support-links{
  display:flex;
@@ -187,26 +189,26 @@ a{color:inherit}
 }
 .support-links a{
  flex:1;
- min-width:170px;
- padding:12px;
+ min-width:180px;
+ padding:13px;
+ border:1px solid #88a8b9;
+ border-radius:9px;
  background:#31566a;
- border:1px solid #7895a6;
- border-radius:8px;
  text-align:center;
- font-weight:800;
  text-decoration:none;
+ font-weight:800;
 }
-.brand-section{
- padding:50px 15px;
+.sns-section{
+ padding:48px 15px;
+ background:#162e3c;
  text-align:center;
- background:#142e3b;
 }
 .sns-grid{
  display:grid;
  grid-template-columns:repeat(4,minmax(0,1fr));
- gap:8px;
+ gap:9px;
  max-width:650px;
- margin:0 auto 30px;
+ margin:25px auto;
 }
 .sns{
  display:flex;
@@ -217,7 +219,7 @@ a{color:inherit}
  font-size:12px;
  font-weight:800;
 }
-.sns-logo{
+.sns-icon{
  display:grid;
  place-items:center;
  width:52px;
@@ -227,34 +229,34 @@ a{color:inherit}
  font-size:24px;
  font-weight:900;
 }
-.naver{background:#03c75a}
-.clip{background:#235c60}
-.insta{background:linear-gradient(45deg,#ffb72d,#e63b75,#8144c5)}
+.blog{background:#03c75a}
+.clip{background:#28766d}
+.insta{background:linear-gradient(45deg,#ffc044,#e33a75,#8346c7)}
 .youtube{background:#ee2424}
-.brand-name{
- margin:14px 0 4px;
- font-size:26px;
+.brand{
+ margin:18px 0 5px;
+ font-size:27px;
  font-weight:900;
 }
 .ever{
  margin:0;
- font-size:30px;
+ color:var(--gold);
+ font-size:29px;
  font-weight:900;
- color:#b7e6f6;
 }
 footer{
- padding:28px 15px 38px;
- background:#0b1b24;
+ padding:30px 15px 40px;
+ background:#0a1923;
  text-align:center;
  font-size:14px;
 }
 footer p{margin:6px 0}
-footer a{color:#b7e6f6}
+footer a{color:var(--gold)}
 @media(max-width:600px){
- .hero{min-height:340px}
+ .hero{min-height:430px;padding:55px 17px}
  .section{padding:40px 0}
- .category-content{padding:20px 15px}
- .sns-logo{width:46px;height:46px}
+ .acc-body{padding:20px 15px}
+ .sns-icon{width:46px;height:46px}
  .sns{font-size:11px}
 }
 </style>
@@ -262,222 +264,308 @@ footer a{color:#b7e6f6}
 
 <body>
 <header class="hero">
-<div>
+<div class="hero-inner">
 <h1>양산중고가전매입</h1>
 <p class="hero-sub">중고냉장고 · 중고세탁기 · 중고건조기 · 중고에어컨</p>
 <p class="hero-desc">
-양산 전 지역 중고가전 매입 기준과 제품별 정리 방법을 안내합니다.
+양산 전 지역 중고가전 매입 기준부터
+제품별 상태 확인과 반출 조건까지 안내합니다.
 </p>
-</div>
-</header>
-
-<div class="cta-zone">
-<a class="quote" href="https://tonghap-used-center.github.io/tonghap-center/">
+<a class="quote" href="https://tonghap-used-center.github.io/tonghap-center/#quote">
 📷 무료 사진견적 신청 →
 </a>
-<p class="quote-note">제품 전면사진·모델명·제조연도·작동상태를 준비해 주세요.</p>
 </div>
+</header>
 
 <main>
 <section class="section">
 <div class="wrap">
-<h2 class="section-title">양산중고가전매입, 품목별 확인사항</h2>
+<h2>양산중고가전매입, 제품별 확인사항</h2>
 <p class="intro">
-중고가전은 제조연도만으로 매입 여부가 결정되지 않습니다.
-제품의 모델과 용량, 정상 작동 여부, 외관 상태, 운반 조건을
-함께 확인해야 합니다. 아래 항목을 누르면 상세 정보가 펼쳐집니다.
+통합중고가전센터입니다.
+냉장고와 세탁기, 건조기, 에어컨 등
+중고가전은 제조연도뿐 아니라 모델,
+정상 작동 여부, 관리 상태,
+운반 조건을 함께 확인해야 합니다.
+아래 카테고리를 누르면 상세 내용이 펼쳐집니다.
 </p>
+<div class="accordions">
 
-<div class="categories">
-
-<article class="category">
-<button type="button" aria-expanded="false" aria-controls="appliance-1">
-<span>01. 중고냉장고·김치냉장고 매입 기준</span><span class="arrow">⌄</span>
+<article class="acc">
+<button class="acc-btn" type="button" aria-expanded="false" aria-controls="ap1">
+<span>01. 양산중고냉장고·김치냉장고 매입</span><span class="arrow">⌄</span>
 </button>
-<div class="category-content" id="appliance-1" hidden>
-<h3>양산중고냉장고매입</h3>
+<div class="acc-body" id="ap1" hidden>
+<h3>중고냉장고 매입 기준</h3>
 <p>
-양산에서 냉장고를 처분할 때는 제조사와 모델명,
-제조연도, 용량, 냉각 성능, 도어 패킹, 내부 선반과
-외관 손상 여부를 확인해야 합니다.
-삼성 비스포크, LG 오브제컬렉션 등 제품은
-시리즈별 규격과 기능이 달라 모델명을 정확하게
-확인하는 것이 좋습니다.
+양산중고냉장고매입에서는 삼성 비스포크,
+LG 오브제컬렉션 등 제조사와 제품 모델,
+제조연도, 용량, 냉각 성능,
+외관 상태를 종합적으로 확인합니다.
+같은 브랜드라도 2도어, 양문형,
+4도어 등 구조에 따라 중고시장 수요와
+운반 조건이 다릅니다.
 </p>
 <p>
-양문형냉장고, 4도어냉장고, 일반냉장고와
-김치냉장고는 제품 크기와 운반 방식이 다릅니다.
-매입 검토 전에는 냉장·냉동 기능이 정상인지,
-누수나 심한 부식이 없는지 확인하고
-전면·내부·모델명 라벨 사진을 준비하세요.
+냉장실과 냉동실의 온도 유지 상태,
+압축기 소음, 도어 패킹, 선반,
+내부 오염과 외관 손상 여부를 확인해야 합니다.
+대형 냉장고는 출입문 폭과
+엘리베이터 크기도 중요한 요소입니다.
+</p>
+<h3>중고김치냉장고 매입</h3>
+<p>
+스탠드형과 뚜껑형 김치냉장고는
+제조연도와 용량, 냉각 기능,
+내부 용기 구성, 외관 상태를 확인합니다.
+모델명 라벨과 제품 내부 사진을
+함께 준비하면 검토에 도움이 됩니다.
 </p>
 </div>
 </article>
 
-<article class="category">
-<button type="button" aria-expanded="false" aria-controls="appliance-2">
-<span>02. 중고세탁기·건조기·워시타워</span><span class="arrow">⌄</span>
+<article class="acc">
+<button class="acc-btn" type="button" aria-expanded="false" aria-controls="ap2">
+<span>02. 양산중고세탁기·건조기·워시타워</span><span class="arrow">⌄</span>
 </button>
-<div class="category-content" id="appliance-2" hidden>
+<div class="acc-body" id="ap2" hidden>
 <h3>양산중고세탁기매입</h3>
 <p>
-드럼세탁기와 통돌이세탁기는 세탁 용량,
-탈수 작동, 소음, 누수, 고무 패킹과 내부 상태를
-확인해야 합니다. LG 트롬과 삼성 그랑데 등은
-모델별 제조연도와 기능을 함께 검토합니다.
+드럼세탁기와 통돌이세탁기는
+세탁 용량, 제조연도, 탈수 기능,
+진동과 소음, 누수 여부를 확인합니다.
+삼성 그랑데와 LG 트롬 등은
+모델에 따라 기능과 사양이 달라
+정확한 모델명 확인이 필요합니다.
 </p>
 <h3>양산중고건조기매입</h3>
 <p>
-건조기는 용량과 건조 방식, 필터 및 열교환기
-관리 상태, 작동 중 소음과 오류 여부를 확인합니다.
-워시타워나 세탁기·건조기 직렬 설치 제품은
-분리 가능한 구조인지도 확인해야 합니다.
+건조기는 용량과 건조 방식,
+정상 작동 여부, 필터 및 열교환기
+관리 상태를 확인합니다.
+건조 성능이 저하되거나
+오류 코드가 발생하는 제품은
+매입 평가가 달라질 수 있습니다.
 </p>
+<h3>워시타워와 직렬 설치 제품</h3>
 <p>
-제품이 설치된 다용도실의 출입문 폭,
-급배수 연결과 이동 공간을 확인하면
-반출 가능 여부를 판단하는 데 도움이 됩니다.
+워시타워 및 세탁기·건조기
+직렬 설치 제품은 반출 전
+설치 구조와 이동 공간을 확인해야 합니다.
+좁은 다용도실에서는 급배수 연결,
+문 폭, 작업 공간이 중요합니다.
 </p>
 </div>
 </article>
 
-<article class="category">
-<button type="button" aria-expanded="false" aria-controls="appliance-3">
-<span>03. 중고에어컨·TV·스타일러</span><span class="arrow">⌄</span>
+<article class="acc">
+<button class="acc-btn" type="button" aria-expanded="false" aria-controls="ap3">
+<span>03. 양산중고에어컨 매입·철거 기준</span><span class="arrow">⌄</span>
 </button>
-<div class="category-content" id="appliance-3" hidden>
-<h3>양산중고에어컨매입</h3>
+<div class="acc-body" id="ap3" hidden>
+<h3>스탠드·벽걸이·2in1 에어컨</h3>
 <p>
-스탠드에어컨, 벽걸이에어컨, 2in1에어컨은
-제조연도와 냉방 상태, 실내기·실외기 구성,
-배관과 설치 위치를 확인해야 합니다.
-에어컨 철거는 냉매 회수와 전기 연결을
-안전하게 처리할 수 있는 작업자가 필요합니다.
+양산중고에어컨매입에서는
+제조사와 모델, 제조연도,
+냉방 성능, 실내기와 실외기 구성,
+외관 상태를 확인합니다.
+스탠드형, 벽걸이형,
+2in1 제품은 각각
+설치 구조와 반출 조건이 다릅니다.
 </p>
+<p>
+실외기가 베란다, 외벽,
+옥상 등 어디에 설치되어 있는지에 따라
+철거 작업 난도가 달라집니다.
+냉매 회수와 전기 연결 분리는
+안전한 전문 작업이 필요합니다.
+</p>
+<div class="info">
+에어컨은 제품 사진뿐 아니라
+실외기 위치와 배관 설치 상태도
+함께 확인하는 것이 좋습니다.
+</div>
+</div>
+</article>
+
+<article class="acc">
+<button class="acc-btn" type="button" aria-expanded="false" aria-controls="ap4">
+<span>04. 양산중고TV·스타일러·의류관리기</span><span class="arrow">⌄</span>
+</button>
+<div class="acc-body" id="ap4" hidden>
 <h3>양산중고TV매입</h3>
 <p>
-TV는 화면 크기와 해상도, 패널 상태,
-화면 줄·멍·잔상 여부, 리모컨과 받침대 등
-구성품을 확인합니다. 벽걸이형은
-탈거 작업 조건도 함께 검토해야 합니다.
+중고TV는 화면 크기와 해상도,
+패널 상태, 제조연도,
+리모컨과 받침대 등 구성품을 확인합니다.
+화면 줄, 멍, 잔상,
+패널 파손 여부에 따라
+매입 가능 여부가 달라질 수 있습니다.
+</p>
+<p>
+벽걸이TV는 브래킷과 설치 위치,
+탈거 작업 조건을 확인해야 합니다.
+대형 TV는 운반 중 파손 위험이 있어
+이동 방법을 사전에 검토하는 것이 좋습니다.
 </p>
 <h3>양산중고스타일러매입</h3>
 <p>
-의류관리기는 모델과 용량, 스팀·건조 기능,
-물통 상태, 도어 작동 여부 등을 확인합니다.
-좁은 드레스룸이나 현관을 통해 반출해야 한다면
-제품 치수와 이동 동선 확인이 중요합니다.
+LG 스타일러와 삼성 에어드레서 등
+의류관리기는 모델명과 제조연도,
+스팀·건조 기능, 도어 상태,
+물통과 내부 구성품을 확인합니다.
+드레스룸이나 좁은 현관에 설치된 제품은
+반출 동선도 함께 살펴봐야 합니다.
 </p>
 </div>
 </article>
 
-<article class="category">
-<button type="button" aria-expanded="false" aria-controls="appliance-4">
-<span>04. 물금읍·증산·범어 중고가전매입</span><span class="arrow">⌄</span>
+<article class="acc">
+<button class="acc-btn" type="button" aria-expanded="false" aria-controls="ap5">
+<span>05. 양산물금·증산·범어중고가전매입</span><span class="arrow">⌄</span>
 </button>
-<div class="category-content" id="appliance-4" hidden>
-<h3>양산물금읍중고가전매입</h3>
+<div class="acc-body" id="ap5" hidden>
+<h3>양산물금중고가전매입</h3>
 <p>
-물금읍과 증산·범어 생활권은 아파트와
-주거시설에서 냉장고, 세탁기, 건조기,
-TV 등을 정리할 때 엘리베이터 크기와
-관리사무소의 반출 규정을 확인하는 것이 좋습니다.
+물금읍에서 냉장고와 세탁기,
+건조기 등을 정리할 때는
+제품 상태와 함께 건물의
+반출 조건을 확인하는 것이 중요합니다.
+대형 가전은 현관문과 복도 폭,
+엘리베이터 크기를 확인해야 합니다.
 </p>
+<h3>양산증산중고가전·양산범어중고가전</h3>
 <p>
-대형 4도어냉장고와 워시타워는
-현관문과 복도 폭에 따라 이동 가능 여부가
-달라질 수 있습니다. 이사 일정과 제품 반출일을
-구분하고 제품 상태를 미리 확인해야 합니다.
+증산과 범어 생활권에서는
+아파트와 상가 등 건물 구조에 따라
+제품 반출 방식이 달라집니다.
+가전 교체나 이사 일정이 정해져 있다면
+매입 검토와 반출 일정을
+미리 구분해 준비하는 것이 좋습니다.
 </p>
-<div class="note">물금읍 · 증산리 · 범어리 · 가촌리 · 물금리</div>
+<div class="info">
+물금읍 · 증산리 · 범어리 · 가촌리 · 물금리
+</div>
 </div>
 </article>
 
-<article class="category">
-<button type="button" aria-expanded="false" aria-controls="appliance-5">
-<span>05. 동면·사송·석산 중고가전매입</span><span class="arrow">⌄</span>
+<article class="acc">
+<button class="acc-btn" type="button" aria-expanded="false" aria-controls="ap6">
+<span>06. 양산동면·사송·석산중고가전매입</span><span class="arrow">⌄</span>
 </button>
-<div class="category-content" id="appliance-5" hidden>
+<div class="acc-body" id="ap6" hidden>
 <h3>양산동면중고가전매입</h3>
 <p>
-동면 사송과 석산 생활권에서 가전을 정리할 때는
-제품의 제조연도와 모델명뿐 아니라
-설치 위치, 주차 가능 공간, 이동 동선을
-함께 확인하는 것이 중요합니다.
+동면에서 중고가전을 정리할 때는
+제품 모델과 사용 연수,
+정상 작동 여부를 확인하고
+설치 공간의 크기와 반출 동선을
+함께 살펴봐야 합니다.
 </p>
+<h3>양산사송중고가전매입</h3>
 <p>
-세탁기와 건조기, 대형냉장고는
-다용도실이나 주방 가구와의 간섭 여부를
-확인해야 합니다. 에어컨은 실외기 설치 위치와
-철거 가능 조건을 별도로 검토합니다.
+사송 생활권에서 냉장고,
+세탁기, 건조기 등을 매입 검토할 때는
+제품의 외관과 내부 상태,
+엘리베이터와 주차 조건을 확인해야 합니다.
 </p>
-<div class="note">동면 · 사송 · 석산 · 금산 · 내송</div>
+<h3>양산석산중고가전매입</h3>
+<p>
+석산과 금산 지역의 가전제품은
+건물 형태와 설치 위치에 따라
+운반 방법이 달라질 수 있습니다.
+워시타워와 대형 냉장고처럼
+규격이 큰 제품은 출입구와
+작업 공간 확인이 중요합니다.
+</p>
+<div class="info">
+동면 · 사송 · 석산 · 금산 · 내송
+</div>
 </div>
 </article>
 
-<article class="category">
-<button type="button" aria-expanded="false" aria-controls="appliance-6">
-<span>06. 양산시내·상북·하북 중고가전매입</span><span class="arrow">⌄</span>
+<article class="acc">
+<button class="acc-btn" type="button" aria-expanded="false" aria-controls="ap7">
+<span>07. 양산중부동·북부동·상북·하북중고가전</span><span class="arrow">⌄</span>
 </button>
-<div class="category-content" id="appliance-6" hidden>
-<h3>양산중부동·북부동·신기동 중고가전</h3>
+<div class="acc-body" id="ap7" hidden>
+<h3>양산중부동·북부동중고가전매입</h3>
 <p>
-중부동, 북부동, 신기동 등 도심 주거지역에서는
-계단과 엘리베이터 유무, 주차 위치가
-가전제품 반출 조건에 영향을 줄 수 있습니다.
-제품별 규격과 무게를 확인하는 것이 좋습니다.
+중부동과 북부동, 남부동,
+신기동 등 양산 도심에서
+중고가전을 정리할 때는
+제품별 모델명과 제조연도,
+작동 상태를 먼저 확인하는 것이 좋습니다.
 </p>
-<h3>양산상북면·하북면 중고가전</h3>
 <p>
-상북면과 하북면은 주택과 상가 등
-건물 형태에 따라 가전 설치 환경이 다를 수 있습니다.
-대형 냉장고나 세탁기 반출 시에는
-현관과 출입문 폭, 차량 진입 조건을
+빌라와 주택 등에서
+냉장고나 세탁기를 반출할 때는
+계단과 출입문 폭,
+차량 정차 위치를 함께 검토해야 합니다.
+</p>
+<h3>양산상북면·하북면중고가전매입</h3>
+<p>
+상북면과 하북면에서는
+주택과 상가 등 건물 구조에 따라
+가전 반출 조건이 다를 수 있습니다.
+대형 냉장고와 세탁기는
+차량 진입과 제품 이동 경로를
 사전에 확인하는 것이 좋습니다.
 </p>
-<div class="note">중부동 · 북부동 · 신기동 · 남부동 · 상북면 · 하북면</div>
+<div class="info">
+중부동 · 북부동 · 남부동 · 신기동 · 상북면 · 하북면
+</div>
 </div>
 </article>
 
-<article class="category">
-<button type="button" aria-expanded="false" aria-controls="appliance-7">
-<span>07. 덕계·평산·서창·소주 중고가전매입</span><span class="arrow">⌄</span>
+<article class="acc">
+<button class="acc-btn" type="button" aria-expanded="false" aria-controls="ap8">
+<span>08. 양산덕계·평산·서창·소주중고가전매입</span><span class="arrow">⌄</span>
 </button>
-<div class="category-content" id="appliance-7" hidden>
-<h3>양산덕계동·평산동중고가전매입</h3>
+<div class="acc-body" id="ap8" hidden>
+<h3>양산덕계중고가전·양산평산중고가전</h3>
 <p>
-덕계동과 평산동에서 가전을 정리할 때는
-아파트와 빌라, 주택 등 건물 구조에 따라
-반출 조건을 확인해야 합니다.
-세탁기와 건조기, 냉장고의 작동상태와
-제품 라벨을 함께 점검하면 좋습니다.
+덕계동과 평산동에서
+냉장고와 세탁기, 건조기,
+TV 등을 정리할 때는
+제품의 제조연도와 정상 작동 여부,
+설치 층수와 운반 조건을 확인해야 합니다.
 </p>
-<h3>양산서창동·소주동중고가전매입</h3>
+<h3>양산서창중고가전·양산소주동중고가전</h3>
 <p>
-서창동과 소주동에서는 가전 교체나
-주거공간 정리 시 TV와 냉장고,
-세탁기 등 품목별 매입 가능 여부를
-확인할 수 있습니다. 제품 상태에 따라
-매입이 어려운 경우도 있으므로
-사진견적으로 먼저 확인하는 것이 효율적입니다.
+서창동과 소주동에서
+가전 교체나 공간 정리를 준비할 때는
+매입 가능한 제품과
+별도 배출이 필요한 제품을
+구분하는 것이 좋습니다.
+오래된 가전이나 고장 제품은
+매입이 제한될 수 있습니다.
 </p>
-<div class="note">덕계동 · 평산동 · 서창동 · 소주동 · 주진동 · 명동 · 삼호동</div>
+<div class="info">
+덕계동 · 평산동 · 서창동 · 소주동 · 주진동 · 삼호동
+</div>
 </div>
 </article>
 
-<article class="category">
-<button type="button" aria-expanded="false" aria-controls="appliance-8">
-<span>08. 매입가격·연식·무료 사진견적 준비</span><span class="arrow">⌄</span>
+<article class="acc">
+<button class="acc-btn" type="button" aria-expanded="false" aria-controls="ap9">
+<span>09. 매입가격·연식·무료 사진견적 준비</span><span class="arrow">⌄</span>
 </button>
-<div class="category-content" id="appliance-8" hidden>
+<div class="acc-body" id="ap9" hidden>
 <h3>중고가전 매입가격 결정 기준</h3>
 <p>
-중고가전 매입가격은 브랜드, 모델명,
-제조연도, 용량, 정상 작동 여부,
-외관 상태, 중고시장 수요, 운반 조건을
+중고가전 매입가격은 브랜드,
+모델명, 제조연도, 용량,
+정상 작동 여부, 외관 상태,
+중고시장 수요, 운반 조건을
 종합적으로 검토해 결정합니다.
-일반적으로 최근 5년 이내 제품을 우선
-검토할 수 있지만 모든 제품이 매입되는 것은 아닙니다.
+</p>
+<p>
+일반적으로 제조 후 5년 이내 제품을
+우선 검토할 수 있지만
+모든 제품의 매입이 보장되는 것은 아닙니다.
+오래된 제품이라도 모델과 상태에 따라
+검토 결과가 달라질 수 있습니다.
 </p>
 <h3>사진견적 준비사항</h3>
 <ul>
@@ -485,18 +573,25 @@ TV 등을 정리할 때 엘리베이터 크기와
 <li>브랜드·모델명·제조연도 라벨</li>
 <li>정상 작동 여부와 고장 이력</li>
 <li>양산 지역 및 설치 층수</li>
-<li>엘리베이터 유무와 반출 예정일</li>
+<li>엘리베이터 유무와 출입문 폭</li>
+<li>에어컨 실외기 설치 위치</li>
+<li>가전 반출 희망일</li>
 </ul>
 <p>
-중고가전 매입은 재사용 가능성과
-운반 비용 등을 함께 검토해야 합니다.
-매입이 어려운 제품은 폐가전 무상방문수거 등
-별도 배출 방법을 확인할 수 있습니다.
+제품별 사진과 정보를 준비하면
+매입 가능 여부와 추가 확인사항을
+검토하는 데 도움이 됩니다.
 </p>
+</div>
+</article>
+
+</div>
+
 <div class="tags">
 <span>#양산중고가전매입</span>
 <span>#양산중고냉장고</span>
 <span>#양산냉장고매입</span>
+<span>#양산중고김치냉장고</span>
 <span>#양산중고세탁기</span>
 <span>#양산세탁기매입</span>
 <span>#양산중고건조기</span>
@@ -506,6 +601,7 @@ TV 등을 정리할 때 엘리베이터 크기와
 <span>#양산중고TV</span>
 <span>#양산TV매입</span>
 <span>#양산중고스타일러</span>
+<span>#양산중고워시타워</span>
 <span>#양산물금중고가전</span>
 <span>#양산증산중고가전</span>
 <span>#양산범어중고가전</span>
@@ -514,7 +610,6 @@ TV 등을 정리할 때 엘리베이터 크기와
 <span>#양산석산중고가전</span>
 <span>#양산중부동중고가전</span>
 <span>#양산북부동중고가전</span>
-<span>#양산신기동중고가전</span>
 <span>#양산상북면중고가전</span>
 <span>#양산하북면중고가전</span>
 <span>#양산덕계중고가전</span>
@@ -522,29 +617,36 @@ TV 등을 정리할 때 엘리베이터 크기와
 <span>#양산서창중고가전</span>
 <span>#양산소주동중고가전</span>
 <span>#양산가전매입</span>
-<span>#양산중고가전출장</span>
 <span>#통합중고가전센터</span>
 </div>
-</div>
-</article>
 
-</div>
 </div>
 </section>
 
 <section class="support">
 <div class="wrap">
-<h2 class="section-title">양산중고가전 정리 전 확인사항</h2>
+<h2>양산중고가전 정리 전 확인사항</h2>
 <p>
-중고가전 매입은 제품 상태와 시장 수요에 따라
-가능 여부가 달라집니다. 매입 대상이 아닌 제품은
-공식 폐가전 수거제도와 지자체 배출 안내를
-확인하는 것이 좋습니다.
+중고가전은 제품 상태와
+중고시장 수요에 따라
+매입 가능 여부가 달라집니다.
+고장이나 심한 노후화로
+매입이 어려운 제품은
+폐가전 무상방문수거 등
+별도 배출 방법을 확인할 수 있습니다.
+</p>
+<p>
+폐가전 무상방문수거는
+품목과 수거 조건에 따라
+신청 가능 여부가 달라질 수 있으므로
+공식 안내를 확인해야 합니다.
+중고가전 매입과 폐가전 수거는
+서로 다른 서비스입니다.
 </p>
 <div class="support-links">
 <a href="https://www.15990903.or.kr/"
  target="_blank" rel="noopener noreferrer">
-폐가전 무상방문수거 안내 →
+폐가전 무상방문수거 공식 안내 →
 </a>
 <a href="https://www.yangsan.go.kr/"
  target="_blank" rel="noopener noreferrer">
@@ -555,14 +657,15 @@ TV 등을 정리할 때 엘리베이터 크기와
 </section>
 </main>
 
-<section class="brand-section">
-<div class="sns-grid">
+<section class="sns-section">
+<h2>통합중고센터 공식 채널</h2>
 
+<div class="sns-grid">
 <a class="sns"
  href="https://m.blog.naver.com/kimsuyoung0118"
  target="_blank" rel="noopener noreferrer"
  aria-label="네이버 블로그">
-<span class="sns-logo naver">N</span>
+<span class="sns-icon blog">N</span>
 <span>네이버 블로그</span>
 </a>
 
@@ -570,7 +673,7 @@ TV 등을 정리할 때 엘리베이터 크기와
  href="https://naver.me/GtYTKGOO"
  target="_blank" rel="noopener noreferrer"
  aria-label="네이버 클립">
-<span class="sns-logo clip">▶</span>
+<span class="sns-icon clip">▶</span>
 <span>네이버 클립</span>
 </a>
 
@@ -578,7 +681,7 @@ TV 등을 정리할 때 엘리베이터 크기와
  href="https://www.instagram.com/technician_kim_pro_82/"
  target="_blank" rel="noopener noreferrer"
  aria-label="인스타그램">
-<span class="sns-logo insta">◎</span>
+<span class="sns-icon insta">◎</span>
 <span>인스타그램</span>
 </a>
 
@@ -586,25 +689,24 @@ TV 등을 정리할 때 엘리베이터 크기와
  href="https://youtube.com/channel/UCo3Bu9YAJvMjAS2i_94Z3fQ"
  target="_blank" rel="noopener noreferrer"
  aria-label="유튜브">
-<span class="sns-logo youtube">▶</span>
+<span class="sns-icon youtube">▶</span>
 <span>유튜브</span>
 </a>
-
 </div>
 
-<h2 class="brand-name">통합중고가전센터</h2>
+<h2 class="brand">통합중고가전센터</h2>
 <p class="ever">EVER KOREA</p>
 <p>양산중고가전매입 · 중고냉장고 · 중고세탁기 · 중고건조기</p>
 </section>
 
 <footer>
-<p><strong>통합중고가전센터 | 에버코리아</strong></p>
+<p><strong>에버코리아 | 통합중고센터</strong></p>
 <p>사업자등록번호 : 403-46-00681</p>
-<p>사업장 : 경상북도 경산시 진량읍 일연로 606-7</p>
 <p>상담전화 : <a href="tel:01088775951">010-8877-5951</a></p>
+<p>카카오톡 ID : pg3040</p>
 <p>
 <a href="https://tonghap-used-center.github.io/tonghap-center/">
-공식 홈페이지
+통합중고센터 공식 홈페이지
 </a>
 </p>
 <p>© EVER KOREA</p>
@@ -612,11 +714,11 @@ TV 등을 정리할 때 엘리베이터 크기와
 
 <script>
 (function(){
- const buttons=document.querySelectorAll(".category button");
+ const buttons=document.querySelectorAll(".acc-btn");
 
  buttons.forEach(function(button){
   button.addEventListener("click",function(){
-   const wasOpen=button.getAttribute("aria-expanded")==="true";
+   const isOpen=button.getAttribute("aria-expanded")==="true";
 
    buttons.forEach(function(other){
     other.setAttribute("aria-expanded","false");
@@ -626,7 +728,7 @@ TV 등을 정리할 때 엘리베이터 크기와
     if(panel) panel.hidden=true;
    });
 
-   if(!wasOpen){
+   if(!isOpen){
     button.setAttribute("aria-expanded","true");
     const panel=document.getElementById(
      button.getAttribute("aria-controls")
@@ -639,4 +741,4 @@ TV 등을 정리할 때 엘리베이터 크기와
 </script>
 </body>
 </html>
-  
+    
