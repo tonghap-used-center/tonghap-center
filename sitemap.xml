@@ -1,57 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://tonghap-used-center.github.io/tonghap-center/</loc>
-  </url>
-  <url>
-    <loc>https://tonghap-used-center.github.io/tonghap-center/region-links.html</loc>
-  </url>
-  <url>
-    <loc>https://tonghap-used-center.github.io/tonghap-center/daegu.html</loc>
-  </url>
-  <url>
-    <loc>https://tonghap-used-center.github.io/tonghap-center/gyeongsan.html</loc>
-  </url>
-  <url>
-    <loc>https://tonghap-used-center.github.io/tonghap-center/hyeonpung.html</loc>
-  </url>
-  <url>
-    <loc>https://tonghap-used-center.github.io/tonghap-center/gumi.html</loc>
-  </url>
-  <url>
-    <loc>https://tonghap-used-center.github.io/tonghap-center/gimcheon.html</loc>
-  </url>
-  <url>
-    <loc>https://tonghap-used-center.github.io/tonghap-center/pohang.html</loc>
-  </url>
-  <url>
-    <loc>https://tonghap-used-center.github.io/tonghap-center/gyeongju.html</loc>
-  </url>
-  <url>
-    <loc>https://tonghap-used-center.github.io/tonghap-center/andong.html</loc>
-  </url>
-  <url>
-    <loc>https://tonghap-used-center.github.io/tonghap-center/%EB%B6%80%EC%82%B0.html</loc>
-  </url>
-  <url>
-    <loc>https://tonghap-used-center.github.io/tonghap-center/ulsan.html</loc>
-  </url>
-  <url>
-    <loc>https://tonghap-used-center.github.io/tonghap-center/changwon-center.html</loc>
-  </url>
-  <url>
-    <loc>https://tonghap-used-center.github.io/tonghap-center/gimhae-center.html</loc>
-  </url>
-  <url>
-    <loc>https://tonghap-used-center.github.io/tonghap-center/yangsan-center.html</loc>
-  </url>
-  <url>
-    <loc>https://tonghap-used-center.github.io/tonghap-center/jinju.html</loc>
-  </url>
-  <url>
-    <loc>https://tonghap-used-center.github.io/tonghap-center/%EA%B1%B0%EC%A0%9C.html</loc>
-  </url>
-  <url>
-    <loc>https://tonghap-used-center.github.io/tonghap-center/daejeon.html</loc>
-  </url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/region-links.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/daegu.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/daegu1.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/daegu2.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/daegu3.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/gyeongsan.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/gyeongsan1.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/gyeongsan2.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/gyeongsan3.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/hyeonpung.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/hyeonpung1.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/hyeonpung2.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/hyeonpung3.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/gumi.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/gumi1.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/gumi2.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/gumi3.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/gimcheon.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/gimcheon1.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/gimcheon2.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/gimcheon3.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/pohang.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/pohang1.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/pohang2.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/pohang3.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/gyeongju.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/gyeongju1.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/gyeongju2.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/gyeongju3.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/andong.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/andong1.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/andong2.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/andong3.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/%EB%B6%80%EC%82%B0.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/busan1.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/busan2.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/busan3.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/ulsan.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/ulsan1.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/ulsan2.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/ulsan3.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/changwon-center.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/changwon1.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/changwon2.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/changwon3.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/gimhae-center.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/gimhae1.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/gimhae2.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/gimhae3.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/yangsan-center.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/yangsan1.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/yangsan2.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/yangsan3.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/jinju.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/jinju1.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/jinju2.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/jinju3.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/%EA%B1%B0%EC%A0%9C.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/geoje1.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/geoje2.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/geoje3.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/daejeon.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/daejeon1.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/daejeon2.html</loc></url>
+<url><loc>https://tonghap-used-center.github.io/tonghap-center/daejeon3.html</loc></url>
 </urlset>
+
